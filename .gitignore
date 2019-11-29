@@ -1,0 +1,4 @@
+.vscode/
+demo/
+vsc-extension-quickstart.md
+*.code-workspace
