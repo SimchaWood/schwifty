@@ -791,7 +791,7 @@
       }
     },
     {
-			"name": "HTML Tags", // "HTML Tags, Property Names, Object Keys"
+			"name": "HTML Tags", // TODO "HTML Tags, Property Names, Object Keys"
 			"scope": [
 				"entity.name.tag",
 				"meta.object-literal.key.js", // Move?
@@ -826,6 +826,14 @@
         "foreground": "#00e0ff"
       }
     },
+    {
+			"name": "Debugger Directive",
+			"scope": "keyword.other.debugger",
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#ff6669"
+			}
+		},
 		{
 			"name": "SCSS/SASS Attribute Parent Selector",
 			"scope": [
@@ -879,88 +887,86 @@
 				"foreground": "#ffb90f"
 			}
     },
-    // !! START HERE *********************************************************
 		{
 			"name": "Decorators",
 			"scope": [
-				"meta.decorator variable.other.readwrite",
-				"meta.decorator variable.other.property"
+        "meta.decorator variable.other.readwrite",
+        "meta.decorator variable.other.object",
+        "meta.decorator variable.other.property",
+        "meta.function.decorator entity.name.function.decorator"
+        // TODO: meta.function.decorator support.type (used in Python)
 			],
 			"settings": {
-				"foreground": "#50FA7B",
+				"foreground": "#abff28",
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Decorator Objects",
+			"name": "Decorator Symbol",
 			"scope": [
-				"meta.decorator variable.other.object"
+        "meta.decorator punctuation.decorator",
+        "meta.function.decorator punctuation.definition.decorator"
 			],
 			"settings": {
-				"foreground": "#50FA7B"
+        "foreground": "#fb6467" // TODO: Keep keyword color?
 			}
-		},
-		{
+    },
+    {
 			"name": "Keywords",
 			"scope": [
 				"keyword",
+				"keyword.control.new",
+        "keyword.operator.new",
+        "meta.selector", // TODO: Keep keyword color? (Used for > ~ etc. in CSS)
 				"punctuation.definition.keyword"
 			],
 			"settings": {
-				"foreground": "#FF79C6"
+				"foreground": "#fb6467"
 			}
-		},
-		{
-			"name": "Keyword \"new\"",
+    },
+    {
+			"name": "Keywords (ES6 Import as/from)",
 			"scope": [
-				"keyword.control.new",
-				"keyword.operator.new"
+				"keyword.control.as",
+				"keyword.control.from"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "italic"
 			}
-		},
+    },
 		{
-			"name": "Generic selectors (CSS/SCSS/Less/Stylus)",
+			"name": "Language Built-Ins",
 			"scope": [
-				"meta.selector"
-			],
-			"settings": {
-				"foreground": "#FF79C6"
-			}
-		},
-		{
-			"name": "Language Built-ins",
-			"scope": [
-				"support"
+        "support",
+        "support.variable",
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#8BE9FD"
+				"foreground": "#a6eee6"
 			}
-		},
+    },
+    {
+      "name": "Language Built-Ins (Functions)",
+      "scope": [
+        "support.function",
+        "support.function.magic",
+      ],
+      "settings": {
+        "fontStyle": ""
+      }
+    },
 		{
-			"name": "Built-in magic functions and constants",
+			"name": "Language Built-Ins (Constants)",
 			"scope": [
-				"support.function.magic",
-				"support.variable",
+        "support.constant",
 				"variable.other.predefined"
 			],
 			"settings": {
-				"fontStyle": "regular",
-				"foreground": "#BD93F9"
+        "fontStyle": "italic",
+				"foreground": "#bf51b2"
 			}
-		},
-		{
-			"name": "Built-in functions / properties",
-			"scope": [
-				"support.function",
-				"support.type.property-name"
-			],
-			"settings": {
-				"fontStyle": "regular"
-			}
-		},
+    },
+    // !! START HERE
 		{
 			"name": "Separators (key/value, namespace, inheritance, pointer, hash, slice, etc)",
 			"scope": [
@@ -1156,7 +1162,6 @@
 			"scope": [
 				"variable",
 				"constant.other.key.perl",
-				"support.variable.property",
 				"variable.other.constant.js",
 				"variable.other.constant.ts",
 				"variable.other.constant.tsx"
@@ -1248,16 +1253,6 @@
 			}
 		},
 		{
-			"name": "Powershell constants mistakenly scoped to `support`, rather than `constant` (edge)",
-			"scope": [
-				"support.constant"
-			],
-			"settings": {
-				"fontStyle": "normal",
-				"foreground": "#BD93F9"
-			}
-		},
-		{
 			"name": "Makefile prerequisite names",
 			"scope": [
 				"meta.scope.prerequisites.makefile"
@@ -1292,36 +1287,6 @@
 			],
 			"settings": {
 				"foreground": "#6272A4"
-			}
-		},
-		{
-			"name": "Debugger Directive",
-			"scope": "keyword.other.debugger",
-			"settings": {
-				"fontStyle": "italic bold",
-				"foreground": "#ff6669"
-			}
-		},
-		{
-			"name": "Keywords",
-			"scope": [
-				"keyword",
-				"keyword.control.new",
-				"keyword.operator.new",
-				"punctuation.definition.keyword"
-			],
-			"settings": {
-				"foreground": "#fb6467"
-			}
-		},
-		{
-			"name": "Keywords (ES6 Import as/from)",
-			"scope": [
-				"keyword.control.as",
-				"keyword.control.from"
-			],
-			"settings": {
-				"fontStyle": "italic"
 			}
 		},
 		{
@@ -1465,12 +1430,6 @@
 			"settings": {
 				"foreground": "#ff9590",
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": "support.variable.property",
-			"settings": {
-				"foreground": "#c4c0e4"
 			}
 		},
 		{
