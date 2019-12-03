@@ -579,6 +579,29 @@
 			"settings": {
 				"foreground": "#BD93F9" // TODO
 			}
+    },
+    {
+			"name": "Brackets, Braces, Etc.",
+			"scope": [
+				"keyword.operator.other.powershell",
+				"keyword.other.statement-separator.powershell",
+				"meta.brace.round",
+				"meta.function-call punctuation",
+				"punctuation.definition.arguments.begin",
+				"punctuation.definition.arguments.end",
+				"punctuation.definition.entity.begin",
+				"punctuation.definition.entity.end",
+				"punctuation.definition.type.begin",
+				"punctuation.definition.type.end",
+				"punctuation.section.scope.begin",
+				"punctuation.section.scope.end",
+				"storage.type.generic.java",
+				"string.template meta.brace",
+				"string.template punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#ffdda6"
+			}
 		},
 		{
 			"name": "Braces in Markdown Headers",
@@ -664,7 +687,8 @@
 				"comment keyword.codetag.notation",
         "comment.block.documentation keyword",
         "comment.block.documentation entity.name.type punctuation.definition.bracket",
-        "comment.block.documentation storage.type.class"
+        "comment.block.documentation storage.type.class",
+        "punctuation.definition.tag.cs",
 			],
 			"settings": {
         "fontStyle": "italic",
@@ -691,7 +715,11 @@
     },
 		{
 			"name": "Constants",
-			"scope": "constant",
+			"scope": [
+        "constant",
+        "constant.other.date",
+				"constant.other.timestamp"
+      ],
 			"settings": {
         "fontStyle": "bold",
 				"foreground": "#ad49a1"
@@ -791,16 +819,20 @@
       }
     },
     {
-			"name": "HTML Tags", // TODO "HTML Tags, Property Names, Object Keys"
+			"name": "HTML Tag Names, Property Names, Object Keys",
 			"scope": [
-				"entity.name.tag",
-				"meta.object-literal.key.js", // Move?
-				"variable.other.constant.property", // Move?
-				"variable.other.env", // Move?
-				"variable.other.property", // Move?
-				"support.type.property-name" // Move?
+        "entity.name.section.toml",
+        "entity.name.tag",
+				"entity.name.tag.yaml",
+        "meta.object-literal.key.js",
+        "support.type.property-name",
+				"variable.other.constant.property",
+        "variable.other.env",
+        "variable.other.key.toml",
+				"variable.other.property"
 			],
 			"settings": {
+        "fontStyle": "",
 				"foreground": "#b7e4f9"
 			}
     },
@@ -835,11 +867,14 @@
 			}
 		},
 		{
-			"name": "SCSS/SASS Attribute Parent Selector",
+			"name": "CSS/SCSS Attribute Selectors",
 			"scope": [
         "entity.name.tag.css.sass.symbol",
         "entity.name.tag.reference.scss",
-				"entity.other.attribute-name.parent-selector"
+        "entity.other.attribute-name.parent-selector",
+        "entity.other.attribute-name.placeholder punctuation",
+        "entity.other.attribute-name.pseudo-class punctuation",
+				"entity.other.attribute-name.pseudo-element punctuation"
 			],
 			"settings": {
 				"foreground": "#e762d7"
@@ -856,7 +891,8 @@
     {
 			"name": "Function Names",
 			"scope": [
-				"entity.name.function",
+        "entity.name.function",
+        "entity.name.function.target.makefile",
 				"meta.function-call.generic",
 				"meta.function-call.object",
 				"meta.function-call.php",
@@ -869,7 +905,15 @@
 			"settings": {
 				"foreground": "#abff28"
 			}
-		},
+    },
+    {
+      "name": "Makefile .PHONY Targets",
+      "scope": "support.function.target",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground":  "#abff28"
+      }
+    },
 		{
 			"name": "Function/Method Parameters",
 			"scope": [
@@ -890,6 +934,7 @@
 		{
 			"name": "Decorators",
 			"scope": [
+        "meta.decorator entity.name.function",
         "meta.decorator variable.other.readwrite",
         "meta.decorator variable.other.object",
         "meta.decorator variable.other.property",
@@ -946,16 +991,6 @@
 			}
     },
     {
-      "name": "Language Built-Ins (Functions)",
-      "scope": [
-        "support.function",
-        "support.function.magic",
-      ],
-      "settings": {
-        "fontStyle": ""
-      }
-    },
-		{
 			"name": "Language Built-Ins (Constants)",
 			"scope": [
         "support.constant",
@@ -966,29 +1001,37 @@
 				"foreground": "#bf51b2"
 			}
     },
-    // !! START HERE
-		{
-			"name": "Separators (key/value, namespace, inheritance, pointer, hash, slice, etc)",
+    {
+      "name": "Language Built-Ins (Functions)",
+      "scope": [
+        "support.function",
+        "support.function.magic",
+      ],
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+			"name": "Operators/Separators",
 			"scope": [
-				"constant.other.symbol.hashkey punctuation.definition.constant.ruby",
-				"entity.other.attribute-name.placeholder punctuation",
-				"entity.other.attribute-name.pseudo-class punctuation",
-				"entity.other.attribute-name.pseudo-element punctuation",
-				"meta.group.double.toml",
-				"meta.group.toml",
-				"meta.object-binding-pattern-variable punctuation.destructuring",
-				"punctuation.colon.graphql",
+        "constant.other.symbol.hashkey punctuation.definition.constant.ruby",
+        "meta.group.double.toml",
+        "meta.group.toml",
+        "meta.object-binding-pattern-variable punctuation.destructuring",
+        "punctuation.colon.graphql",
 				"punctuation.definition.block.scalar.folded.yaml",
 				"punctuation.definition.block.scalar.literal.yaml",
 				"punctuation.definition.block.sequence.item.yaml",
 				"punctuation.definition.entity.other.inherited-class",
-				"punctuation.function.swift",
-				"punctuation.separator.dictionary.key-value",
-				"punctuation.separator.hash",
+				"punctuation.definition.tag",
+				"punctuation.definition.tag source",
+        "punctuation.function.swift",
+        "punctuation.separator.dictionary.key-value",
+        "punctuation.separator.hash",
 				"punctuation.separator.inheritance",
-				"punctuation.separator.key-value",
-				"punctuation.separator.key-value.mapping.yaml",
-				"punctuation.separator.namespace",
+        "punctuation.separator.key-value",
+        "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.separator.namespace",
 				"punctuation.separator.pointer-access",
 				"punctuation.separator.slice",
 				"string.unquoted.heredoc punctuation.definition.string",
@@ -996,35 +1039,11 @@
 				"punctuation.separator.annotation"
 			],
 			"settings": {
-				"foreground": "#FF79C6"
+				"foreground": "#fb6467"
 			}
 		},
 		{
-			"name": "Brackets, braces, parens, etc.",
-			"scope": [
-				"keyword.operator.other.powershell",
-				"keyword.other.statement-separator.powershell",
-				"meta.brace.round",
-				"meta.function-call punctuation",
-				"punctuation.definition.arguments.begin",
-				"punctuation.definition.arguments.end",
-				"punctuation.definition.entity.begin",
-				"punctuation.definition.entity.end",
-				"punctuation.definition.tag.cs",
-				"punctuation.definition.type.begin",
-				"punctuation.definition.type.end",
-				"punctuation.section.scope.begin",
-				"punctuation.section.scope.end",
-				"storage.type.generic.java",
-				"string.template meta.brace",
-				"string.template punctuation.accessor"
-			],
-			"settings": {
-				"foreground": "#ffdda6"
-			}
-		},
-		{
-			"name": "Variable interpolation operators",
+			"name": "Interpolation Operators",
 			"scope": [
 				"meta.string-contents.quoted.double punctuation.definition.variable",
 				"punctuation.definition.interpolation.begin",
@@ -1039,41 +1058,31 @@
 				"punctuation.definition.variable.makefile"
 			],
 			"settings": {
-				"foreground": "#FF79C6"
+				"foreground": "#fb6467"
 			}
 		},
 		{
-			"name": "Keys (serializable languages)",
+			"name": "YAML Anchors & Aliases",
 			"scope": [
-				"entity.name.function.target.makefile",
-				"entity.name.section.toml",
-				"entity.name.tag.yaml",
-				"variable.other.key.toml"
-			],
-			"settings": {
-				"foreground": "#8BE9FD"
-			}
-		},
-		{
-			"name": "Dates / timestamps (serializable languages)",
-			"scope": [
-				"constant.other.date",
-				"constant.other.timestamp"
-			],
-			"settings": {
-				"foreground": "#FFB86C"
-			}
-		},
-		{
-			"name": "YAML aliases",
-			"scope": [
+        "entity.name.type.anchor",
 				"variable.other.alias.yaml"
 			],
 			"settings": {
-				"fontStyle": "italic underline",
-				"foreground": "#50FA7B"
+				"fontStyle": "italic",
+				"foreground": "#6187ff"
 			}
-		},
+    },
+    {
+      "name": "YAML Anchors & Aliases (Punctuation)",
+      "scope": [
+        "punctuation.definition.anchor",
+        "punctuation.definition.alias"
+      ],
+      "settings": {
+        "foreground": "#b7e4f9"
+      }
+    },
+    // !! START HERE
 		{
 			"name": "Storage",
 			"scope": [
@@ -1287,19 +1296,6 @@
 			],
 			"settings": {
 				"foreground": "#6272A4"
-			}
-		},
-		{
-			"name": "Operators/Punctuation",
-			"scope": [
-				"punctuation.definition.tag",
-				"punctuation.definition.tag source",
-				"punctuation.definition.template-expression",
-				"punctuation.separator.dictionary.key-value",
-				"punctuation.separator.key-value"
-			],
-			"settings": {
-				"foreground": "#fb6467"
 			}
 		},
 		{

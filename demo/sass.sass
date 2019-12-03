@@ -1,0 +1,15 @@
+@font-face 
+  font-family: "Open Sans"
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2")
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff")
+
+  .parent-class
+  &.child-class
+    background: blue
+    [dir=rtl] &
+      margin-left: 0
+
+  &:hover
+    color: yellow
+
+  :active

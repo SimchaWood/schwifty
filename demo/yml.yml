@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "6"
+install:
+  - npm install
+script:
+  - npm test
+after_script:
+  - npm run coveralls
+date: 2001-12-15T02:59:43.1Z
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+do_stuff: &stuff
+    name: Do Stuff
+    script:
+      - npm do-stuff
+do_more_stuff: *stuff
