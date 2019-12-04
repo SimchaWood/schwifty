@@ -634,22 +634,25 @@
         "foreground": "#ff6669"
 			}
     },
-		{
+    {
 			"name": "Class Names",
+			"scope": [
+        "entity.name.type",
+        "entity.other.inherited-class"
+      ],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#abff28"
+			}
+    },
+		{
+			"name": "Class Names (Declared)",
 			"scope": [
 				"entity.name.type.class",
 				"entity.name.class"
 			],
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "#abff28"
-			}
-    },
-    {
-			"name": "Class Names (Inherited)",
-			"scope": "entity.other.inherited-class",
-			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#abff28"
 			}
     },
@@ -672,7 +675,8 @@
 			"name": "Comments",
 			"scope": [
 				"comment",
-				"punctuation.definition.comment",
+        "punctuation.definition.comment",
+        "string.quoted.docstring.multi",
 				"unused.comment",
 				"wildcard.comment"
 			],
@@ -692,7 +696,7 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-        "foreground": "#4864beaa"
+        "foreground": "#6187ffaa"
 			}
     },
 		{
@@ -825,6 +829,8 @@
         "entity.name.tag",
 				"entity.name.tag.yaml",
         "meta.object-literal.key.js",
+        "punctuation.support.type.property-name.begin",
+				"punctuation.support.type.property-name.end",
         "support.type.property-name",
 				"variable.other.constant.property",
         "variable.other.env",
@@ -938,11 +944,11 @@
         "meta.decorator variable.other.readwrite",
         "meta.decorator variable.other.object",
         "meta.decorator variable.other.property",
-        "meta.function.decorator entity.name.function.decorator"
-        // TODO: meta.function.decorator support.type (used in Python)
+        "meta.function.decorator entity.name.function.decorator",
+        "meta.function.decorator support.type"
 			],
 			"settings": {
-				"foreground": "#abff28",
+				"foreground": "#69c8ec",
 				"fontStyle": "italic"
 			}
 		},
@@ -953,7 +959,7 @@
         "meta.function.decorator punctuation.definition.decorator"
 			],
 			"settings": {
-        "foreground": "#fb6467" // TODO: Keep keyword color?
+        "foreground": "#6187ff"
 			}
     },
     {
@@ -983,6 +989,7 @@
 			"name": "Language Built-Ins",
 			"scope": [
         "support",
+        "support.type.builtin",
         "support.variable",
 			],
 			"settings": {
@@ -1096,21 +1103,25 @@
 			],
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#4864be"
+				"foreground": "#6187ff"
 			}
     },
-    // !! START HERE
     {
 			"name": "Types",
 			"scope": [
-				"entity.name.type",
-				"keyword.primitive-datatypes.swift",
-				"meta.protocol-list.objc",
-				"meta.return-type.objc",
+        "entity.name.type.cpp",
+        "entity.name.type.type-parameter",
+        "keyword.primitive-datatypes.swift",
+        "meta.indexer.mappedtype.declaration entity.name.type",
+        "meta.import variable.other.readwrite",
+        "meta.object-binding-pattern-variable variable.object.property",
+        "meta.protocol-list.objc",
+        "meta.return-type.objc",
+        "meta.type.parameters entity.name.type",
+				"meta.variable.assignment.destructured.object.coffee variable",
 				"source.go storage.type",
 				"source.groovy storage.type",
 				"source.java storage.type",
-				"source.powershell entity.other.attribute-name",
 				"storage.class.std.rust",
 				"storage.type.attribute.swift",
 				"storage.type.c",
@@ -1120,137 +1131,67 @@
 				"storage.type.objc",
 				"storage.type.php",
 				"storage.type.haskell",
-				"storage.type.ocaml"
+        "storage.type.ocaml",
+        "support.type.graphql"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#abff28"
+				"foreground": "#a6eee6"
 			}
-		},
-		{
-			"name": "Types",
-			"scope": [
-				"entity.name.type",
-				"keyword.primitive-datatypes.swift",
-				"meta.protocol-list.objc",
-				"meta.return-type.objc",
-				"source.go storage.type",
-				"source.groovy storage.type",
-				"source.java storage.type",
-				"source.powershell entity.other.attribute-name",
-				"storage.class.std.rust",
-				"storage.type.attribute.swift",
-				"storage.type.c",
-				"storage.type.core.rust",
-				"storage.type.cs",
-				"storage.type.groovy",
-				"storage.type.objc",
-				"storage.type.php",
-				"storage.type.haskell",
-				"storage.type.ocaml"
-			],
+    },
+    {
+      "name": "Types (C++ Templates)",
+      "scope": "entity.name.type.template.cpp",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#a6eee6"
+      }
+    },
+    {
+      "name": "Modifiers",
+			"scope": "storage.modifier",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#8BE9FD"
+				"foreground": "#69c8ec"
 			}
 		},
 		{
-			"name": "Generics, templates, and mapped type declarations",
+			"name": "Comments (Punctuation)",
 			"scope": [
-				"entity.name.type.type-parameter",
-				"meta.indexer.mappedtype.declaration entity.name.type",
-				"meta.type.parameters entity.name.type"
-			],
-			"settings": {
-				"foreground": "#FFB86C"
-			}
-		},
-		{
-			"name": "Modifiers",
-			"scope": [
-				"storage.modifier"
-			],
-			"settings": {
-				"foreground": "#FF79C6"
-			}
-		},
-		{
-			"name": "Property quotes (temporary vscode fix)",
-			"scope": [
-				"punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end"
-			],
-			"settings": {
-				"foreground": "#8BE9FE"
-			}
-		},
-		{
-			"name": "Docstrings",
-			"scope": [
-				"string.quoted.docstring.multi",
+				"punctuation.definition.comment",
 				"string.quoted.docstring.multi.python punctuation.definition.string.begin",
 				"string.quoted.docstring.multi.python punctuation.definition.string.end",
 				"string.quoted.docstring.multi.python constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#6272A4"
+        "fontStyle": "",
+				"foreground": "#b0b090"
 			}
-		},
+    },
 		{
-			"name": "Variables and object properties",
+			"name": "Variables",
 			"scope": [
 				"variable",
-				"constant.other.key.perl",
-				"variable.other.constant.js",
-				"variable.other.constant.ts",
-				"variable.other.constant.tsx"
+        "constant.other.key.perl",
+        "meta.export variable.other.readwrite.alias",
+        "meta.import variable.other.readwrite.alias",
+        "meta.variable.assignment.destructured.object.coffee variable variable",
+        "new.expr entity.name.type.module",
+				"variable.other.constant"
 			],
 			"settings": {
 				"foreground": "#ffdda6"
 			}
-		},
+    },
 		{
-			"name": "Destructuring / aliasing reference name (LHS)",
-			"scope": [
-				"meta.import variable.other.readwrite",
-				"meta.object-binding-pattern-variable variable.object.property",
-				"meta.variable.assignment.destructured.object.coffee variable"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FFB86C"
-			}
-		},
-		{
-			"name": "Destructuring / aliasing variable name (RHS)",
-			"scope": [
-				"meta.import variable.other.readwrite.alias",
-				"meta.export variable.other.readwrite.alias",
-				"meta.variable.assignment.destructured.object.coffee variable variable"
-			],
-			"settings": {
-        "fontStyle": "", // TODO: Still need?
-				"foreground": "#ffdda6"
-			}
-		},
-		{
-			"name": "GraphQL keys",
+			"name": "GraphQL Keys", // TODO: Keep separate entry?
 			"scope": [
 				"meta.selectionset.graphql variable"
 			],
 			"settings": {
-				"foreground": "#fafd7c"
-			}
-		},
-		{
-			"name": "GraphQL function arguments",
-			"scope": [
-				"meta.selectionset.graphql meta.arguments variable"
-			],
-			"settings": {
 				"foreground": "#ffdda6"
 			}
-		},
+    },
+    // !! START HERE
 		{
 			"name": "GraphQL fragment name (definition)",
 			"scope": [
@@ -1369,18 +1310,6 @@
 			}
 		},
 		{
-			"scope": "punctuation.definition.comment",
-			"settings": {
-				"foreground": "#b0b090"
-			}
-		},
-		{
-			"scope": "storage.modifier",
-			"settings": {
-				"foreground": "#af21ff"
-			}
-		},
-		{
 			"name": "Strings",
 			"scope": [
 				"punctuation.definition.string.begin",
@@ -1411,19 +1340,6 @@
 			"settings": {
 				"foreground": "#ff9590",
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": [
-				"meta.export variable.other.readwrite.alias",
-				"meta.import variable.other.readwrite.alias",
-				"new.expr entity.name.type.module",
-				"variable",
-				"variable.other.constant",
-				"variable.other.constant.js"
-			],
-			"settings": {
-				"foreground": "#ffdda6"
 			}
 		},
 		{
