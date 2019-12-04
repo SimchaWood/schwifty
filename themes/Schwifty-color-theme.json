@@ -1004,11 +1004,13 @@
     {
       "name": "Language Built-Ins (Functions)",
       "scope": [
+        "meta.method.declaration storage.type",
         "support.function",
         "support.function.magic",
       ],
       "settings": {
-        "fontStyle": ""
+        "fontStyle": "",
+        "foreground": "#a6eee6"
       }
     },
     {
@@ -1082,18 +1084,47 @@
         "foreground": "#b7e4f9"
       }
     },
-    // !! START HERE
 		{
 			"name": "Storage",
 			"scope": [
-				"storage",
+        "keyword.type.cs",
+        "storage",
+        "meta.method.declaration meta.var.expr storage.type",
 				"meta.implementation storage.type.objc",
 				"meta.interface-or-protocol storage.type.objc",
 				"source.groovy storage.type.def"
 			],
 			"settings": {
-				"fontStyle": "regular",
-				"foreground": "#FF79C6"
+				"fontStyle": "bold italic",
+				"foreground": "#4864be"
+			}
+    },
+    // !! START HERE
+    {
+			"name": "Types",
+			"scope": [
+				"entity.name.type",
+				"keyword.primitive-datatypes.swift",
+				"meta.protocol-list.objc",
+				"meta.return-type.objc",
+				"source.go storage.type",
+				"source.groovy storage.type",
+				"source.java storage.type",
+				"source.powershell entity.other.attribute-name",
+				"storage.class.std.rust",
+				"storage.type.attribute.swift",
+				"storage.type.c",
+				"storage.type.core.rust",
+				"storage.type.cs",
+				"storage.type.groovy",
+				"storage.type.objc",
+				"storage.type.php",
+				"storage.type.haskell",
+				"storage.type.ocaml"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#abff28"
 			}
 		},
 		{
@@ -1101,7 +1132,6 @@
 			"scope": [
 				"entity.name.type",
 				"keyword.primitive-datatypes.swift",
-				"keyword.type.cs",
 				"meta.protocol-list.objc",
 				"meta.return-type.objc",
 				"source.go storage.type",
@@ -1310,34 +1340,6 @@
 			}
 		},
 		{
-			"name": "Types",
-			"scope": [
-				"entity.name.type",
-				"keyword.primitive-datatypes.swift",
-				"keyword.type.cs",
-				"meta.protocol-list.objc",
-				"meta.return-type.objc",
-				"source.go storage.type",
-				"source.groovy storage.type",
-				"source.java storage.type",
-				"source.powershell entity.other.attribute-name",
-				"storage.class.std.rust",
-				"storage.type.attribute.swift",
-				"storage.type.c",
-				"storage.type.core.rust",
-				"storage.type.cs",
-				"storage.type.groovy",
-				"storage.type.objc",
-				"storage.type.php",
-				"storage.type.haskell",
-				"storage.type.ocaml"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#abff28"
-			}
-		},
-		{
 			"name": "JSDoc Tags",
 			"scope": "punctuation.definition.block.tag.jsdoc",
 			"settings": {
@@ -1349,23 +1351,6 @@
 			"scope": "comment.block.documentation markup.inline.raw",
 			"settings": {
 				"foreground": "#e5dfb4cc"
-			}
-		},
-		{
-			"scope": [
-				"storage",
-				"meta.class meta.method.declaration meta.block storage.type"
-			],
-			"settings": {
-				"foreground": "#4864be",
-				"fontStyle": "bold italic"
-			}
-		},
-		{
-			"scope": "meta.class meta.method.declaration storage.type",
-			"settings": {
-				"foreground": "#abe51d",
-				"fontStyle": "italic"
 			}
 		},
 		{

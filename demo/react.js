@@ -19,6 +19,8 @@ class App extends React.Component {
   }
 
   render() {
+    let foo = 42;
+    
     return (
       <div className="component-app">
         Tacos
