@@ -47,7 +47,7 @@
 		"dropdown.border": "#12192f",
 		"dropdown.foreground": "#ffdda6",
 		"dropdown.listBackground": "#12192f",
-		"editor.background": "#0d1223",
+		"editor.background": "#12192f", // TODO: Revert to "#0d1223"?
 		"editor.findMatchBackground": "#46b55a40",
 		"editor.findMatchBorder": "#46b55a00",
 		"editor.findMatchHighlightBackground": "#46b55a40",
@@ -581,20 +581,32 @@
 			}
     },
     {
-			"name": "Brackets, Braces, Etc.",
+			"name": "Brackets, Braces, & Other Punctuation",
 			"scope": [
+        "keyword.operator.dereference.java",
+				"keyword.operator.navigation.groovy",
 				"keyword.operator.other.powershell",
 				"keyword.other.statement-separator.powershell",
 				"meta.brace.round",
-				"meta.function-call punctuation",
+        "meta.function-call punctuation", // TODO: Keep here? (Ruby keyword arg colon)
+        "meta.scope.for-loop.shell punctuation.definition.string.begin",
+				"meta.scope.for-loop.shell punctuation.definition.string.end",
+				"meta.scope.for-loop.shell string",
 				"punctuation.definition.arguments.begin",
-				"punctuation.definition.arguments.end",
+        "punctuation.definition.arguments.end",
+        "punctuation.definition.attribute-selector.end.bracket.square",
+				"punctuation.definition.attribute-selector.begin.bracket.square",
 				"punctuation.definition.entity.begin",
 				"punctuation.definition.entity.end",
 				"punctuation.definition.type.begin",
-				"punctuation.definition.type.end",
+        "punctuation.definition.type.end",
+        "punctuation.section.embedded.begin.tsx",
+				"punctuation.section.embedded.end.tsx",
+				"punctuation.section.embedded.begin.jsx",
+				"punctuation.section.embedded.end.jsx",
 				"punctuation.section.scope.begin",
-				"punctuation.section.scope.end",
+        "punctuation.section.scope.end",
+        "punctuation.separator.list.comma.css",
 				"storage.type.generic.java",
 				"string.template meta.brace",
 				"string.template punctuation.accessor"
@@ -602,7 +614,15 @@
 			"settings": {
 				"foreground": "#ffdda6"
 			}
-		},
+    },
+    {
+      "name": "Brackets, Braces, & Other Punctuation (Edge Cases)",
+      "scope": "constant.language.empty-list.haskell",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#ffdda6"
+      }
+    },
 		{
 			"name": "Braces in Markdown Headers",
 			"scope": [
@@ -656,6 +676,20 @@
 				"foreground": "#abff28"
 			}
     },
+    {
+			"name": "Comments",
+			"scope": [
+				"comment",
+        "punctuation.definition.comment",
+        "string.quoted.docstring.multi",
+				"unused.comment",
+				"wildcard.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#9f8e72"
+			}
+		},
 		{
 			"name": "This, Self, Etc.",
 			"scope": [
@@ -671,20 +705,6 @@
 				"fontStyle": "italic"
 			}
 		},
-    {
-			"name": "Comments",
-			"scope": [
-				"comment",
-        "punctuation.definition.comment",
-        "string.quoted.docstring.multi",
-				"unused.comment",
-				"wildcard.comment"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#917c5d"
-			}
-		},
 		{
 			"name": "JSDoc and JSDoc-Style Keywords",
 			"scope": [
@@ -696,7 +716,7 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-        "foreground": "#6187ffaa"
+        "foreground": "#6187ffbf"
 			}
     },
 		{
@@ -706,14 +726,14 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#69c8ecaa"
+				"foreground": "#a6eee6bf"
 			}
 		},
 		{
 			"name": "JSDoc-Style Parameters",
 			"scope": "comment.block.documentation variable",
 			"settings": {
-				"foreground": "#e89242aa",
+				"foreground": "#ffb90fbf",
 				"fontStyle": "italic"
 			}
     },
@@ -722,7 +742,8 @@
 			"scope": [
         "constant",
         "constant.other.date",
-				"constant.other.timestamp"
+        "constant.other.timestamp",
+        "keyword.operator.tilde.shell"
       ],
 			"settings": {
         "fontStyle": "bold",
@@ -823,11 +844,24 @@
       }
     },
     {
-			"name": "HTML Tag Names, Property Names, Object Keys",
+      "name": "Import/Require Aliases",
+      "scope": [
+        "meta.import variable.other.readwrite",
+        "meta.object-binding-pattern-variable variable.object.property"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#b7e4f9"
+      }
+    },
+    {
+			"name": "HTML Tag Names, Property Names, Object/Hash Keys",
 			"scope": [
+        "constant.language.symbol.hashkey.ruby",
+				"constant.other.symbol.hashkey.ruby",
         "entity.name.section.toml",
         "entity.name.tag",
-				"entity.name.tag.yaml",
+        "entity.name.tag.yaml",
         "meta.object-literal.key.js",
         "punctuation.support.type.property-name.begin",
 				"punctuation.support.type.property-name.end",
@@ -1027,6 +1061,7 @@
         "meta.group.double.toml",
         "meta.group.toml",
         "meta.object-binding-pattern-variable punctuation.destructuring",
+        "punctuation.assignment.graphql",
         "punctuation.colon.graphql",
 				"punctuation.definition.block.scalar.folded.yaml",
 				"punctuation.definition.block.scalar.literal.yaml",
@@ -1058,12 +1093,11 @@
 				"punctuation.definition.interpolation.begin",
 				"punctuation.definition.interpolation.end",
 				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end",
-				"punctuation.section.embedded.begin",
-				"punctuation.section.embedded.coffee",
-				"punctuation.section.embedded.end",
+        "punctuation.definition.template-expression.end",
+        "punctuation.definition.variable.shell",
+				"punctuation.section.embedded",
 				"punctuation.section.embedded.end source.php",
-				"punctuation.section.embedded.end source.ruby",
+        "punctuation.section.embedded.end source.ruby",
 				"punctuation.definition.variable.makefile"
 			],
 			"settings": {
@@ -1097,6 +1131,7 @@
         "keyword.type.cs",
         "storage",
         "storage.modifier.shell",
+        "storage.type.primitive",
         "meta.method.declaration meta.var.expr storage.type",
 				"meta.implementation storage.type.objc",
 				"meta.interface-or-protocol storage.type.objc",
@@ -1115,16 +1150,14 @@
         "entity.scalar.graphql",
         "keyword.primitive-datatypes.swift",
         "meta.indexer.mappedtype.declaration entity.name.type",
-        "meta.import variable.other.readwrite",
-        "meta.object-binding-pattern-variable variable.object.property",
         "meta.protocol-list.objc",
         "meta.return-type.objc",
         "meta.type.parameters entity.name.type",
-				"meta.variable.assignment.destructured.object.coffee variable",
-				"source.go storage.type",
+        "meta.variable.assignment.destructured.object.coffee variable",
+        "source.go storage.type",
 				"source.groovy storage.type",
 				"source.java storage.type",
-				"storage.class.std.rust",
+        "storage.class.std.rust",
 				"storage.type.attribute.swift",
 				"storage.type.c",
 				"storage.type.core.rust",
@@ -1172,129 +1205,88 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"variable",
         "constant.other.key.perl",
         "meta.export variable.other.readwrite.alias",
         "meta.import variable.other.readwrite.alias",
         "meta.variable.assignment.destructured.object.coffee variable variable",
         "new.expr entity.name.type.module",
+				"variable",
 				"variable.other.constant"
 			],
 			"settings": {
 				"foreground": "#ffdda6"
 			}
     },
+    {
+      "name": "Variables (Edge Cases)",
+      "scope": "storage.modifier.import",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#ffdda6"
+      }
+    },
 		{
 			"name": "GraphQL Fields", // TODO: Keep separate entry?
-			"scope": "meta.selectionset.graphql variable",
+			"scope": [
+        "meta.selectionset.graphql variable",
+        "variable.fragment.graphql"
+      ],
 			"settings": {
 				"foreground": "#ffdda6"
 			}
     },
     {
-      "name": "GraphQL Arguments",
-      "scope": "meta.selectionset.graphql meta.arguments variable",
+      "name": "GraphQL Aliases & Variable Names",
+      "scope": [
+        "meta.selectionset.graphql meta.arguments variable",
+        "string.unquoted.alias.graphql"
+      ],
       "settings": {
         "foreground": "#fafd7c"
       }
     },
-    // !! START HERE
 		{
-			"name": "GraphQL fragment name (definition)",
-			"scope": [
-				"entity.name.fragment.graphql",
-				"variable.fragment.graphql"
-			],
+			"name": "GraphQL Fragment Names",
+			"scope": "entity.name.fragment.graphql",
 			"settings": {
-				"foreground": "#8BE9FD"
+				"foreground": "#ff6cee"
 			}
-		},
+    },
 		{
-			"name": "Edge Cases",
-			"scope": [
-				"constant.other.symbol.hashkey.ruby",
-				"keyword.operator.dereference.java",
-				"keyword.operator.navigation.groovy",
-				"meta.scope.for-loop.shell punctuation.definition.string.begin",
-				"meta.scope.for-loop.shell punctuation.definition.string.end",
-				"meta.scope.for-loop.shell string",
-				"storage.modifier.import",
-				"punctuation.section.embedded.begin.tsx",
-				"punctuation.section.embedded.end.tsx",
-				"punctuation.section.embedded.begin.jsx",
-				"punctuation.section.embedded.end.jsx",
-				"punctuation.separator.list.comma.css",
-				"constant.language.empty-list.haskell"
-			],
+			"name": "Makefile Prerequisite Files",
+			"scope": "meta.scope.prerequisites.makefile",
 			"settings": {
-				"foreground": "#ffdda6"
+				"foreground": "#b7e4f9"
 			}
-		},
-		{
-			"name": "Shell variables prefixed with \"$\" (edge case)",
-			"scope": [
-				"source.shell variable.other"
-			],
-			"settings": {
-				"foreground": "#BD93F9"
-			}
-		},
-		{
-			"name": "Makefile prerequisite names",
-			"scope": [
-				"meta.scope.prerequisites.makefile"
-			],
-			"settings": {
-				"foreground": "#fafd7c"
-			}
-		},
-		{
-			"name": "SCSS attibute selector strings",
-			"scope": [
-				"meta.attribute-selector.scss"
-			],
-			"settings": {
-				"foreground": "#fafd7c"
-			}
-		},
-		{
-			"name": "SCSS attribute selector brackets",
-			"scope": [
-				"punctuation.definition.attribute-selector.end.bracket.square.scss",
-				"punctuation.definition.attribute-selector.begin.bracket.square.scss"
-			],
-			"settings": {
-				"foreground": "#ffdda6"
-			}
-		},
-		{
-			"name": "Haskell Pragmas",
-			"scope": [
-				"meta.preprocessor.haskell"
-			],
-			"settings": {
-				"foreground": "#6272A4"
-			}
-		},
-		{
+    },
+    {
 			"name": "Shebang Directive",
 			"scope": [
+        "comment.line.hashbang",
+        "comment.line.hashbang punctuation.definition.comment",
 				"comment.line.shebang",
 				"comment.line.shebang punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#917c5d",
+				"foreground": "#9f8e72", // TODO: Darken to "#917c5d"?
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Haskell Pragmas",
+			"scope": "meta.preprocessor.haskell",
+			"settings": {
+				"foreground": "#00a8bf"
 			}
 		},
 		{
 			"name": "JSDoc Tags",
 			"scope": "punctuation.definition.block.tag.jsdoc",
 			"settings": {
-				"foreground": "#8be9fdaa"
+				"foreground": "#a6eee6bf"
 			}
 		},
-
+    // !! START HERE !!
 		{
 			"scope": "comment.block.documentation markup.inline.raw",
 			"settings": {
@@ -1302,23 +1294,18 @@
 			}
 		},
 		{
-			"scope": "meta.object-binding-pattern-variable punctuation.destructuring",
-			"settings": {
-				"foreground": "#ff6560"
-			}
-		},
-		{
 			"scope": [
 				"meta.object-binding-pattern-variable variable.object.property"
 			],
 			"settings": {
-				"foreground": "#a0dce8",
+				"foreground": "#b7e4f9",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"name": "Strings",
 			"scope": [
+        "meta.attribute-selector",
 				"punctuation.definition.string.begin",
 				"punctuation.definition.string.end",
 				"string",

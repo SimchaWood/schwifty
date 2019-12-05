@@ -233,6 +233,12 @@ class InternalEscapableScope : public v8::EscapableHandleScope {
 
 // TODO(jochen): This should be #ifdef DEBUG
 #ifdef V8_CHECK_MICROTASKS_SCOPES_CONSISTENCY
+/*! \brief Brief description.
+ *         Brief description continued.
+ *  @p foobar
+ *  @a foobar
+ *  Detailed description starts here.
+ */
 void CheckMicrotasksScopesConsistency(i::Isolate* isolate) {
   auto handle_scope_implementer = isolate->handle_scope_implementer();
   if (handle_scope_implementer->microtasks_policy() ==
@@ -354,7 +360,7 @@ void i::V8::FatalProcessOutOfMemory(i::Isolate* isolate, const char* location,
     // On a background thread -> we cannot retrieve memory information from the
     // Isolate. Write easy-to-recognize values on the stack.
     memset(last_few_messages, 0x0BADC0DE, Heap::kTraceRingBufferSize + 1);
-    memset(js_stacktrace, 0x0BADC0DE, Heap::kStacktraceBufferSize + 1);
+    memset(js_stacktrace, 0x0BADC0DE, /* Inline Comment */ Heap::kStacktraceBufferSize + 1);
     memset(&heap_stats, 0xBADC0DE, sizeof(heap_stats));
     // Note that the embedder's oom handler won't be called in this case. We
     // just crash.

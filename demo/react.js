@@ -4,6 +4,8 @@ import './App.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
+import { foo as bar } from './foobar';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -19,7 +21,7 @@ class App extends React.Component {
   }
 
   render() {
-    let foo = 42;
+    let foobar = bar(42);
     
     return (
       <div className="component-app">

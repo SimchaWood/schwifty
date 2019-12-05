@@ -45,4 +45,10 @@ example_instance = ExampleModule::ExampleClass::ScopeResolution.new(:arg)
 example_instance.method(:arg) do
   puts 'yielding in block!'
 end
- 
+
+my_hash = { "Last Name": "Wood", :meaning_of_life => 42, other: "stuff" }
+my_hash["foobar"] = true;
+
+my_other_hash = Hash.new { |hash, key| hash[key] = "Go fish: #{key}"}
+
+foo = my_hash

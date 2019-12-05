@@ -7,7 +7,7 @@ class Sale {
   }
 
   /**
-   * Description of this method.
+   * Description of the `decorate` method.
    * @param {*} decorator a decorator
    * @returns {void} not used
    */
@@ -81,3 +81,6 @@ class EditFishForm extends Component {
 
 const rx = /^(?:foo)bar$/u;
 const text = "foobar";
+const { foo: bar } = require('stuff');
+
+console.log(rx, text, bar);

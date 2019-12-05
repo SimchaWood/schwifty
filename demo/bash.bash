@@ -45,6 +45,13 @@ ted () {
   done
 }
 
+foo () {
+  for ((f=0; f<=5; f++))
+  do
+    echo "$f"
+  done
+}
+
 export NODE_ENV=development
 
 # Variable for current project directory
