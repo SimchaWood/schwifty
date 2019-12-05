@@ -1096,6 +1096,7 @@
 			"scope": [
         "keyword.type.cs",
         "storage",
+        "storage.modifier.shell",
         "meta.method.declaration meta.var.expr storage.type",
 				"meta.implementation storage.type.objc",
 				"meta.interface-or-protocol storage.type.objc",
@@ -1111,6 +1112,7 @@
 			"scope": [
         "entity.name.type.cpp",
         "entity.name.type.type-parameter",
+        "entity.scalar.graphql",
         "keyword.primitive-datatypes.swift",
         "meta.indexer.mappedtype.declaration entity.name.type",
         "meta.import variable.other.readwrite",
@@ -1183,13 +1185,18 @@
 			}
     },
 		{
-			"name": "GraphQL Keys", // TODO: Keep separate entry?
-			"scope": [
-				"meta.selectionset.graphql variable"
-			],
+			"name": "GraphQL Fields", // TODO: Keep separate entry?
+			"scope": "meta.selectionset.graphql variable",
 			"settings": {
 				"foreground": "#ffdda6"
 			}
+    },
+    {
+      "name": "GraphQL Arguments",
+      "scope": "meta.selectionset.graphql meta.arguments variable",
+      "settings": {
+        "foreground": "#fafd7c"
+      }
     },
     // !! START HERE
 		{

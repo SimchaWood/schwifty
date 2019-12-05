@@ -78,3 +78,6 @@ class EditFishForm extends Component {
     })
   }
 }
+
+const rx = /^(?:foo)bar$/u;
+const text = "foobar";
