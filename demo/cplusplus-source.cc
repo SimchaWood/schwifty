@@ -235,8 +235,8 @@ class InternalEscapableScope : public v8::EscapableHandleScope {
 #ifdef V8_CHECK_MICROTASKS_SCOPES_CONSISTENCY
 /*! \brief Brief description.
  *         Brief description continued.
- *  @p foobar
- *  @a foobar
+ *  @p foobar Description
+ *  @b foobar
  *  Detailed description starts here.
  */
 void CheckMicrotasksScopesConsistency(i::Isolate* isolate) {

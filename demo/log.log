@@ -1,0 +1,17 @@
+Error: Something went wrong!
+    at foo (/home/ec2-user/musket/temp_.js:11:11)
+    at Object.<anonymous> (/home/ec2-user/musket/temp_.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+
+127.0.0.1 user-identifier frank [10/10/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
+
+127.0.0.1 user-identifier frank [2000-10-10T13:55:36.000Z] "GET /apache_pb.gif HTTP/1.0" 200 2326
+
+foobar.Exception
+
+https://github.com/emilast/vscode-logfile-highlighter/commit/e90aa2554b439827f125fd60ff6d7773fc582fcc

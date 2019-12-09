@@ -46,9 +46,29 @@ example_instance.method(:arg) do
   puts 'yielding in block!'
 end
 
+if test
+  puts 'Foo!'
+else 
+
 my_hash = { "Last Name": "Wood", :meaning_of_life => 42, other: "stuff" }
 my_hash["foobar"] = true;
 
-my_other_hash = Hash.new { |hash, key| hash[key] = "Go fish: #{key}"}
+my_other_hash = Hash.new { |hash, key| hash[key] = "Go fish: #{key}\n"}
 
 foo = my_hash
+
+=begin
+  This will be ignored.
+=end
+
+print <<"EOF"
+This is some text.
+EOF
+
+$foobar
+
+rx =~ /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
+
+3_14
+
+for [1 ... 20]

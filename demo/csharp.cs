@@ -52,3 +52,48 @@ namespace NightOwl.demo
         TestValue
     }
 }
+
+public class Person
+{
+    protected string ssn = "444-55-6666";
+    protected string name = "John L. Malgraine";
+
+    public virtual void GetInfo()
+    {
+        Console.WriteLine("Name: {0}", name);
+        Console.WriteLine("SSN: {0}", ssn);
+    }
+}
+class Employee : Person
+{
+    public string id = "ABC567EFG";
+    public override void GetInfo()
+    {
+        // Calling the base class GetInfo method:
+        base.GetInfo();
+        Console.WriteLine("Employee ID: {0}", id);
+    }
+}
+
+class TestClass
+{
+    static void Main()
+    {
+        Employee E = new Employee();
+        E.GetInfo();
+    }
+}
+
+public class Employee
+{
+    private string alias;
+    private string name;
+
+    public Employee(string name, string alias)
+    {
+        // Use this to qualify the members of the class 
+        // instead of the constructor parameters.
+        this.name = name;
+        this.alias = alias;
+    }
+}

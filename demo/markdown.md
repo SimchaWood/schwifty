@@ -31,8 +31,12 @@ Heading 1
 
 ******************************
 
-> [Link in Blockquote](https://simchawood.com)
+> This is a [Link in Blockquote](https://simchawood.com) for your edification.
 
 Sometimes we _italicize_ for emphasis.
 
+<[foo]>
+
 Sometimes we ~~keep forever~~ delete something we've said.
+
+    This is a block quote.

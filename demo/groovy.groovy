@@ -9,6 +9,8 @@ char ch = "foo";
 float f = 3.14;
 BigDecimal bd = 3.14;
 
+def pattern = ~/^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/
+
 /**
  * A Class description
  */
@@ -25,6 +27,8 @@ static class Person {
     String greet(String otherPerson) {
        "Hello ${otherPerson}"
     }
+
+    ArrayList<Integer> myList = new ArrayList<>(3);
 
     public static void foobar() {}
 }

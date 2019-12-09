@@ -36,6 +36,13 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
 
 function foo($bar = "bar")
 {
+  $rx = "/^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/";
   echo "foo $bar";
 }
+?>
+
+<?php namespace foo;
+  class Cat {
+    static function says() {echo 'meoow';}
+  }
 ?>
