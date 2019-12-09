@@ -1,15 +1,49 @@
-@font-face 
+@font-face
   font-family: "Open Sans"
   src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2")
        url("/fonts/OpenSans-Regular-webfont.woff") format("woff")
 
-  .parent-class
-  &.child-class
-    background: blue
-    [dir=rtl] &
-      margin-left: 0
+@mixin button-base()
+  @include typography(button)
+  @include ripple-surface
+  @include ripple-radius-bounded
+
+  display: inline-flex
+  position: relative
+  height: $button-height
+  border: none
+  vertical-align: middle
 
   &:hover
-    color: yellow
+    cursor: pointer
 
-  :active
+  &:disabled
+    color: $mdc-button-disabled-ink-color
+    cursor: default
+    pointer-events: none
+
+*
+  background: white
+
+.someClass
+  font-family: serif
+
+#someID
+  background: purple
+
+h1, h2, h3
+  font-weight: bold
+
+main
+  margin-top: 20px
+  font-size: 1.5em
+
+input::placeholder
+  color: gray
+
+button[class~="special"]
+  color: red
+
+.parent
+  .child
+    background: blue

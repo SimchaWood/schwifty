@@ -554,6 +554,29 @@
 				"foreground": "#ad49a1"
 			}
     },
+    {
+      "name": "CSS At-Rules Ampersand",
+      "scope": "keyword.control.at-rule punctuation.definition.keyword",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#bf51b2"
+      }
+    },
+    {
+      "name": "CSS Units (px, rem, etc.)",
+      "scope": "keyword.other.unit",
+      "settings": {
+        "foreground": "#bf4c4e"
+      }
+    },
+    {
+			"name": "Debugger Directive",
+			"scope": "keyword.other.debugger",
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#ff6669"
+			}
+		},
 		{
       "name": "Diff Files",
 			"scope": [
@@ -788,6 +811,41 @@
 			}
     },
     {
+      "name": "Object Properties",
+			"scope": [
+        "meta.function.method.with-arguments.ruby",
+        "meta.function.method.with-arguments.ruby variable.other",
+				"variable.other.object.property",
+				"variable.other.constant.object.property"
+			],
+			"settings": {
+        "fontStyle": "italic",
+				"foreground": "#b7e4f9"
+			}
+		},
+    {
+			"name": "Property Names, Object/Hash Keys, HTML Tags",
+			"scope": [
+        "constant.language.symbol.hashkey.ruby",
+				"constant.other.symbol.hashkey.ruby",
+        "entity.name.tag",
+        "entity.name.tag.css.sass.symbol",
+        "entity.name.tag.yaml",
+        "keyword.key.toml",
+        "meta.object-literal.key.js",
+        "punctuation.support.type.property-name.begin",
+				"punctuation.support.type.property-name.end",
+        "support.type.property-name",
+				"variable.other.constant.property",
+        "variable.other.env",
+				"variable.other.property"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#b7e4f9"
+			}
+    },
+    {
 			"name": "RegExp and String Escape Sequences",
 			"scope": [
         "constant.character.escape",
@@ -926,73 +984,9 @@
 		},
     // !! START HERE !!
 
-    {
-			"name": "HTML Tag Names, Property Names, Object/Hash Keys",
-			"scope": [
-        "constant.language.symbol.hashkey.ruby",
-				"constant.other.symbol.hashkey.ruby",
-        "entity.name.section.toml",
-        "entity.name.tag",
-        "entity.name.tag.yaml",
-        "meta.object-literal.key.js",
-        "punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end",
-        "support.type.property-name",
-				"variable.other.constant.property",
-        "variable.other.env",
-        "variable.other.key.toml",
-				"variable.other.property"
-			],
-			"settings": {
-        "fontStyle": "",
-				"foreground": "#b7e4f9"
-			}
-    },
-    {
-      "name": "Object Properties",
-			"scope": [
-				"variable.other.object.property",
-				"variable.other.constant.object.property"
-			],
-			"settings": {
-        "fontStyle": "italic",
-				"foreground": "#b7e4f9"
-			}
-		},
-    {
-      "name": "HTML Units (px, rem, etc.)",
-      "scope": "keyword.other.unit",
-      "settings": {
-        "foreground": "#bc4b4d"
-      }
-    },
-    {
-      "name": "CSS At-Rules",
-      "scope": "keyword.control.at-rule",
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#00707f",
-      }
-    },
-    {
-      "name": "CSS At-Rules Ampersand",
-      "scope": "keyword.control.at-rule punctuation.definition.keyword",
-      "settings": {
-        "foreground": "#00e0ff"
-      }
-    },
-    {
-			"name": "Debugger Directive",
-			"scope": "keyword.other.debugger",
-			"settings": {
-				"fontStyle": "italic bold",
-				"foreground": "#ff6669"
-			}
-		},
 		{
 			"name": "CSS/SCSS Attribute Selectors",
 			"scope": [
-        "entity.name.tag.css.sass.symbol",
         "entity.name.tag.reference.scss",
         "entity.other.attribute-name.parent-selector",
         "entity.other.attribute-name.placeholder punctuation",
@@ -1041,6 +1035,7 @@
 		{
 			"name": "Function/Method Parameters",
 			"scope": [
+        "constant.language.symbol.hashkey.parameter.function.ruby",
 				"entity.name.variable.parameter",
 				"meta.at-rule.function variable",
 				"meta.at-rule.mixin variable",
@@ -1083,7 +1078,8 @@
     {
 			"name": "Keywords",
 			"scope": [
-				"keyword",
+        "keyword",
+        "keyword.control.at-rule", // DONE
 				"keyword.control.new",
         "keyword.operator.new",
         "meta.selector", // TODO: Keep keyword color? (Used for > ~ etc. in CSS)

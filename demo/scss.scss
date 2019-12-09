@@ -4,6 +4,26 @@
        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
 }
 
+@mixin button-base() {
+  @include typography(button);
+  @include ripple-surface;
+  @include ripple-radius-bounded;
+
+  display: inline-flex;
+  position: relative;
+  height: $button-height;
+  border: none;
+  vertical-align: middle;
+
+  &:hover { cursor: pointer; }
+
+  &:disabled {
+    color: $mdc-button-disabled-ink-color;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
 * {
   background: white;
 }
@@ -22,24 +42,19 @@ h1, h2, h3 {
 
 main {
   margin-top: 20px;
+  font-size: 1.5em;
 }
 
 input::placeholder {
   color: gray;
 }
 
-.existingClass, %placeholderClass {
-  color: orange;
+button[class~="special"] {
+  color: red;
 }
 
-.parent-class {
-  &.child-class {
+.parent {
+  .child {
     background: blue;
-    [dir=rtl] & {
-      margin-left: 0
-    }
-  }
-  &:hover {
-    color: yellow;
   }
 }

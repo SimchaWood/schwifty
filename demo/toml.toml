@@ -1,0 +1,72 @@
+# Comments start with hash
+
+name = "Simcha Wood"
+description = "Description."
+
+point = { x = 1, y = 2 }
+animal = { type.name = "pug" }
+
+"quoted key" = "value"
+
+dot.ted.key = "value"
+
+foo = "strings are in quotes and are always UTF8 with escape codes: \n \u00E9"
+
+bar = """multi-line strings
+use three quotes"""
+
+baz = 'literal\strings\use\single\quotes'
+
+bat = '''multiline\literals\use
+three\quotes'''
+
+int = 5 # integers are just numbers
+float = 5.0 # floats have a decimal point with numbers on both sides
+
+date = 2006-05-27T07:32:00Z # dates are ISO 8601 full zulu form
+
+bool = true # good old true and false
+
+preamble = """
+We the people of the United States, in order to form a more perfect union,
+establish justice, insure domestic tranquility, provide for the common defense,
+promote the general welfare, and secure the blessings of liberty to ourselves
+and our posterity, do ordain and establish this Constitution for the United \
+States of America."""
+
+foo = [ "bar", "baz"
+        "bat"
+]
+
+nums = [ 1, 2, ]
+
+nested = [[ "a", "b"], [1, 2]]
+
+# some config above
+[table1]
+foo = 1
+bar = 2
+
+[table2]
+	foo = 1
+	baz = 2
+
+[table1]
+	foo = "bar"
+
+[table1.nested_table]
+	baz = "bat"
+
+[[comments]]
+author = "Nate"
+text = "Great Article!"
+
+[[comments]]
+author = "Anonymous"
+text = "Love it!"
+
+# What you see is what you get.
+winpath  = 'C:\Users\nodejs\templates'
+winpath2 = '\\ServerX\admin$\system32\'
+quoted   = 'Tom "Dubs" Preston-Werner'
+regex    = '<\i\c*\s*>'

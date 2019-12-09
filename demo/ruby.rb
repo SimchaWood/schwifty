@@ -69,6 +69,14 @@ $foobar
 
 rx =~ /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
 
+def do_something(foo: bar)
+  puts 'something'
+end
+
+def do_another_thing foo: bar
+  puts 'another thing'
+end
+
 3_14
 
 for [1 ... 20]
