@@ -1,9 +1,11 @@
 #! /usr/env/foo
-'use strict'
+/* eslint-disable max-classes-per-file */
+
+'use strict';
 
 class Sale {
   constructor(price) {
-    ;[this.decoratorsList, this.price] = [[], price]
+    [this.decoratorsList, this.price] = [[], price];
   }
 
   /**
@@ -12,33 +14,33 @@ class Sale {
    * @returns {void} not used
    */
   decorate(decorator) {
-    if (!Sale[decorator]) throw new Error(`decorator not exist: ${decorator}`)
-    this.decoratorsList.push(Sale[decorator])
+    if (!Sale[decorator]) throw new Error(`decorator not exist: ${decorator}`);
+    this.decoratorsList.push(Sale[decorator]);
   }
 
   getPrice() {
-    for (let decorator of this.decoratorsList) {
-      this.price = decorator(this.price)
+    for (const decorator of this.decoratorsList) {
+      this.price = decorator(this.price);
     }
-    return this.price.toFixed(2)
+    return this.price.toFixed(2);
   }
 
   static quebec(price) {
     // this is a comment
-    return price + price * 7.5 / 100
+    return price + price * 7.5 / 100;
   }
 
   static fedtax(price) {
-    return price + price * 5 / 100
+    return price + price * 5 / 100;
   }
 }
 
-let sale = new Sale(100)
-sale.decorate('fedtax')
-sale.decorate('quebec')
-console.log(sale.getPrice()) //112.88
+let sale = new Sale(100);
+sale.decorate('fedtax');
+sale.decorate('quebec');
+console.log(sale.getPrice()); //112.88
 
-getPrice()
+sale.getPrice();
 
 //deeply nested
 
@@ -50,7 +52,7 @@ const options = {
   connections: {
     compression: false
   }
-}
+};
 
 for (let i = 0; i < 10; i++) {
   continue;
@@ -67,18 +69,20 @@ switch (2) {
     break;
 }
 
+class Foo {}
+
 class EditFishForm extends Component {
-  static propTypes = {
-    updateFish: PropTypes.func,
-    deleteFish: PropTypes.func,
-    index: PropTypes.string,
-    fish: PropTypes.shape({
-      image: PropTypes.string,
-      name: PropTypes.string.isRequired
-    })
-  }
+  // static propTypes = {
+  //   updateFish: PropTypes.func,
+  //   deleteFish: PropTypes.func,
+  //   index: PropTypes.string,
+  //   fish: PropTypes.shape({
+  //     image: PropTypes.string,
+  //     name: PropTypes.string.isRequired
+  //   })
+  // }
 }
-const str = `${sale.getPrice()}`
+const str = `${sale.getPrice()}`;
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
 const text = "foobar";
 const { foo: bar } = require('stuff');
@@ -86,7 +90,7 @@ const { foo: bar } = require('stuff');
 console.log(rx, text, bar);
 
 const pi = Math.PI;
-const str = JSON.stringify()
+// const str = JSON.stringify()
 
 const { find, forEach, isUndefined } = require('lodash');
 const winston = require('winston');
