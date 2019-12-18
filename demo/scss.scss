@@ -1,152 +1,4 @@
-$title1: #00afc8; //V3
-
-$title1MX: #00e0ff; //V3
-$title1MX-1: #00a8bf; //V3
-$title1MX-2: #00707f;
-
-$title2: #c2d155;
-
-$title3: #46b55a; //V3
-
-$title3-1: #348743; //V3
-$title3-2: #235a2d; //V3
-
-$schwink: #e762d7; //V3
-
-$schwinkMX: #ff6cee; //V3
-$schwinkMX-1: #bf51b2; //V3
-$schwinkMX-2: #7f3677; //V3
-$schwinkMX-3: #5f2859;
-$schwinkMX-4: #3f1b3b; //V3
-
-$schwink-1: #ad49a1; //V3
-$schwink-2: #73316b; //V3
-
-$schwellow: #fae48b; //V3
-
-$schwellow-1: #bbab68; //V3
-$schwellow-2: #7d7245; //V3
-
-$schwellow1X: #fce68c; //V3
-$schwellowMX: #ffe88d; //V3
-
-$schwellower: #fafd7c; //V3 (Text)
-
-$schwellowerMX: #fcff7d; //V3
-$schwellowerMX-2: #7e7f3e; //V3
-
-$schwellower-1: #bbbd5d; //V3
-$schwellower-2: #7d7e3e; //V3
-
-
-$schwibrown: #82491e; //V3
-
-$schwibrownMX: #ff923e; // #32
-$schwibrownMX-1: #c06d2e;
-
-$schwibrown-1: #613616; //V3
-$schwibrown-2: #41240f; //V3
-$schwibrown-4: #201207; //V3
-$schwibrown-6: #150c05; //V3
-$schwibrown-8: #100903; //V3
-
-$schwiblue: #b7e4f9;
-
-$schwibluer: #69c8ec; //V3
-
-$schwibluer-1: #4e96b1; //V3
-$schwibluer-2: #346476; //V3
-
-$schwibleh: #a6eee6; //V3
-
-$schwiblehMX: #b2fff7; //V3
-$schwiblehMX-1: #85bfb9;
-$schwiblehMX-2: #597f7b; //V3
-
-$schwibleh-1: #7cb2ac;
-$schwibleh-2: #537773; //V3
-$schwibleh-3: #374f4c; //V3
-$schwibleh-4: #293b39; //V3
-$schwibleh-6: #1b2726; //V3
-$schwibleh-8: #141d1c;
-$schwibleh-12: #0d1313;
-$schwibleh-16: #0a0e0e;
-$schwibleh-32: #050507; //V3
-
-$schwed: #fb6467; //V3 (Keywords)
-
-$schwed-1: #bc4b4d; //V3
-$schwed-2: #7d3233; //V3
-
-$schwedMX: #ff6669; //V3 (Errors)
-$schwedMX-1: #bf4c4e;
-$schwedMX-2: #7f3334; //V3
-
-$schwigreen: #526e2d; //V3
-
-$schwigreen1X: #7ba543; //V3
-$schwigreen2X: #a4dc5a; //V3
-
-$schwigreenMX: #beff68; //V3 #2b
-
-$schworange: #e89242; //V3
-
-$schworangeMX: #ffa249; //V3
-$schworangeMX-1: #bf7936; //V3
-$schworangeMX-2: #7f5124; //V3
-
-$schworange-1: #ae6d31; //V3
-$schworange-2: #744921; //V3
-
-$schwigray: #917c5d; //V3
-
-$schwigray-1: #6c5d45; //V3
-$schwigray-2: #483e2e; //V3
-$schwigray-3: #362e22;
-$schwigray-4: #241f17; //V3
-$schwigray-6: #18140f;
-$schwigray-8: #120f0b;
-
-$schwigrayMX: #ffdda6; //V3 (Default Foreground Color)
-$schwigrayMX-1: #bfae92; //V3 (Badge Foreground)
-$schwigrayMX-1_5: #9f8e72; //V3 (Comments)
-$schwigrayMX-2: #7f6e53; //V3 (Dimmed Foreground Color)
-$schwigrayMX-3: #5f523e;
-$schwigrayMX-4: #3f3729;
-
-$schwigrayMXP: #ffeed2; //V3 (Bolder Foreground Color)
-$schwigrayMXP-1: #bfb29d; //V3
-$schwigrayMXP-2: #7f7769; //V3
-
-$schwigreener: #2f9331; 
-
-$schwigreenest: #8bcf21; //V3
-
-$schwigreenestMX: #abff28; //V3
-$schwigreenestMX-1: #80bf1e; //V3
-$schwigreenestMX-2: #557f14;
-
-$schwigreenest-1: #689b18; //V3
-$schwigreenest-2: #456710; //V3
-$schwigreenest-3: #334d0c;
-$schwigreenest-4: #223308;
-
-$schwindigo: #24325f; //V3 (Sidebar/Panel/Menus)
-
-$schwindigo-05: #1f2b53;
-$schwindigo-1: #1b2547; //V3
-$schwindigo-2: #12192f; //V3 (Welcome Page)
-$schwindigo-3: #0d1223; //V3 (Editor/Default Background Color)
-$schwindigo-4: #090c17;
-$schwindigo-6: #06080f; //V3
-$schwindigo-8: #04060b; //V3
-$schwindigo-16: #020305;
-
-$schwindigoX1: #364b8e; //V3
-$schwindigoX2: #4864be; //V3
-
-$schwindigoXM: #6187ff; //V3
-$schwindigoXM-2: #30437f; //V3
+@use './some/other/file.scss' as other;
 
 @debug 1px == 1px;
 
@@ -215,12 +67,12 @@ input:hover {
   cursor: pointer;
 }
 
-button[class~="special"] {
+button[class~="special" i] {
   color: red;
 }
 
 .parent {
-  .child {
+  & .child {
     background: blue;
   }
 }
@@ -235,4 +87,24 @@ button[class~="special"] {
 
 .sidebar {
   @include rtl(float, left, right);
+}
+
+div:not(.stupidDiv) {
+  height: 2rem;
+}
+
+.ancestor .descendent {
+  background: blue;
+}
+
+.parent > .child {
+  background: blue;
+}
+
+.sibling1 ~ .siblingN {
+  background: blue;
+}
+
+.sibling2 + .sibling3 {
+  background: #0000ff;
 }

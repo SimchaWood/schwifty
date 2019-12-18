@@ -1,16 +1,61 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
 .someClass {
   font-family: serif;
 }
 
 #someID {
-  background: yellow;
+  background: purple;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
 }
 
 main {
   margin-top: 20px;
+  font-size: 1.5em;
 }
 
-.someotherclass {
-  padding: 20px;
-  box-shadow: 0 0 0 2px inset;
+input::placeholder {
+  color: gray !important;
+}
+
+input:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+button[class~="special" i] {
+  color: red;
+}
+
+div:not(.stupidDiv) {
+  height: 2rem;
+}
+
+.parent {
+  .child {
+    background: blue;
+  }
+}
+
+.ancestor .descendent {
+  background: blue;
+}
+
+.parent > .child {
+  background: blue;
+}
+
+.sibling1 ~ .siblingN {
+  background: blue;
+}
+
+.sibling2 + .sibling3 {
+  background: #0000ff;
 }

@@ -34,10 +34,26 @@ input:hover {
   cursor: pointer;
 }
 
-button[class~="special"] {
+button[class~="special" i] {
   color: red;
+}
+
+div:not(.stupidDiv) {
+  height: 2rem;
+}
+
+.ancestor .descendent {
+  background: blue;
 }
 
 .parent > .child {
   background: blue;
+}
+
+.sibling1 ~ .siblingN {
+  background: blue;
+}
+
+.sibling2 + .sibling3 {
+  background: #0000ff;
 }

@@ -84,7 +84,7 @@ class EditFishForm extends Component {
   //   })
   // }
 }
-const str = `${sale.getPrice()}`;
+const str = `The price for this widget is ${sale.getPrice('widget')}`;
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
 const text = "foobar";
 const { foo: bar } = require('stuff');

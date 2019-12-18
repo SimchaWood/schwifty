@@ -54,7 +54,7 @@
 		"dropdown.border": "#12192f",
 		"dropdown.foreground": "#ffdda6",
 		"dropdown.listBackground": "#12192f",
-    "editor.background": "#0d1223",
+    "editor.background": "#12192f",
 		"editor.findMatchBackground": "#46b55a40",
 		"editor.findMatchBorder": "#46b55a00",
 		"editor.findMatchHighlightBackground": "#46b55a40",
@@ -397,11 +397,11 @@
 		"textLink.foreground": "#85bfb9",
 		"textPreformat.foreground": "#ffa249",
 		"textSeparator.foreground": "#bfae92",
-		"titleBar.activeBackground": "#364b8e",
-		"titleBar.activeForeground": "#ffdda6",
+		"titleBar.activeBackground": "#2d3e76", //#364b8e
+		"titleBar.activeForeground": "#d2fff2", //#ffdda6
 		"titleBar.border": "#1b2547",
-		"titleBar.inactiveBackground": "#24325f",
-		"titleBar.inactiveForeground": "#917c5d",
+		"titleBar.inactiveBackground": "#1b2726",
+		"titleBar.inactiveForeground": "#7cb2ac",
 		"tree.indentGuidesStroke": "#7f6e53",
 		"walkThrough.embeddedEditorBackground": "#050507",
 		"welcomePage.background": "#12192f",
@@ -572,10 +572,17 @@
     },
     {
       "name": "CSS At-Rules Ampersand",
-      "scope": "keyword.control.at-rule punctuation.definition.keyword",
+      "scope": "punctuation.definition.keyword",
       "settings": {
         "fontStyle": "bold",
         "foreground": "#bf51b2"
+      }
+    },
+    {
+      "name": "CSS Important Property",
+      "scope": "keyword.other.important",
+      "settings": {
+        "fontStyle": "bold"
       }
     },
     {
@@ -583,9 +590,7 @@
 			"scope": [
         "entity.name.tag.reference.scss",
         "entity.other.attribute-name.parent-selector",
-        "entity.other.attribute-name.placeholder punctuation",
-        "entity.other.attribute-name.pseudo-class punctuation",
-				"entity.other.attribute-name.pseudo-element punctuation"
+        "entity.other.attribute-name.placeholder punctuation"
 			],
 			"settings": {
 				"foreground": "#e762d7"
@@ -646,7 +651,17 @@
 				"foreground": "#69c8ec",
 				"fontStyle": "italic"
 			}
-		},
+    },
+    {
+			"name": "Decorator Symbol",
+			"scope": [
+        "meta.decorator punctuation.decorator",
+        "meta.function.decorator punctuation.definition.decorator"
+			],
+			"settings": {
+        "foreground": "#6187ff"
+			}
+    },
 		{
       "name": "Diff Files",
 			"scope": [
@@ -802,7 +817,31 @@
         "fontStyle": "italic",
 				"foreground": "#7cb2ac"
 			}
-		},
+    },
+    {
+			"name": "Keywords",
+			"scope": [
+        "keyword",
+        "keyword.control.at-rule",
+				"keyword.control.new",
+        "keyword.operator.new",
+        "sass.use support.type"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#fb6467"
+			}
+    },
+    {
+			"name": "Keywords (ES6 Import as/from)",
+			"scope": [
+				"keyword.control.as",
+        "keyword.control.from"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+    },
     {
       "name": "Logs",
       "scope": [
@@ -1110,41 +1149,6 @@
 			}
 		},
     // !! START HERE !!
-
-		{
-			"name": "Decorator Symbol",
-			"scope": [
-        "meta.decorator punctuation.decorator",
-        "meta.function.decorator punctuation.definition.decorator"
-			],
-			"settings": {
-        "foreground": "#6187ff"
-			}
-    },
-    {
-			"name": "Keywords",
-			"scope": [
-        "keyword",
-        "keyword.control.at-rule", // DONE
-				"keyword.control.new",
-        "keyword.operator.new",
-        "meta.selector", // TODO: Keep keyword color? (Used for > ~ etc. in CSS)
-				"punctuation.definition.keyword"
-			],
-			"settings": {
-				"foreground": "#fb6467"
-			}
-    },
-    {
-			"name": "Keywords (ES6 Import as/from)",
-			"scope": [
-				"keyword.control.as",
-				"keyword.control.from"
-			],
-			"settings": {
-				"fontStyle": "italic"
-			}
-    },
 		{
 			"name": "Language Built-Ins",
 			"scope": [
@@ -1431,11 +1435,13 @@
 			"scope": [
         "meta.attribute-selector",
 				"punctuation.definition.string.begin",
-				"punctuation.definition.string.end",
+        "punctuation.definition.string.end",
+        "sass.use constant", // DONE
 				"string",
 				"source.env"
 			],
 			"settings": {
+        "fontStyle": "",
 				"foreground": "#fafd7c"
 			}
 		},
