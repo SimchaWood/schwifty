@@ -1,3 +1,5 @@
+@debug 1px == 1px
+  
 @font-face
   font-family: "Open Sans"
   src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2")
@@ -39,7 +41,11 @@ main
   font-size: 1.5em
 
 input::placeholder
-  color: gray
+  color: gray !important
+
+input:hover
+  color: blue
+  cursor: pointer
 
 button[class~="special"]
   color: red
@@ -47,3 +53,14 @@ button[class~="special"]
 .parent
   .child
     background: blue
+
+@mixin rtl($property, $ltr-value, $rtl-value)
+  #{$property}: $ltr-value
+
+  [dir=rtl] &
+    #{$property}: $rtl-value
+
+
+
+.sidebar
+  @include rtl(float, left, right)

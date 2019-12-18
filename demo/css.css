@@ -26,7 +26,12 @@ main {
 }
 
 input::placeholder {
-  color: gray;
+  color: gray !important;
+}
+
+input:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 button[class~="special"] {

@@ -14,7 +14,9 @@ class Sale {
    * @returns {void} not used
    */
   decorate(decorator) {
-    if (!Sale[decorator]) throw new Error(`decorator not exist: ${decorator}`);
+    if (!Sale[decorator]) {
+      throw new Error(`decorator not exist: ${decorator}`);
+    }
     this.decoratorsList.push(Sale[decorator]);
   }
 

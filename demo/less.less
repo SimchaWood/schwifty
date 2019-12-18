@@ -1,0 +1,64 @@
+@pale-green-color: #4D926F;
+
+#header {
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    a {
+      text-decoration: none;
+      color: red;
+      &:hover {
+        border-width: 1px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+h2 {
+  color: @pale-green-color;
+}
+
+.rounded-corners (@radius: 5px 10px 8px 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+#header {
+  .rounded-corners;
+}
+
+#footer {
+  .rounded-corners(10px 25px 35px 0px);
+}
+
+@base-color: #111;
+@red:        #842210;
+
+#header {
+  color: @base-color * 3;
+  border-left: @the-border;
+  border-right: @the-border * 3;
+}
+
+#footer {
+  color: @base-color + #003300;
+  border-color: desaturate(@red, 10%);
+}
+
+input::placeholder {
+  color: gray !important;
+}
+
+input:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+button[class~="special"] {
+  color: red;
+}

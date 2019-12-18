@@ -19,9 +19,9 @@
 		"breadcrumb.focusForeground": "#bfae92",
 		"breadcrumb.foreground": "#917c5d",
 		"breadcrumbPicker.background": "#24325f",
-		"button.background": "#334d0c",
-		"button.foreground": "#ffeed2",
-		"button.hoverBackground": "#456710",
+		"button.background": "#346476",
+		"button.foreground": "#ffdda6",
+		"button.hoverBackground": "#4e96b1",
 		"checkbox.background": "#483e2e",
 		"checkbox.border": "#1b2547",
     "checkbox.foreground": "#ffdda6",
@@ -157,9 +157,9 @@
 		"errorForeground": "#ff6669",
 		"extensionBadge.remoteBackground": "#348743",
 		"extensionBadge.remoteForeground": "#ffeed2",
-		"extensionButton.prominentBackground": "#456710",
-		"extensionButton.prominentForeground": "#ffeed2",
-		"extensionButton.prominentHoverBackground": "#689b18",
+		"extensionButton.prominentBackground": "#73316b",
+		"extensionButton.prominentForeground": "#ffdda6",
+		"extensionButton.prominentHoverBackground": "#ad49a1",
 		"focusBorder": "#537773",
 		"foreground": "#ffdda6",
 		"gitDecoration.addedResourceForeground": "#abff28",
@@ -567,7 +567,7 @@
       ],
 			"settings": {
         "fontStyle": "bold",
-				"foreground": "#ad49a1"
+				"foreground": "#bf51b2"
 			}
     },
     {
@@ -579,10 +579,49 @@
       }
     },
     {
-      "name": "CSS Units (px, rem, etc.)",
-      "scope": "keyword.other.unit",
+			"name": "CSS Pseudo-Class/Element Punctuation & Parent Selectors",
+			"scope": [
+        "entity.name.tag.reference.scss",
+        "entity.other.attribute-name.parent-selector",
+        "entity.other.attribute-name.placeholder punctuation",
+        "entity.other.attribute-name.pseudo-class punctuation",
+				"entity.other.attribute-name.pseudo-element punctuation"
+			],
+			"settings": {
+				"foreground": "#e762d7"
+			}
+    },
+    {
+      "name": "CSS Placeholders & Makefile .PHONY Targets",
+      "scope": [
+        "entity.other.attribute-name.placeholder",
+        "support.function.target"
+      ],
       "settings": {
-        "foreground": "#bf4c4e"
+        "fontStyle": "italic",
+        "foreground":  "#abff28"
+      }
+    },
+    {
+      "name": "CSS Properties",
+      "scope": [
+        "meta.property-list entity.name.tag.css",
+        "support.type.property-name"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#ffa249"
+      }
+    },
+    {
+      "name": "CSS Units (px, rem, etc.)",
+      "scope": [
+        "keyword.control.unit",
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#e762d7"
       }
     },
     {
@@ -591,6 +630,21 @@
 			"settings": {
 				"fontStyle": "italic bold",
 				"foreground": "#ff6669"
+			}
+    },
+    {
+			"name": "Decorators",
+			"scope": [
+        "meta.decorator entity.name.function",
+        "meta.decorator variable.other.readwrite",
+        "meta.decorator variable.other.object",
+        "meta.decorator variable.other.property",
+        "meta.function.decorator entity.name.function.decorator",
+        "meta.function.decorator support.type"
+			],
+			"settings": {
+				"foreground": "#69c8ec",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -636,6 +690,64 @@
 			"settings": {
 				"foreground": "#7cb2ac"
 			}
+    },
+    {
+			"name": "Function/Method Names & CSS Selectors",
+			"scope": [
+        "entity.name.function",
+        "entity.name.function.target.makefile",
+        "entity.name.tag.css",
+        "entity.other.attribute-name.class",
+        "entity.other.attribute-name.id",
+        "keyword.operator.function.infix",
+				"meta.function-call.generic",
+				"meta.function-call.object",
+				"meta.function-call.php",
+				"meta.function-call.static",
+				"meta.method-call.java meta.method",
+        "meta.method.groovy",
+        "new.expr entity.name.type",
+				"support.function.any-method.lua"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#abff28"
+			}
+    },
+    {
+			"name": "Function/Method Parameters",
+			"scope": [
+        "constant.language.symbol.hashkey.parameter.function.ruby",
+				"entity.name.variable.parameter",
+				"meta.at-rule.function variable",
+				"meta.at-rule.mixin variable",
+        "meta.function.arguments variable.other.php",
+        "meta.function.parameter.default variable.other",
+        "meta.function.parameter.no-default variable.other",
+        "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
+        "variable.other.root",
+				"variable.parameter"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ffa249"
+			}
+    },
+    {
+			"name": "HTML Attribute Names",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"foreground": "#ffa249",
+				"fontStyle": "italic"
+			}
+    },
+    {
+      "name": "HTML Tags",
+      "scope": "entity.name.tag",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#abff28"
+      }
     },
     {
       "name": "Import/Require Aliases",
@@ -840,18 +952,17 @@
 			}
 		},
     {
-			"name": "Property Names, Object/Hash Keys, HTML Tags",
+			"name": "Property Names, Object/Hash Keys",
 			"scope": [
         "constant.language.symbol.hashkey.ruby",
 				"constant.other.symbol.hashkey.ruby",
-        "entity.name.tag",
-        "entity.name.tag.css.sass.symbol",
+        "meta.property-list.scss entity.name.tag",
         "entity.name.tag.yaml",
         "keyword.key.toml",
         "meta.object-literal.key.js",
         "punctuation.support.type.property-name.begin",
 				"punctuation.support.type.property-name.end",
-        "support.type.property-name",
+        "support.type.property-name.json",
 				"variable.other.constant.property",
         "variable.other.env",
 				"variable.other.property"
@@ -1001,87 +1112,6 @@
     // !! START HERE !!
 
 		{
-			"name": "CSS/SCSS Attribute Selectors",
-			"scope": [
-        "entity.name.tag.reference.scss",
-        "entity.other.attribute-name.parent-selector",
-        "entity.other.attribute-name.placeholder punctuation",
-        "entity.other.attribute-name.pseudo-class punctuation",
-				"entity.other.attribute-name.pseudo-element punctuation"
-			],
-			"settings": {
-				"foreground": "#e762d7"
-			}
-    },
-    {
-			"name": "HTML/CSS Attribute Names",
-			"scope": "entity.other.attribute-name",
-			"settings": {
-				"foreground": "#abff28",
-				"fontStyle": "italic"
-			}
-    },
-    {
-			"name": "Function Names",
-			"scope": [
-        "entity.name.function",
-        "entity.name.function.target.makefile",
-        "keyword.operator.function.infix",
-				"meta.function-call.generic",
-				"meta.function-call.object",
-				"meta.function-call.php",
-				"meta.function-call.static",
-				"meta.method-call.java meta.method",
-        "meta.method.groovy",
-        "new.expr entity.name.type",
-				"support.function.any-method.lua"
-			],
-			"settings": {
-				"foreground": "#abff28"
-			}
-    },
-    {
-      "name": "Makefile .PHONY Targets",
-      "scope": "support.function.target",
-      "settings": {
-        "fontStyle": "italic",
-        "foreground":  "#abff28"
-      }
-    },
-		{
-			"name": "Function/Method Parameters",
-			"scope": [
-        "constant.language.symbol.hashkey.parameter.function.ruby",
-				"entity.name.variable.parameter",
-				"meta.at-rule.function variable",
-				"meta.at-rule.mixin variable",
-        "meta.function.arguments variable.other.php",
-        "meta.function.parameter.default variable.other",
-        "meta.function.parameter.no-default variable.other",
-				"meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
-				"variable.parameter"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#ffa249"
-			}
-    },
-		{
-			"name": "Decorators",
-			"scope": [
-        "meta.decorator entity.name.function",
-        "meta.decorator variable.other.readwrite",
-        "meta.decorator variable.other.object",
-        "meta.decorator variable.other.property",
-        "meta.function.decorator entity.name.function.decorator",
-        "meta.function.decorator support.type"
-			],
-			"settings": {
-				"foreground": "#69c8ec",
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "Decorator Symbol",
 			"scope": [
         "meta.decorator punctuation.decorator",
@@ -1194,7 +1224,8 @@
 				"punctuation.section.embedded",
 				"punctuation.section.embedded.end source.php",
         "punctuation.section.embedded.end source.ruby",
-				"punctuation.definition.variable.makefile"
+        "punctuation.definition.variable.makefile",
+        "support.function.interpolation" // DONE
 			],
 			"settings": {
 				"foreground": "#fb6467"
@@ -1246,6 +1277,8 @@
         "entity.name.type",
         "entity.name.type.cpp",
         "entity.name.type.type-parameter",
+        "entity.other.attribute-name.pseudo-class",
+        "entity.other.attribute-name.pseudo-element",
         "entity.scalar.graphql",
         "keyword.primitive-datatypes.swift",
         "meta.indexer.mappedtype.declaration entity.name.type",
@@ -1254,7 +1287,6 @@
         "meta.type.parameters entity.name.type",
         "meta.variable.assignment.destructured.object.coffee variable",
         "source.go storage.type",
-				"source.groovy storage.type",
 				"source.java storage.type",
         "storage.class.std.rust",
 				"storage.type.attribute.swift",
