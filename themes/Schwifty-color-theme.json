@@ -54,7 +54,7 @@
 		"dropdown.border": "#12192f",
 		"dropdown.foreground": "#ffdda6",
 		"dropdown.listBackground": "#12192f",
-    "editor.background": "#12192f",
+    "editor.background": "#212a2e", //REV - #0d1223
 		"editor.findMatchBackground": "#46b55a40",
 		"editor.findMatchBorder": "#46b55a00",
 		"editor.findMatchHighlightBackground": "#46b55a40",
@@ -99,7 +99,7 @@
 		"editorGroupHeader.tabsBackground": "#241f17",
 		"editorGroupHeader.tabsBorder": "#1b2547",
 		"editorGutter.addedBackground": "#689b18",
-		"editorGutter.background": "#090c17",
+		"editorGutter.background": "#161c1f", //REV - #090c17
 		"editorGutter.commentRangeForeground": "#00afc8",
 		"editorGutter.deletedBackground": "#fb6467",
 		"editorGutter.modifiedBackground": "#7cb2ac",
@@ -115,8 +115,8 @@
 		"editorInfo.foreground": "#69c8ec",
 		"editorLightBulb.foreground": "#fafd7c",
 		"editorLightBulbAutoFix.foreground": "#00afc8",
-		"editorLineNumber.activeForeground": "#7cb2ac",
-		"editorLineNumber.foreground": "#537773",
+		"editorLineNumber.activeForeground": "#bfae92", //REV - #7cb2ac
+		"editorLineNumber.foreground": "#917c5d", //REV - #6c5d45
 		"editorLink.activeForeground": "#00afc8",
 		"editorMarkerNavigation.background": "#1b2726",
 		"editorMarkerNavigationError.background": "#ff6669",
@@ -240,7 +240,7 @@
 		"notificationsErrorIcon.foreground": "#ff6669",
 		"notificationsInfoIcon.foreground": "#69c8ec",
 		"notificationsWarningIcon.foreground": "#fafd7c",
-		"panel.background": "#24325f",
+		"panel.background": "#1a323b", // REV - #24325f
 		"panel.border": "#1b2547",
 		"panel.dropBackground": "#917c5d80",
 		"panelInput.border": "#1b2547",
@@ -291,7 +291,7 @@
 		"settings.textInputBackground": "#483e2e",
 		"settings.textInputBorder": "#1b2547",
 		"settings.textInputForeground": "#ffdda6",
-		"sideBar.background": "#1b2547",
+		"sideBar.background": "#13252c", //REV - #1b2547
 		"sideBar.border": "#12192f",
 		"sideBar.dropBackground": "#917c5d80",
 		"sideBar.foreground": "#ffdda6",
@@ -384,7 +384,7 @@
 		"terminal.ansiRed": "#bc4b4d",
 		"terminal.ansiWhite": "#bfb29d",
 		"terminal.ansiYellow": "#7e7f3e",
-		"terminal.background": "#050507",
+		"terminal.background": "#12192f", //REV
 		"terminal.border": "#1b2547",
 		"terminal.foreground": "#bfb29d",
 		"terminal.selectionBackground": "#a6eee630",
