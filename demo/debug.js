@@ -1,8 +1,6 @@
 /* eslint-disable strict */
 const stringThing = require('./debug2');
 
-throw Error('Foo!');
-
 function foo(x) {
   while (x < 10) {
     x++;
