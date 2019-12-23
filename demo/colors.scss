@@ -1,30 +1,40 @@
-$schlogoblue: #00afc8; //V3
-$schlogoblue-2: #005764; //V3
-$schlogoblue-3: #00414b; //V3
-$schlogoblue-4: #002b32; //V3
+$schlogoblue100: #00afc8; //V4
 
-$schlogoblueMX: #00e0ff; //V3
+$schlogoblue-75: #008396; //V4
+$schlogoblue-60: #006978; //V4 (buttons)
+$schlogoblue-50: #005764; //V4
+$schlogoblue-25: #002b32; //V4
+$schlogoblue-20: #002328; //V4
+$schlogoblue-10: #001114; //V4
+
+$schlogoblue125: #00dafa; //V4
+
 $schlogoblueMX-1: #00a8bf; //V3
 $schlogoblueMX-2: #00707f; //V3
 
 $schlogoyellow: #c2d155;
 
-$schlogogreen: #46b55a; //V3
+$schlogogreen100: #46b55a; //V4
 
-$schlogogreen-1: #348743; //V3
+$schlogogreen120: #54d96c; //V4 UNUSED
+$schlogogreen125: #57e270; //V4
+$schlogogreen140: #62fd7e; //V4
+
+$schlogogreen-75: #348743; //V4
+
 $schlogogreen-2: #235a2d; //V3
 $schlogogreen-4: #114321; //V3
 
-$schwed: #fb6467; //V3 (Keywords)
+$schwed100: #fb6467; //V4 (V3 Keywords)
+$schwed-75: #bc4b4d; //V4
+$schwed-50: #7d3233; //V4
+$schwed-25: #3e1919; //V4 (exception widget)
 
 $schwedMX: #ff6669; //V3 (Errors)
-$schwedMX-1: #bf4c4e;
-$schwedMX-2: #7f3334; //V3
 
-$schwed-1: #bc4b4d; //V3
-$schwed-2: #7d3233; //V3
+$schworange100: #e89242; //V4
 
-$schworange: #e89242; //V3
+$schworange-75: #ae6d31; //V4
 
 $schworangeMX: #ffa249; //V3
 $schworangeMX-1: #bf7936; //V3
@@ -33,7 +43,11 @@ $schworangeMX-2: #7f5124; //V3
 $schworange-1: #ae6d31; //V3
 $schworange-2: #744921; //V3
 
-$schwibrown: #82491e; //V3
+$schwibrown100: #82491e; //V4 UNUSED
+
+$schwibrown150: #c36d2d; //V4
+$schwibrown190: #f78a39; //V4
+$schwibrown195: #fd8e3a; //V4 (badges)
 
 $schwibrownMX: #ff923e; // #32
 $schwibrownMX-1: #c06d2e;
@@ -44,7 +58,10 @@ $schwibrown-4: #201207; //V3
 $schwibrown-6: #150c05; //V3
 $schwibrown-8: #100903; //V3
 
-$schwigray: #917c5d; //V3
+$schwigray100: #917c5d; //V4
+
+$schwigray150: #d9ba8b; //V4 (foreground)
+$schwigray175: #fdd9a2; //V4 (text)
 
 $schwigray-1: #6c5d45; //V3
 $schwigray-2: #483e2e; //V3
@@ -53,7 +70,6 @@ $schwigray-4: #241f17; //V3
 $schwigray-6: #18140f;
 $schwigray-8: #120f0b;
 
-$schwigrayMX: #ffdda6; //V3 (Default Foreground Color)
 $schwigrayMX-1: #bfae92; //V3 (Badge Foreground)
 $schwigrayMX-1o5: #9f8e72; //V3 (Comments)
 $schwigrayMX-2: #7f6e53; //V3 (Dimmed Foreground Color)
@@ -65,7 +81,7 @@ $schwigrayMXP-05: #ffd0b7;
 $schwigrayMXP-1: #bfb29d; //V3
 $schwigrayMXP-2: #7f7769; //V3
 
-$schwellow: #fae48b; //V3
+$schwellow100: #fae48b; //V4
 
 $schwellow1X: #fce68c; //V3
 $schwellowMX: #ffe88d; //V3
@@ -73,7 +89,7 @@ $schwellowMX: #ffe88d; //V3
 $schwellow-1: #bbab68; //V3
 $schwellow-2: #7d7245; //V3
 
-$schwellower: #fafd7c; //V3 (Text)
+$schwellower: #fafd7c; //V4 (V3 Text)
 
 $schwellowerMX: #fcff7d; //V3
 $schwellowerMX-2: #7e7f3e; //V3
@@ -88,9 +104,12 @@ $schwigreen2X: #a4dc5a; //V3
 
 $schwigreenMX: #beff68; //V3 #2b
 
-$schwigreener: #2f9331;
+$schwigreener100: #2f9331; //V4
 
-$schwigreenest: #8bcf21; //V3
+$schwigreener-50: #174918; //V4
+$schwigreener-25: #0b240c; //V4
+
+$schwigreenest100: #8bcf21; //V4 (debug start/restart)
 
 $schwigreenestMX: #abff28; //V3
 $schwigreenestMX-1: #80bf1e; //V3
@@ -102,48 +121,69 @@ $schwigreenest-3: #334d0c;
 $schwigreenest-4: #223308;
 $schwigreenest-8: #111904;
 
-$schwiblue: #b7e4f9; //V3
+$schwiblue100: #b7e4f9; //V4
+
+$schwiblue-50: #5b727c; //V4 UNUSED
+$schwiblue-30: #36444a; //V4 UNUSED
+$schwiblue-20: #242d31; //V4 UNUSED
+$schwiblue-10: #121618;
 
 $schwiblue-MX: #bcebff; //V3
 
-$schwiblue-2: #5b727c; //V3
 $schwiblue-4: #2d393e; //V3
 $schwiblue-6: #212a2e; //V3 (REV editor background)
 $schwiblue-8: #161c1f; //V3
 
-$schwibluer: #69c8ec; //V3
+$schwibluer100: #69c8ec; //V4
+
+$schwibluer-50: #346476; //V4
+$scwhibluer-25: #1a323b; //V4 (REV editor)
+$schwibluer-20: #15282f; //V4 
 
 $schwibluer-1: #4e96b1; //V3
-$schwibluer-2: #346476; //V3
 $schwibluer-3: #274b58; //V3
-$schwibluer-4: #1a323b; //V3 (REV panel)
-$schwibluer-5: #162b33; //V3 (REV sidebar)
+$schwibluer-5: #162b33; //V3
 $schwibluer-6: #13252c; //V3
 $schwibluer-8: #0d191d; //V3
 
-$schwibleh: #a6eee6; //V3
+$schwibleh100: #a6eee6; //V4 (widget shadow 25%)
+
+$schwibleh105: #aef9f1; //V4
+
+$schwibleh-75: #7cb2ac; //V4 (title/status text, breadcrumb active text)
+$schwibleh-50: #537773; //V4 (breadcrumb text)
+$schwibleh-25: #293b39; //V4 (activity border)
+$schwibleh-20: #212f2e; //V4
+$schwibleh-10: #101717; //V4
 
 $schwiblehMXP: #d2fff2; //V3
 
-$schwiblehMX: #b2fff7; //V3
 $schwiblehMX-1: #85bfb9;
 $schwiblehMX-2: #597f7b; //V3
 
 $schwibleh-1: #7cb2ac;
-$schwibleh-2: #537773; //V3
 $schwibleh-3: #374f4c; //V3
-$schwibleh-4: #293b39; //V3
 $schwibleh-6: #1b2726; //V3
 $schwibleh-8: #141d1c;
 $schwibleh-12: #0d1313;
 $schwibleh-16: #0a0e0e;
 $schwibleh-32: #050507; //V3
 
-$schwindigo: #24325f; //V3 (Sidebar/Panel/Menus)
+$schwindigo100: #24325f; //V4 (V3 Menus)
 
-$schwindigo-05: #1f2b53;
-$schwindigo-1: #1b2547; //V3
-$schwindigo-2: #12192f; //V3 (Welcome Page) (REV terminal background)
+$schwindigo150: #364b8e; //V4
+$schwindigo200: #4864be; //V4
+$schwindigo270: #6187ff; //V4
+
+$schwindigo-75: #1b2547; //V4
+$schwindigo-70: #192342; //V4 (inactive title, activity active)
+$schwindigo-60: #151e39; //V4 (editor, dropdown)
+$schwindigo-50: #12192f; //V4 (Rev 3 welcome) (activity, gutter)
+$schwindigo-45: #10162a; //V4 (panel, breadcrumbs)
+$schwindigo-40: #0e1426; //V4 (sidebar, group/dropdown border)
+$schwindigo-30: #0a0f1c; //V4 (title, status)
+$schwindigo-20: #070a13; //V4 (terminal, default dark bg)
+
 $schwindigo-3: #0d1223; //V3 (Editor/Default Background Color)
 $schwindigo-4: #090c17;
 $schwindigo-6: #06080f; //V3
@@ -151,13 +191,12 @@ $schwindigo-8: #04060b; //V3
 $schwindigo-16: #020305;
 
 $schwindigoX05: #2d3e76;
-$schwindigoX1: #364b8e; //V3
-$schwindigoX2: #4864be; //V3
 
-$schwindigoXM: #6187ff; //V3
 $schwindigoXM-2: #30437f; //V3
 
-$schwink: #e762d7; //V3
+$schwink100: #e762d7; //V4
+$schwink-80: #b84eac; //V4
+$schwink-50: #73316b; //V4
 
 $schwinkMX: #ff6cee; //V3
 $schwinkMX-1: #bf51b2; //V3
@@ -166,6 +205,5 @@ $schwinkMX-3: #5f2859;
 $schwinkMX-4: #3f1b3b; //V3
 
 $schwink-1: #ad49a1; //V3
-$schwink-2: #73316b; //V3
 $schwink-4: #391835; //V3
 $schwink-8: #1c0c1a; //V3
