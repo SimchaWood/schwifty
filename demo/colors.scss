@@ -1,13 +1,13 @@
 $schlogoblue100: #00afc8; //V4
 
+$schlogoblue125: #00dafa; //V4
+
 $schlogoblue-75: #008396; //V4
 $schlogoblue-60: #006978; //V4 (buttons)
 $schlogoblue-50: #005764; //V4
 $schlogoblue-25: #002b32; //V4
 $schlogoblue-20: #002328; //V4
 $schlogoblue-10: #001114; //V4
-
-$schlogoblue125: #00dafa; //V4
 
 $schlogoblueMX-1: #00a8bf; //V3
 $schlogoblueMX-2: #00707f; //V3
@@ -18,21 +18,25 @@ $schlogogreen100: #46b55a; //V4
 
 $schlogogreen120: #54d96c; //V4 UNUSED
 $schlogogreen125: #57e270; //V4
-$schlogogreen140: #62fd7e; //V4
+$schlogogreen140: #62fd7e; //V4 (debug icons)
 
 $schlogogreen-75: #348743; //V4
 
 $schlogogreen-2: #235a2d; //V3
 $schlogogreen-4: #114321; //V3
 
-$schwed100: #fb6467; //V4 (V3 Keywords)
+$schwed100: #fb6467; //V4 (exception border. debug icons)(V3 Keywords)
+
 $schwed-75: #bc4b4d; //V4
 $schwed-50: #7d3233; //V4
-$schwed-25: #3e1919; //V4 (exception widget)
+$schwed-25: #3e1919; //V4
+$schwed-20: #321414; //V4 (exception widget)
 
 $schwedMX: #ff6669; //V3 (Errors)
 
 $schworange100: #e89242; //V4
+
+$schworange110: #ffa048; //V4
 
 $schworange-75: #ae6d31; //V4
 
@@ -121,12 +125,15 @@ $schwigreenest-3: #334d0c;
 $schwigreenest-4: #223308;
 $schwigreenest-8: #111904;
 
-$schwiblue100: #b7e4f9; //V4
+$schwiblue100: #b7e4f9; //V4 (active title text)
 
+$schwiblue-90: #a4cde0; //V4 (active activity)
+$schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text)
+$schwiblue-70: #808fae; //V4 (breadcrumb text, inactive activity)
 $schwiblue-50: #5b727c; //V4 UNUSED
 $schwiblue-30: #36444a; //V4 UNUSED
 $schwiblue-20: #242d31; //V4 UNUSED
-$schwiblue-10: #121618;
+$schwiblue-10: #121618; //V4 (badge text)
 
 $schwiblue-MX: #bcebff; //V3
 
@@ -136,7 +143,7 @@ $schwiblue-8: #161c1f; //V3
 
 $schwibluer100: #69c8ec; //V4
 
-$schwibluer105: #6ed2f7; //V4
+$schwibluer105: #6ed2f7; //V4 (debug icons)
 
 $schwibluer-50: #346476; //V4
 $scwhibluer-25: #1a323b; //V4
@@ -150,13 +157,14 @@ $schwibluer-8: #0d191d; //V3
 
 $schwibleh100: #a6eee6; //V4 (widget shadow 25%)
 
-$schwibleh105: #aef9f1; //V4 (search highlights)
+$schwibleh105: #aef9f1; //V4 (drop overlay 40%)(search highlights)
 
-$schwibleh-75: #7cb2ac; //V4 (title/status text, breadcrumb active text)
-$schwibleh-50: #537773; //V4 (breadcrumb text)
-$schwibleh-40: #425f5c; //V4 (tabs/panel border)
+$schwibleh-75: #7cb2ac; //V4 (breadcrumb text)(title/status text, breadcrumb active text)
+$schwibleh-60: #638e8a;
+$schwibleh-50: #537773; //V4 (*breadcrumb text*)
+$schwibleh-40: #425f5c; //V4 (sidebar border)(tabs/panel border)
 $schwibleh-25: #293b39; //V4 (activity border)
-$schwibleh-20: #212f2e; //V4
+$schwibleh-20: #212f2e; //V4 (dropdown border)
 $schwibleh-10: #101717; //V4
 
 $schwiblehMXP: #d2fff2; //V3
@@ -172,21 +180,23 @@ $schwibleh-12: #0d1313;
 $schwibleh-16: #0a0e0e;
 $schwibleh-32: #050507; //V3
 
-$schwindigo100: #24325f; //V4 (line highligt border) (V3 Menus)
+$schwindigo100: #24325f; //V4 (line highlight)*line highlight border* (V3 Menus)
 
+$schwindigo110: #273768; //V4 (line highlight border)
 $schwindigo150: #364b8e; //V4
 $schwindigo200: #4864be; //V4
 $schwindigo270: #6187ff; //V4
 
-$schwindigo-90: #202d55; //V4 (line highlight)
+$schwindigo-90: #202d55; //V4 (editor) *line highlight*
+$schwindigo-80: #1c284c; //V4 (gutter)
 $schwindigo-75: #1b2547; //V4
-$schwindigo-70: #192342; //V4 (inactive title, activity active)
-$schwindigo-60: #151e39; //V4 (editor, dropdown)
-$schwindigo-50: #12192f; //V4 (Rev 3 welcome) (activity, gutter)
-$schwindigo-45: #10162a; //V4 (panel, breadcrumbs, tabless headers)
-$schwindigo-40: #0e1426; //V4 (sidebar, group/dropdown border)
-$schwindigo-30: #0a0f1c; //V4 (title, status)
-$schwindigo-20: #070a13; //V4 (terminal, default dark bg)
+$schwindigo-70: #192342; //V4 (activity, panel, breadcrumbs)(inactive title, activity active)
+$schwindigo-60: #151e39; //V4 *editor, dropdown*
+$schwindigo-50: #12192f; //V4 (dropdown, sidebar)(Rev 3 welcome) *activity, gutter*
+$schwindigo-45: #10162a; //V4 (title, status)(*panel, breadcrumbs,* tabless headers)
+$schwindigo-40: #0e1426; //V4 (*sidebar*, group border)
+$schwindigo-30: #0a0f1c; //V4 (terminal) *title, status*
+$schwindigo-20: #070a13; //V4 (*terminal*, default dark bg)
 
 $schwindigo-3: #0d1223; //V3 (Editor/Default Background Color)
 $schwindigo-4: #090c17;
@@ -199,8 +209,10 @@ $schwindigoX05: #2d3e76;
 $schwindigoXM-2: #30437f; //V3
 
 $schwink100: #e762d7; //V4
+
 $schwink-80: #b84eac; //V4
 $schwink-50: #73316b; //V4
+$schwink-30: #451d40; //V4
 
 $schwinkMX: #ff6cee; //V3
 $schwinkMX-1: #bf51b2; //V3
