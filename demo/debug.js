@@ -1,7 +1,7 @@
 /* eslint-disable strict */
 const stringThing = require('./debug2');
 
-// throw Error('Foo!');
+throw Error('Foo!');
 
 function foo(x) {
   while (x < 10) {
@@ -14,7 +14,7 @@ let z = 0;
 if (z !== 0) {
   z = 1;
 }
-function boof() {};
+
 function bar(y) {
 }
 

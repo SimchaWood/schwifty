@@ -18,9 +18,9 @@ $schlogoyellow120: #e8fa66; //V4 (lightbulb)
 $schlogogreen100: #46b55a; //V4 (diff inserted, find results, hints)
 
 $schlogogreen110: #4dc763;
-$schlogogreen120: #54d96c; //V4 (debug restart)
+$schlogogreen120: #54d96c; //V4 (debug restart, git added)
 $schlogogreen125: #57e270; //V4
-$schlogogreen140: #62fd7e; //V4
+$schlogogreen140: #62fd7e; // (suggest highlights)
 
 // $schlogogreen-80: #
 $schlogogreen-75: #348743; //V4
@@ -39,6 +39,9 @@ $schworange100: #e89242;
 
 $schworange110: #ffa048;
 
+$schworange-90: #d0833b;
+$schworange-85: #c57c38; (breadcrumb classes)
+$schworange-80: #b97434;
 $schworange-75: #ae6d31;
 
 
@@ -52,13 +55,19 @@ $schwibrown195: #fd8e3a;
 $schwigray100: #917c5d;
 
 $schwigray150: #d9ba8b;
-$schwigray175: #fdd9a2;
+$schwigray175: #fdd9a2; // (input)
 
 
 $schwellow100: #fae48b;
 
+$schwellow-80: #c8b66f;
+$schwellow-75: #bbab68; (breadbrumb vars)
+$schwellow-70: #af9f61;
+
 
 $schwellower100: #fafd7c; //V4 (warnings)
+
+$schwellower-80: #c8ca63;
 
 
 $schwigreen100: #526e2d; //V4
@@ -77,30 +86,30 @@ $schwigreenest120: #a6f83a; //V4
 $schwigreenest-80: #6fa51a; //V4 (gutter/overview green)
 
 
-$schwiblue100: #b7e4f9; //V4 (active title text, menu active text)
+$schwiblue100: #b7e4f9; //V4 (active title text, menu active text, icons)
 
 $schwiblue-90: #a4cde0; //V4 (active activity)
 $schwiblue-85: #9bc1d3; //V4 (title text, active line #)
-$schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text, hovers text, menu text)
+$schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text, hovers text, menu text, sideheader text)
 $schwiblue-70: #808fae; //V4 (breadcrumb text, inactive activity)
 $schwiblue-60: #6d8895; //V4
 $schwiblue-55: #647d88; //V4 (line #)
-$schwiblue-50: #5b727c; //V4 (panel border)
-$schwiblue-45: #526670; //V4 (active indent, resize border, hover border, empty border)
-$schwiblue-40: #495b63; //V4
+$schwiblue-50: #5b727c; //V4 (panel border, nofolder status text)
+$schwiblue-45: #526670; //V4 (active indent, resize border, hover border, empty border, image border)
+$schwiblue-40: #495b63; // (default focus)
 $schwiblue-30: #36444a; //V4 (indent, activity border, title border, hovered tab)
-$schwiblue-27: #313d43;
-$schwiblue-25: #2d393e; //V4 (debug, dropdown border)
-$schwiblue-23: #2a3439; //V4 (activity active, active tab, line highlight, menu active)
+$schwiblue-27: #313d43; // (sidebar border)
+$schwiblue-25: #2d393e; //V4 (debug)
+$schwiblue-23: #2a3439; //V4 (activity active, active tab, line highlight, menu active, status border)
 $schwiblue-20: #242d31; //V4 (editor, hover status)
 $schwiblue-17: #1f262a; //V4 (gutter, menu, widgets)
 $schwiblue-15: #1b2225; //V4 (panel, activity, headers, inactive tabs, inactive title, edgroup border)
 $schwiblue-13: #171d20; //V4 (dropdown, empty, sidebar, hovers, tab border, overview border)
-$schwiblue-10: #121618; //V4 (title, status, menu border, widget border)
-$schwiblue-05: #090b0c; //V4 (terminal, badge text)
+$schwiblue-10: #121618; //V4 (input, title, status, menu border, widget border, dropdown border, notify header, sidebar header)
+$schwiblue-05: #090b0c; //V4 (terminal, badge text, input)
 
 
-$schwibluer100: #69c8ec; //V4 (gutter/overview blue)
+$schwibluer100: #69c8ec; //V4 (info, gutter/overview blue)
 
 $schwibluer105: #6ed2f7; //V4 (debug icons)
 
@@ -145,8 +154,7 @@ $schwindigo-20: #070a13; //V4
 
 $schwink100: #e762d7; //V4
 
-$schwink-80: #b84eac; //V4
+$schwink-80: #b84eac; // (progress bar)
 $schwink-50: #73316b; //V4
+$schwink-40: #5c2756; // (remote button)
 $schwink-30: #451d40; //V4
-
-// New stuff.

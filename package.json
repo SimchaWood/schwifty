@@ -17,5 +17,6 @@
                 "path": "./themes/Schwifty-color-theme.json"
             }
         ]
-    }
+    },
+    "dependencies": {}
 }
