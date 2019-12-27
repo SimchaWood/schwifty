@@ -126,10 +126,10 @@
     "editorOverviewRuler.border": "#1f262a",
     "editorOverviewRuler.bracketMatchForeground": "#00afc8",
     "editorOverviewRuler.commonContentForeground": "#6fa51a",
-    
 		"editorOverviewRuler.currentContentForeground": "#4e96b1",
 		"editorOverviewRuler.deletedForeground": "#fb6467",
-		"editorOverviewRuler.errorForeground": "#ff6669",
+    "editorOverviewRuler.errorForeground": "#fb6467",
+
 		"editorOverviewRuler.findMatchForeground": "#46b55a80",
 		"editorOverviewRuler.incomingContentForeground": "#ae6d31",
 		"editorOverviewRuler.infoForeground": "#69c8ec",
