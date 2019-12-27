@@ -129,45 +129,45 @@
 		"editorOverviewRuler.currentContentForeground": "#4e96b1",
 		"editorOverviewRuler.deletedForeground": "#fb6467",
     "editorOverviewRuler.errorForeground": "#fb6467",
-
-		"editorOverviewRuler.findMatchForeground": "#46b55a80",
-		"editorOverviewRuler.incomingContentForeground": "#ae6d31",
-		"editorOverviewRuler.infoForeground": "#69c8ec",
-		"editorOverviewRuler.modifiedForeground": "#7cb2ac",
-		"editorOverviewRuler.rangeHighlightForeground": "#46b55a60",
-		"editorOverviewRuler.selectionHighlightForeground": "#bfae9260",
-		"editorOverviewRuler.warningForeground": "#fafd7c",
-		"editorOverviewRuler.wordHighlightForeground": "#ff6cee80",
-		"editorOverviewRuler.wordHighlightStrongForeground": "#46b55a80",
-		"editorPane.background": "#120f0b",
-		"editorRuler.foreground": "#141d1c",
-		"editorSuggestWidget.background": "#1b2726",
-		"editorSuggestWidget.border": "#293b39",
-		"editorSuggestWidget.foreground": "#fdd9a2",
-		"editorSuggestWidget.highlightForeground": "#e762d7",
-		"editorSuggestWidget.selectedBackground": "#293b39",
-		"editorUnnecessaryCode.border": "#0d1223",
-		"editorUnnecessaryCode.opacity": "#000000aa",
-		"editorWarning.border": "#0d1223",
-		"editorWarning.foreground": "#fafd7c",
-		"editorWhitespace.foreground": "#4864be",
-		"editorWidget.background": "#1f262a", //AB
-		"editorWidget.border": "#121618", //AB
-		"editorWidget.foreground": "#92b6c7", //AB--
-		"editorWidget.resizeBorder": "#526670", //AB
-		"errorForeground": "#fb6467", //AB
-		"extensionBadge.remoteBackground": "#348743",
-		"extensionBadge.remoteForeground": "#ffeed2",
-		"extensionButton.prominentBackground": "#73316b",
-		"extensionButton.prominentForeground": "#fdd9a2",
-		"extensionButton.prominentHoverBackground": "#ad49a1",
+    "editorOverviewRuler.findMatchForeground": "#46b55a80",
+		"editorOverviewRuler.incomingContentForeground": "#fd8e3a",
+    "editorOverviewRuler.infoForeground": "#69c8ec",
+		"editorOverviewRuler.modifiedForeground": "#54a0bc",
+    "editorOverviewRuler.rangeHighlightForeground": "#46b55a60",    
+    "editorOverviewRuler.selectionHighlightForeground": "#00afc860",
+    "editorOverviewRuler.warningForeground": "#fafd7c",
+		"editorOverviewRuler.wordHighlightForeground": "#e762d780",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#62fd7e80",
+    "editorPane.background": "#1b2225",
+    "editorRuler.foreground": "#36444a",
+		"editorSuggestWidget.background": "#171d20",
+    "editorSuggestWidget.border": "#526670",
+    "editorSuggestWidget.foreground": "#92b6c7",
+		"editorSuggestWidget.highlightForeground": "#00dafa",
+    "editorSuggestWidget.selectedBackground": "#2a3439",
+		// "editorUnnecessaryCode.border": null,
+		"editorUnnecessaryCode.opacity": "#000000aa", // TODO
+		// "editorWarning.border": null,
+    "editorWarning.foreground": "#fafd7c",
+		"editorWhitespace.foreground": "#647d88",
+		"editorWidget.background": "#1f262a",
+		"editorWidget.border": "#121618",
+		"editorWidget.foreground": "#92b6c7",
+		"editorWidget.resizeBorder": "#526670",
+    "errorForeground": "#fb6467",
+		"extensionBadge.remoteBackground": "#348743", // TODO
+		"extensionBadge.remoteForeground": "#ffeed2", // TODO
+		"extensionButton.prominentBackground": "#73316b", // TODO
+		"extensionButton.prominentForeground": "#fdd9a2", // TODO
+		"extensionButton.prominentHoverBackground": "#ad49a1", // TODO
 		"focusBorder": "#537773",
-		"foreground": "#92b6c7", //AB--
-		"gitDecoration.addedResourceForeground": "#abff28",
-		"gitDecoration.conflictingResourceForeground": "#ffa249",
+    "foreground": "#92b6c7",
+
+		"gitDecoration.addedResourceForeground": "#54d96c",
+		"gitDecoration.conflictingResourceForeground": "#ffa048",
 		"gitDecoration.deletedResourceForeground": "#ffa249",
-		"gitDecoration.ignoredResourceForeground": "#917c5d",
-		"gitDecoration.modifiedResourceForeground": "#a6eee6",
+		"gitDecoration.ignoredResourceForeground": "#917c5d", // TODO
+		"gitDecoration.modifiedResourceForeground": "#54a0bc",
 		"gitDecoration.submoduleResourceForeground": "#fafd7c",
 		"gitDecoration.untrackedResourceForeground": "#abff28",
 		"icon.foreground": "#fdd9a2",
