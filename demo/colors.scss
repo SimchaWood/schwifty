@@ -15,16 +15,18 @@ $schlogoblueMX-2: #00707f; //V3
 
 $schlogoyellow: #c2d155;
 
-$schlogogreen100: #46b55a; //V4
+$schlogogreen100: #46b55a; //V4 (diff inserted, find results)
 
-$schlogogreen120: #54d96c; //V4 UNUSED
+$schlogogreen110: #4dc763;
+$schlogogreen120: #54d96c; //V4 (debug restart)
 $schlogogreen125: #57e270; //V4
-$schlogogreen140: #62fd7e; //V4 (debug icons)
+$schlogogreen140: #62fd7e; //V4
 
+// $schlogogreen-80: #
 $schlogogreen-75: #348743; //V4
 $schlogogreen-50: #235a2d; //V4
 
-$schwed100: #fb6467; //V4 (exception border. debug icons)(V3 Keywords)
+$schwed100: #fb6467; //V4 (errors, exception border, debug icons)(V3 Keywords)
 
 $schwed-80: #c85052; //V4
 $schwed-75: #bc4b4d; //V4
@@ -115,6 +117,8 @@ $schwigreener-25: #0b240c; //V4
 
 $schwigreenest100: #8bcf21; //V4 (debug start/restart)
 
+$schwigreenest120: #a6f83a; //V4
+
 $schwigreenest-80: #6fa51a; //V4 (gutter/overview green)
 
 $schwigreenestMX: #abff28; //V3
@@ -127,16 +131,25 @@ $schwigreenest-3: #334d0c;
 $schwigreenest-4: #223308;
 $schwigreenest-8: #111904;
 
-$schwiblue100: #b7e4f9; //V4 (active title text)
+$schwiblue100: #b7e4f9; //V4 (active title text, menu active text)
 
 $schwiblue-90: #a4cde0; //V4 (active activity)
-$schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text)
+$schwiblue-85: #9bc1d3; //V4 (title text)
+$schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text, hovers text, menu text)
 $schwiblue-70: #808fae; //V4 (breadcrumb text, inactive activity)
 $schwiblue-50: #5b727c; //V4 (panel border)
-$schwiblue-40: #495b63; //V4 (activity border)
-$schwiblue-30: #36444a; //V4 (ed group border)
-$schwiblue-20: #242d31; //V4 (dropdown border)
-$schwiblue-10: #121618; //V4 (badge text)
+$schwiblue-45: #526670; //V4 (resize border)
+$schwiblue-40: #495b63; //V4
+$schwiblue-30: #36444a; //V4 (activity border, title border, hovered tab)
+$schwiblue-27: #313d43;
+$schwiblue-25: #2d393e; //V4 (debug, dropdown border)
+$schwiblue-23: #2a3439; //V4 (activity active, active tab, line highlight, menu active)
+$schwiblue-20: #242d31; //V4 (editor)
+$schwiblue-17: #1f262a; //V4 (gutter, menu, widgets)
+$schwiblue-15: #1b2225; //V4 (panel, activity, headers, inactive tabs, inactive title)
+$schwiblue-13: #171d20; //V4 (dropdown, empty, sidebar, hovers)
+$schwiblue-10: #121618; //V4 (title, status, menu border, widget border)
+$schwiblue-05: #090b0c; //V4 (terminal, badge text)
 
 $schwiblue-MX: #bcebff; //V3
 
@@ -164,7 +177,7 @@ $schwibleh100: #a6eee6; //V4 (widget shadow 25%)
 $schwibleh105: #aef9f1; //V4 (drop overlay 40%)(search highlights)
 
 $schwibleh-75: #7cb2ac; //V4
-$schwibleh-60: #638e8a;
+$schwibleh-60: #638e8a; //V4 (disabled breakpoints)
 $schwibleh-50: #537773; //V4 (*breadcrumb text*)
 $schwibleh-40: #425f5c; //V4 (sidebar border)(tabs border)
 $schwibleh-30: #314745; //V4
