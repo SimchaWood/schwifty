@@ -14,9 +14,8 @@ let z = 0;
 if (z !== 0) {
   z = 1;
 }
-
+function boof() {};
 function bar(y) {
-  return foo(y);
 }
 
 function baz(z) {
