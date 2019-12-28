@@ -30,7 +30,9 @@ $schwed100: #fb6467; //V4 (errors, exception border, debug icons)(V3 Keywords)
 
 $schwed-80: #c85052;
 $schwed-75: #bc4b4d;
+$schwed-70: #af4648;
 $schwed-50: #7d3233;
+$schwed-30: #4b1e1e;
 $schwed-25: #3e1919;
 $schwed-20: #321414;
 
@@ -54,6 +56,8 @@ $schwibrown195: #fd8e3a;
 
 $schwigray100: #917c5d;
 
+$schwigray125: #b59b74;
+$schwigray130: #bca178;
 $schwigray150: #d9ba8b;
 $schwigray175: #fdd9a2; // (input)
 
@@ -68,13 +72,20 @@ $schwellow-70: #af9f61;
 $schwellower100: #fafd7c; //V4 (warnings)
 
 $schwellower-80: #c8ca63;
+$schwellower-50: #7d7e3e;
 
 
 $schwigreen100: #526e2d; //V4
 
+$schwigreen230: #bcfd67;
+
 
 $schwigreener100: #2f9331;
 
+// START HERE
+$schwigreener170: #4ff953;
+
+$schwigreener-85: #277c29;
 $schwigreener-50: #174918;
 $schwigreener-25: #0b240c;
 
@@ -95,13 +106,13 @@ $schwiblue-70: #808fae; //V4 (breadcrumb text, inactive activity)
 $schwiblue-60: #6d8895; //V4
 $schwiblue-55: #647d88; //V4 (line #)
 $schwiblue-50: #5b727c; //V4 (panel border, nofolder status text)
-$schwiblue-45: #526670; //V4 (active indent, resize border, hover border, empty border, image border)
+$schwiblue-45: #526670; //V4 (active indent, tree indent, resize border, hover border, empty border, image border)
 $schwiblue-40: #495b63; // (default focus)
 $schwiblue-30: #36444a; //V4 (indent, activity border, title border, hovered tab)
 $schwiblue-27: #313d43; // (sidebar border)
 $schwiblue-25: #2d393e; //V4 (debug)
-$schwiblue-23: #2a3439; //V4 (activity active, active tab, line highlight, menu active, status border)
-$schwiblue-20: #242d31; //V4 (editor, hover status)
+$schwiblue-23: #2a3439; //V4 (activity active, line highlight, menu active, status border)
+$schwiblue-20: #242d31; //V4 (active tab, editor, hover status)
 $schwiblue-17: #1f262a; //V4 (gutter, menu, widgets)
 $schwiblue-15: #1b2225; //V4 (panel, activity, headers, inactive tabs, inactive title, edgroup border)
 $schwiblue-13: #171d20; //V4 (dropdown, empty, sidebar, hovers, tab border, overview border)
@@ -119,23 +130,24 @@ $schwibluer-25: #1a323b; //V4
 $schwibluer-20: #15282f; //V4 
 
 
-$schwibleh100: #a6eee6; //V4 (widget shadow 25%)
+$schwibleh100: #a6eee6; //
 
-$schwibleh105: #aef9f1; //V4 (drop overlay 40%)(search highlights)
+$schwibleh105: #aef9f1; //
 
-$schwibleh-75: #7cb2ac; //V4
-$schwibleh-60: #638e8a; //V4 (disabled breakpoints)
-$schwibleh-50: #537773; //V4 (*breadcrumb text*)
-$schwibleh-40: #425f5c; //V4 (sidebar border)(tabs border)
-$schwibleh-30: #314745; //V4
-$schwibleh-25: #293b39; //V4
-$schwibleh-20: #212f2e; //V4 (dropdown border)
-$schwibleh-10: #101717; //V4
+$schwibleh-75: #7cb2ac; //
+$schwibleh-60: #638e8a; //
+$schwibleh-50: #537773; //
+$schwibleh-40: #425f5c; //
+$schwibleh-30: #314745; //
+$schwibleh-25: #293b39; //
+$schwibleh-20: #212f2e; //
+$schwibleh-10: #101717; //
 
 
 $schwindigo100: #24325f; //V4 
 
 $schwindigo110: #273768; //V4
+$schwindigo135: #304380;
 $schwindigo150: #364b8e; //V4
 $schwindigo200: #4864be; //V4
 $schwindigo270: #6187ff; //V4
@@ -154,7 +166,10 @@ $schwindigo-20: #070a13; //V4
 
 $schwink100: #e762d7; //V4
 
+$schwink110: #fe6bec;
+
 $schwink-80: #b84eac; // (progress bar)
+$schwink-55: #7f3576;
 $schwink-50: #73316b; //V4
 $schwink-40: #5c2756; // (remote button)
 $schwink-30: #451d40; //V4
