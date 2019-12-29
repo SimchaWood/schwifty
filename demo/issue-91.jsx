@@ -3,6 +3,7 @@ import calculate from '../logic/calculate'
 import './App.css'
 import ButtonPanel from './ButtonPanel'
 import Display from './Display'
+import { find as _find } from 'lodash';
 
 class App extends React.Component {
   constructor(props) {

@@ -14,4 +14,6 @@ Error: Something went wrong!
 
 foobar.Exception
 
+Warn: You should know about this!
+
 https://github.com/emilast/vscode-logfile-highlighter/commit/e90aa2554b439827f125fd60ff6d7773fc582fcc
