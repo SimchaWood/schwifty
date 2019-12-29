@@ -1,7 +1,8 @@
 $schlogoblue100: #00afc8; // (cursor, codelens)
 
-$schlogoblue125: #00dafa;
+$schlogoblue125: #00dafa; // [diff header]
 
+$schlogoblue-80: #008ca0;
 $schlogoblue-75: #008396;
 $schlogoblue-70: #007a8c;
 $schlogoblue-60: #006978; // (buttons)
@@ -16,7 +17,7 @@ $schlogoyellow100: #c2d155; //V4
 
 $schlogoyellow120: #e8fa66; //V4 (lightbulb)
 
-$schlogogreen100: #46b55a; //V4 (diff inserted, find results, hints)
+$schlogogreen100: #46b55a; //V4 [diff inserted] (diff inserted, find results, hints)
 
 $schlogogreen110: #4dc763;
 $schlogogreen120: #54d96c; //V4 (debug restart, git added)
@@ -27,11 +28,12 @@ $schlogogreen140: #62fd7e; // (suggest highlights)
 $schlogogreen-75: #348743; //V4
 $schlogogreen-50: #235a2d; //V4
 
-$schwed100: #fb6467; //V4 (errors, exception border, debug icons)(V3 Keywords)
+$schwed100: #fb6467; //V4 [diff deleted, keywords] (errors, exception border, debug icons)
 
 $schwed-80: #c85052;
 $schwed-75: #bc4b4d;
 $schwed-70: #af4648;
+$schwed-65: #a34142;
 $schwed-50: #7d3233;
 $schwed-30: #4b1e1e;
 $schwed-25: #3e1919;
@@ -62,7 +64,7 @@ $schwigray120: #ae946f;
 $schwigray125: #b59b74;
 $schwigray130: #bca178;
 $schwigray150: #d9ba8b;
-$schwigray175: #fdd9a2; // (input)
+$schwigray175: #fdd9a2; // [source](input)
 
 
 $schwellow100: #fae48b;
@@ -72,7 +74,7 @@ $schwellow-75: #bbab68; // (breadbrumb vars)
 $schwellow-70: #af9f61;
 
 
-$schwellower100: #fafd7c; //V4 (warnings)
+$schwellower100: #fafd7c; // [strings, quotes] (warnings)
 
 $schwellower-80: #c8ca63;
 $schwellower-50: #7d7e3e;
@@ -80,12 +82,14 @@ $schwellower-50: #7d7e3e;
 
 $schwigreen100: #526e2d; //V4
 
+$schwigreen180: #93c651;
+$schwigreen190: #9bd155;
+$schwigreen200: #a4dc5a; //
 $schwigreen230: #bcfd67;
 
 
 $schwigreener100: #2f9331;
 
-// START HERE
 $schwigreener170: #4ff953;
 
 $schwigreener-85: #277c29;
@@ -127,7 +131,7 @@ $schwibluer100: #69c8ec; //V4 (info, gutter/overview blue)
 
 $schwibluer105: #6ed2f7; //V4 (debug icons)
 
-$schwibluer-80: #54a0bc; //V4 (git modified)
+$schwibluer-80: #54a0bc; //V4 [git modified] (git modified)
 $schwibluer-50: #346476; //V4
 $schwibluer-25: #1a323b; //V4
 $schwibluer-20: #15282f; //V4 
@@ -171,6 +175,7 @@ $schwink100: #e762d7; //V4
 
 $schwink110: #fe6bec;
 
+$schwink-90: #cf58c1; // [diff files, md separator]
 $schwink-80: #b84eac; // (progress bar)
 $schwink-55: #7f3576; //
 $schwink-50: #73316b; // (remote badge)

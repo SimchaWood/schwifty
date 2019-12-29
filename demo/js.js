@@ -94,7 +94,7 @@ console.log(rx, text, bar);
 const pi = Math.PI;
 // const str = JSON.stringify()
 
-const { find, forEach, isUndefined } = require('lodash');
+const { find: _find, forEach, isUndefined } = require('lodash');
 const winston = require('winston');
 
 const loggerConfig = require('./config');
@@ -208,7 +208,7 @@ class LoggerWrapper {
   }
 
   getLoggerConfig(loggerId) {
-    return find(this.loggerConfigs, (x) => x.loggerId === loggerId);
+    return _find(this.loggerConfigs, (x) => x.loggerId === loggerId);
   }
 }
 
