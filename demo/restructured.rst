@@ -1,5 +1,5 @@
-
 Paragraphs contain text and may contain inline markup:
+
 *emphasis*, **strong emphasis**, `interpreted text`, ``inline
 literals``, standalone hyperlinks (http://www.python.org),
 external hyperlinks (Python_), internal cross-references

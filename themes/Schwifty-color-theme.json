@@ -62,7 +62,7 @@
     "editor.findRangeHighlightBackground": "#62fd7e20",
 		// "editor.findRangeHighlightBorder": null,
 		"editor.focusedStackFrameHighlightBackground": "#6ed2f720",
-    "editor.foreground": "#fdd9a2",
+    "editor.foreground": "#92b6c7",
 		"editor.hoverHighlightBackground": "#b7e4f960",
 		"editor.inactiveSelectionBackground": "#00afc840",
 		"editor.lineHighlightBackground": "#2d393e",
@@ -412,10 +412,6 @@
     "window.inactiveBorder": "#1b2225"
 	},
   "tokenColors": [
-    /*
-     * TODO: Add support for `search-result` files (used by
-     * search sidebar Open In Editor option)
-     */
 		{
 			"scope": "emphasis",
 			"settings": {
@@ -475,12 +471,6 @@
 				"fontStyle": "underline"
 			}
 		},
-    {
-			"scope": "source",
-			"settings": {
-				"foreground": "#fdd9a2"
-			}
-    },
 		{
 			"scope": "strong",
 			"settings": {
@@ -1140,6 +1130,16 @@
       ],
 			"settings": {
 				"foreground": "#fae48b"
+			}
+    },
+    {
+      "name": "Text",
+			"scope": [
+        "source",
+        "text"
+      ],
+			"settings": {
+				"foreground": "#fdd9a2"
 			}
     },
     {
