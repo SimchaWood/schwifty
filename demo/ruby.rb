@@ -52,6 +52,7 @@ else
 
 my_hash = { "Last Name": "Wood", :meaning_of_life => 42, other: "stuff" }
 my_hash["foobar"] = true;
+my_hash[foobaz:] = false;
 
 my_other_hash = Hash.new { |hash, key| hash[key] = "Go fish: #{key}\n"}
 
@@ -80,3 +81,7 @@ end
 3_14
 
 for [1 ... 20]
+
+puts <<~EOF
+  It's #{now.hour} o'clock John, where are your kids?
+  EOF

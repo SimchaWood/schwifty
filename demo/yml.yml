@@ -17,3 +17,9 @@ do_stuff: &stuff
     script:
       - npm do-stuff
 do_more_stuff: *stuff
+data: |
+  This is some
+  multiline text.
+more_data: >
+  This is some
+  folded text.

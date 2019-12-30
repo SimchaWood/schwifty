@@ -42,7 +42,7 @@ $schwed-20: #321414;
 
 $schworange100: #e89242;
 
-$schworange110: #ffa048;
+$schworange110: #ffa048; // [regex lookbehind]
 
 $schworange-90: #d0833b;
 $schworange-85: #c57c38; // (breadcrumb classes)
@@ -67,7 +67,7 @@ $schwigray150: #d9ba8b;
 $schwigray175: #fdd9a2; // [source](input)
 
 
-$schwellow100: #fae48b;
+$schwellow100: #fae48b; // [regex text]
 
 $schwellow-80: #c8b66f;
 $schwellow-75: #bbab68; // (breadbrumb vars)
@@ -90,6 +90,7 @@ $schwigreen230: #bcfd67;
 
 $schwigreener100: #2f9331;
 
+$schwigreener140: #41cd44; // [regex lookahead]
 $schwigreener170: #4ff953;
 
 $schwigreener-85: #277c29;
@@ -141,9 +142,10 @@ $schwibleh100: #a6eee6; //
 
 $schwibleh105: #aef9f1; //
 
-// $schwibleh-80: START HERE
+$schwibleh-80: #84beb8; //
 $schwibleh-75: #7cb2ac; //
-$schwibleh-60: #638e8a; //
+$schwibleh-70: #74a6a1; // [regex setrange]
+$schwibleh-60: #638e8a; // [regex set]
 $schwibleh-50: #537773; //
 $schwibleh-40: #425f5c; //
 $schwibleh-30: #314745; //

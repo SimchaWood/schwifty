@@ -1023,13 +1023,12 @@
 				"foreground": "#b84eac"
 			}
     },
-    // START HERE
     {
       "name": "RegExp Character Set Range",
       "scope": "constant.other.character-class.range.regexp",
       "settings": {
         "fontStyle": "",
-        "foreground": "#a6eee6"
+        "foreground": "#74a6a1" // TODO
       }
     },
     {
@@ -1041,7 +1040,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#537773"
+        "foreground": "#638e8a" // TODO
       }
     },
     {
@@ -1063,7 +1062,7 @@
 			],
 			"settings": {
         "fontStyle": "bold",
-				"foreground": "#c06d2e"
+				"foreground": "#fb6467"
 			}
     },
 		{
@@ -1086,7 +1085,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#ffa048" // TODO
+				"foreground": "#fb6467" // TODO
 			}
     },
     {
@@ -1094,7 +1093,7 @@
       "scope": "variable.other.regexp",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b7e4f9"
+        "foreground": "#b7e4f9" // TODO
       }
     },
     {
@@ -1107,7 +1106,7 @@
         "punctuation.definition.group.assertion.regexp"
       ],
       "settings": {
-        "foreground": "#ff6669"
+        "foreground": "#ffa048"
       }
     },
     {
@@ -1119,7 +1118,7 @@
         "meta.assertion.look-behind.regexp"
       ],
       "settings": {
-        "foreground": "#46b55a"
+        "foreground": "#41cd44"
       }
     },
     {
@@ -1152,7 +1151,7 @@
 				"variable.parameter.function.language.special"
 			],
 			"settings": {
-				"foreground": "#ff6cee",
+				"foreground": "#ff6cee", // TODO
 				"fontStyle": "italic"
 			}
 		},
@@ -1195,19 +1194,14 @@
     {
 			"name": "Operators/Separators",
 			"scope": [
-        "constant.other.symbol.hashkey punctuation.definition.constant.ruby",
-        "meta.group.double.toml",
-        "meta.group.toml",
         "meta.object-binding-pattern-variable punctuation.destructuring",
         "punctuation.assignment.graphql",
         "punctuation.colon.graphql",
-				"punctuation.definition.block.scalar.folded.yaml",
-				"punctuation.definition.block.scalar.literal.yaml",
-				"punctuation.definition.block.sequence.item.yaml",
-				"punctuation.definition.entity.other.inherited-class",
+        "punctuation.definition.block.sequence.item.yaml",
+        "punctuation.definition.entity.other.inherited-class",
 				"punctuation.definition.tag",
-				"punctuation.definition.tag source",
-        "punctuation.function.swift",
+        "punctuation.definition.tag source",
+        "punctuation.definition.keyValuePair",
         "punctuation.separator.dictionary.key-value",
         "punctuation.separator.hash",
 				"punctuation.separator.inheritance",
@@ -1215,8 +1209,11 @@
         "punctuation.separator.key-value.mapping.yaml",
         "punctuation.separator.namespace",
 				"punctuation.separator.pointer-access",
-				"punctuation.separator.slice",
-				"string.unquoted.heredoc punctuation.definition.string",
+        "punctuation.separator.slice",
+        "punctuation.definition.string string.unquoted.heredoc",
+        "string.unquoted.heredoc punctuation.definition.string.begin",
+        "string.unquoted.heredoc punctuation.definition.string.end",
+        // !! START HERE - Test shell heredoc support !!
 				"support.other.chomping-indicator.yaml",
 				"punctuation.separator.annotation"
 			],
