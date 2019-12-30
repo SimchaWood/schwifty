@@ -981,7 +981,6 @@
 				"foreground": "#fafd7c"
 			}
     },
-    // START HERE
     {
       "name": "Object Properties",
 			"scope": [
@@ -1000,10 +999,13 @@
 			"scope": [
         "constant.language.symbol.hashkey.ruby",
 				"constant.other.symbol.hashkey.ruby",
-        "meta.property-list.scss entity.name.tag",
+        // "meta.property-list.scss entity.name.tag", !! TODO
         "entity.name.tag.yaml",
         "keyword.key.toml",
         "meta.object-literal.key.js",
+        "meta.object-literal.key.js punctuation.definition.string.begin",
+        "meta.object-literal.key.js punctuation.definition.string.end",
+        "meta.object-literal.key.js string",
         "punctuation.support.type.property-name.begin",
 				"punctuation.support.type.property-name.end",
         "support.type.property-name.json",
@@ -1028,15 +1030,16 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#ad49a1"
+				"foreground": "#b84eac"
 			}
     },
+    // START HERE
     {
       "name": "RegExp Character Set Range",
       "scope": "constant.other.character-class.range.regexp",
       "settings": {
-        "foreground": "#7cb2ac",
-        "fontStyle": ""
+        "fontStyle": "",
+        "foreground": "#a6eee6"
       }
     },
     {

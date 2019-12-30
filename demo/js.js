@@ -89,6 +89,11 @@ const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d
 const text = "foobar";
 const { foo: bar } = require('stuff');
 
+const obj = {
+  foobar: 'baz',
+  'foo-bar': 'baz',
+};
+
 console.log(rx, text, bar);
 
 const pi = Math.PI;
