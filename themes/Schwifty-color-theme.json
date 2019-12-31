@@ -624,6 +624,31 @@
       }
     },
     {
+			"name": "Data Types",
+			"scope": [
+        "keyword.channel.go",
+        "keyword.const.go",
+        "keyword.function.go",
+        "keyword.interface.go",
+        "keyword.map.go",
+        "keyword.other.class.cs",
+        "keyword.other.namespace",
+        "keyword.struct.go",
+        "keyword.type.go",
+        "keyword.var.go",
+        "meta.class.identifier storage.modifier",
+        "meta.method.declaration meta.var.expr storage.type",
+        "storage",
+        "storage.modifier.shell",
+        "storage.type.def",
+        "storage.type.primitive"
+			],
+			"settings": {
+				"fontStyle": "bold italic",
+				"foreground": "#6187ff"
+			}
+    },
+    {
 			"name": "Debugger Directive",
 			"scope": "keyword.other.debugger",
 			"settings": {
@@ -1262,32 +1287,17 @@
         "foreground": "#b7e4f9" // TODO
       }
     },
-		{
-			"name": "Storage/Type Declarations",
-			"scope": [
-        "keyword.channel.go",
-        "keyword.const.go",
-        "keyword.function.go",
-        "keyword.interface.go",
-        "keyword.map.go",
-        "keyword.other.class.cs",
-        "keyword.other.namespace",
-        "keyword.struct.go",
-        "keyword.type.go",
-        "keyword.var.go",
-        "meta.class.identifier storage.modifier",
-        "meta.method.declaration meta.var.expr storage.type",
-        "storage",
-        "storage.modifier.shell",
-        "storage.type.def",
-        "storage.type.primitive",
-        "meta.implementation storage.type.objc",  // TODO: Move
-        "meta.implementation storage.type.objcpp", // TODO: Move
-        "meta.interface-or-protocol storage.type.objc", // TODO: Move
-        "meta.interface-or-protocol storage.type.objcpp", // TODO: Move
-			],
-			"settings": {
-				"fontStyle": "bold italic",
+    {
+      // TODO: Add highlighting for @ directives
+      "name": "Objective-C Implementations, Interfaces, & Protocols",
+      "scope": [
+        "meta.implementation storage.type.objc", 
+        "meta.implementation storage.type.objcpp",
+        "meta.interface-or-protocol storage.type.objc",
+        "meta.interface-or-protocol storage.type.objcpp"
+      ],
+      "settings": {
+				"fontStyle": "bold",
 				"foreground": "#6187ff"
 			}
     },
@@ -1313,7 +1323,7 @@
 				"storage.type.c",
 				"storage.type.core.rust",
         "storage.type.cs",
-        "storage.type.generic.java",
+        "storage.type.generic",
         "storage.type.groovy",
 				"storage.type.objc",
 				"storage.type.php",
