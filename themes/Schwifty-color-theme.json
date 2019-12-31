@@ -549,7 +549,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#008396"
+				"foreground": "#008ca0"
 			}
     },
     {
@@ -1249,7 +1249,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#6187ff"
+				"foreground": "#6187ff" // TODO
 			}
     },
     {
@@ -1259,26 +1259,36 @@
         "punctuation.definition.alias"
       ],
       "settings": {
-        "foreground": "#b7e4f9"
+        "foreground": "#b7e4f9" // TODO
       }
     },
 		{
-			"name": "Storage",
+			"name": "Storage/Type Declarations",
 			"scope": [
-        "keyowrd.other.class.cs", // DONE
-        "keyword.other.namespace", // DONE
-        "keyword.type.cs",
+        "keyword.channel.go",
+        "keyword.const.go",
+        "keyword.function.go",
+        "keyword.interface.go",
+        "keyword.map.go",
+        "keyword.other.class.cs",
+        "keyword.other.namespace",
+        "keyword.struct.go",
+        "keyword.type.go",
+        "keyword.var.go",
+        "meta.class.identifier storage.modifier",
+        "meta.method.declaration meta.var.expr storage.type",
         "storage",
         "storage.modifier.shell",
+        "storage.type.def",
         "storage.type.primitive",
-        "meta.method.declaration meta.var.expr storage.type",
-				"meta.implementation storage.type.objc",
-				"meta.interface-or-protocol storage.type.objc",
-				"source.groovy storage.type.def"
+        "meta.implementation storage.type.objc",  // TODO: Move
+        "meta.implementation storage.type.objcpp", // TODO: Move
+        "meta.interface-or-protocol storage.type.objc", // TODO: Move
+        "meta.interface-or-protocol storage.type.objcpp", // TODO: Move
 			],
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#e762d7"
+				"foreground": "#6187ff"
 			}
     },
     {
@@ -1346,8 +1356,8 @@
 				"string.quoted.docstring.multi.python constant.character.escape"
 			],
 			"settings": {
-        "fontStyle": "",
-				"foreground": "#bfae92"
+        "fontStyle": "bold",
+				"foreground": "#009db4"
 			}
     },
 		{

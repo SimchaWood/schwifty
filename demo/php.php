@@ -34,6 +34,17 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
     }
 }
 
+class A {
+
+  public function getClassName(){
+      return __CLASS__;
+  }
+
+  public function getRealClassName() {
+      return static::class;
+  }
+}
+
 function foo($bar = "bar")
 {
   $rx = "/^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/";

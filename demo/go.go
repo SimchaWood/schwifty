@@ -5,6 +5,11 @@ import (
     "net/http"
 )
 
+const Pi float64 = 3.14159265358979323846
+chan<- float64 foo
+
+make(chan int, 100)
+
 func main() {
     http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Welcome to my website!")
@@ -86,4 +91,31 @@ func Hello(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", Chain(Hello, Method("GET"), Logging()))
 	http.ListenAndServe(":8080", nil)
+}
+
+type ReadWriter interface {
+	Read(b Buffer) bool
+	Write(b Buffer) bool
+}
+
+type File interface {
+	ReadWriter  // same as adding the methods of ReadWriter
+	Locker      // same as adding the methods of Locker
+	Close()
+}
+
+interface {
+	Read([]byte) (int, error)
+	Write([]byte) (int, error)
+	Close() error
+}
+
+map[string]int
+
+struct {
+	x, y int
+	u float32
+	_ float32  // padding
+	A *[]int
+	F func()
 }
