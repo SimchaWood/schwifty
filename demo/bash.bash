@@ -100,3 +100,11 @@ if [ "$PS1" != "" ]; then
   # We invoke `command history` so as not to call the override function above.
   export PROMPT_COMMAND='__bash_prompt; command history -a; command history -c; command history -r'
 fi
+
+read a b c <<< 'one two three'
+echo $a $b $c
+
+echo << END_TEXT
+This is some multiline text
+to be echoed.
+END_TEXT

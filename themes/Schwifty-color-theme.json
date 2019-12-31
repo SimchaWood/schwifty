@@ -983,6 +983,36 @@
         "fontStyle": "italic",
 				"foreground": "#b7e4f9"
 			}
+    },
+    {
+			"name": "Operators (Separators)",
+			"scope": [
+        "meta.object-binding-pattern-variable punctuation.destructuring",
+        "punctuation.assignment.graphql",
+        "punctuation.colon.graphql",
+        "punctuation.definition.block.sequence.item.yaml",
+        "punctuation.definition.entity.other.inherited-class",
+				"punctuation.definition.tag",
+        "punctuation.definition.tag source",
+        "punctuation.definition.keyValuePair",
+        "punctuation.separator.dictionary.key-value",
+        "punctuation.separator.hash",
+				"punctuation.separator.inheritance",
+        "punctuation.separator.key-value",
+        "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.separator.namespace",
+				"punctuation.separator.pointer-access",
+        "punctuation.separator.slice",
+        "punctuation.definition.string string.unquoted.heredoc",
+        "string.unquoted.heredoc punctuation.definition.string.begin",
+        "string.unquoted.heredoc punctuation.definition.string.end",
+				"storage.modifier.chomping-indicator.yaml",
+				"punctuation.separator.annotation"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#fb6467"
+			}
 		},
     {
 			"name": "Property Names, Object/Hash Keys",
@@ -1155,7 +1185,7 @@
 				"fontStyle": "italic"
 			}
 		},
-    // !! START HERE !!
+    // !! SAVE FOR LATER !!
 		{
 			"name": "Language Built-Ins",
 			"scope": [
@@ -1191,38 +1221,9 @@
         "foreground": "#a6eee6"
       }
     },
-    {
-			"name": "Operators/Separators",
-			"scope": [
-        "meta.object-binding-pattern-variable punctuation.destructuring",
-        "punctuation.assignment.graphql",
-        "punctuation.colon.graphql",
-        "punctuation.definition.block.sequence.item.yaml",
-        "punctuation.definition.entity.other.inherited-class",
-				"punctuation.definition.tag",
-        "punctuation.definition.tag source",
-        "punctuation.definition.keyValuePair",
-        "punctuation.separator.dictionary.key-value",
-        "punctuation.separator.hash",
-				"punctuation.separator.inheritance",
-        "punctuation.separator.key-value",
-        "punctuation.separator.key-value.mapping.yaml",
-        "punctuation.separator.namespace",
-				"punctuation.separator.pointer-access",
-        "punctuation.separator.slice",
-        "punctuation.definition.string string.unquoted.heredoc",
-        "string.unquoted.heredoc punctuation.definition.string.begin",
-        "string.unquoted.heredoc punctuation.definition.string.end",
-        // !! START HERE - Test shell heredoc support !!
-				"support.other.chomping-indicator.yaml",
-				"punctuation.separator.annotation"
-			],
-			"settings": {
-				"foreground": "#fb6467"
-			}
-		},
+    // START HERE
 		{
-			"name": "Interpolation Operators",
+			"name": "Operators (Interpolators)",
 			"scope": [
 				"meta.string-contents.quoted.double punctuation.definition.variable",
 				"punctuation.definition.interpolation.begin",
