@@ -60,8 +60,8 @@ public class Person
 
     public virtual void GetInfo()
     {
-        Console.WriteLine("Name: {0}", name);
-        Console.WriteLine("SSN: {0}", ssn);
+        Console.WriteLine($"Name: {0}", name);
+        Console.WriteLine($"SSN: {0}", ssn);
     }
 }
 class Employee : Person
@@ -95,5 +95,17 @@ public class Employee
         // instead of the constructor parameters.
         this.name = name;
         this.alias = alias;
+    }
+}
+
+string filename1 = @"c:\documents\files\u0066.txt";
+
+struct Point
+{
+    public int x, y;
+    public Point(int x, int y) 
+    {
+        this.x = x;
+        this.y = y;
     }
 }

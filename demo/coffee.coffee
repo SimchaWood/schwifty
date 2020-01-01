@@ -45,3 +45,5 @@ tom = new Horse "Tommy the Palomino"
 
 sam.move()
 tom.move()
+
+coffee> { name: name, age: age } = user

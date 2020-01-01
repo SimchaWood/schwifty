@@ -553,6 +553,19 @@
 			}
     },
     {
+			"name": "Comments (Punctuation)",
+			"scope": [
+				"punctuation.definition.comment",
+				"string.quoted.docstring.multi.python punctuation.definition.string.begin",
+				"string.quoted.docstring.multi.python punctuation.definition.string.end",
+				"string.quoted.docstring.multi.python constant.character.escape"
+			],
+			"settings": {
+        "fontStyle": "bold",
+				"foreground": "#009db4"
+			}
+    },
+    {
 			"name": "Constants",
 			"scope": [
         "constant",
@@ -632,9 +645,11 @@
         "keyword.interface.go",
         "keyword.map.go",
         "keyword.other.class.cs",
+        "keyword.other.interface.cs",
         "keyword.other.namespace",
+        "keyword.other.struct",
         "keyword.struct.go",
-        "keyword.type.go",
+        "keyword.type",
         "keyword.var.go",
         "meta.class.identifier storage.modifier",
         "meta.method.declaration meta.var.expr storage.type",
@@ -797,7 +812,7 @@
     {
 			"name": "JSDoc-Style Keywords",
 			"scope": [
-				"comment keyword.codetag.notation",
+				"keyword.codetag.notation", // TODO: Move
         "comment.block.documentation keyword",
         "comment.block.documentation entity.name.type punctuation.definition.bracket",
         "comment.block.documentation storage.type.class",
@@ -1006,9 +1021,28 @@
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#b7e4f9"
+				"foreground": "#b7e4f9" // TODO
 			}
     },
+    {
+			"name": "Operators (Interpolators)",
+			"scope": [
+        "keyword.other.template.begin.env",
+        "keyword.other.template.end.env",
+				"punctuation.definition.interpolation.begin",
+        "punctuation.definition.interpolation.end",
+				"punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "punctuation.definition.variable.makefile",
+        "punctuation.definition.variable.shell",
+				"punctuation.section.embedded",
+				"punctuation.section.embedded.end source",
+        "support.function.interpolation"
+			],
+			"settings": {
+				"foreground": "#fb6467"
+			}
+		},
     {
 			"name": "Operators (Separators)",
 			"scope": [
@@ -1040,7 +1074,7 @@
 			}
 		},
     {
-			"name": "Property Names, Object/Hash Keys",
+			"name": "Property Names & Object/Hash Keys",
 			"scope": [
         "constant.language.symbol.hashkey.ruby",
 				"constant.other.symbol.hashkey.ruby",
@@ -1051,6 +1085,7 @@
         "meta.object-literal.key.js punctuation.definition.string.begin",
         "meta.object-literal.key.js punctuation.definition.string.end",
         "meta.object-literal.key.js string",
+        "meta.variable.assignment.destructured.object.coffee variable",
         "punctuation.support.type.property-name.begin",
 				"punctuation.support.type.property-name.end",
         "support.type.property-name.json",
@@ -1197,6 +1232,20 @@
 			}
     },
     {
+			"name": "Shebang Directives & Haskell Pragmas",
+			"scope": [
+        "comment.line.hashbang",
+        "comment.line.hashbang punctuation.definition.comment",
+				"comment.line.shebang",
+        "comment.line.shebang punctuation.definition.comment",
+        "meta.preprocessor.haskell"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#009db4"
+			}
+		},
+    {
 			"name": "This, Self, Etc.",
 			"scope": [
         "keyword.other.base.cs",
@@ -1209,7 +1258,38 @@
 				"foreground": "#ff6cee", // TODO
 				"fontStyle": "italic"
 			}
-		},
+    },
+    {
+			"name": "Types",
+			"scope": [
+        "entity.name.type",
+        "entity.name.type.type-parameter",
+        "entity.other.attribute-name.pseudo-class", // TODO: Move
+        "entity.other.attribute-name.pseudo-element", // TODO: Move
+        "entity.scalar.graphql",
+        "meta.protocol-list.objc",
+        "meta.return-type.objc",
+        "meta.scope.implementation storage.type.objc",
+        "meta.implementation meta.scope.interface storage.type.objc",
+        "source.go storage.type",
+        "source.java storage.type",
+        "storage.class.std.rust",
+        "storage.type.core.rust",
+        "storage.type.cs",
+        "storage.type.elm",
+        "storage.type.generic",
+        "storage.type.groovy",
+        "storage.type.objc",
+        "storage.type.php",
+        "storage.type.haskell",
+        "storage.type.ocaml",
+        "support.type.graphql"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#69c8ec"
+			}
+    },
     // !! SAVE FOR LATER !!
 		{
 			"name": "Language Built-Ins",
@@ -1248,25 +1328,6 @@
     },
     // START HERE
 		{
-			"name": "Operators (Interpolators)",
-			"scope": [
-				"meta.string-contents.quoted.double punctuation.definition.variable",
-				"punctuation.definition.interpolation.begin",
-				"punctuation.definition.interpolation.end",
-				"punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
-        "punctuation.definition.variable.shell",
-				"punctuation.section.embedded",
-				"punctuation.section.embedded.end source.php",
-        "punctuation.section.embedded.end source.ruby",
-        "punctuation.definition.variable.makefile",
-        "support.function.interpolation" // DONE
-			],
-			"settings": {
-				"foreground": "#fb6467"
-			}
-		},
-		{
 			"name": "YAML Anchors & Aliases",
 			"scope": [
         "entity.name.type.anchor",
@@ -1302,41 +1363,6 @@
 			}
     },
     {
-			"name": "Types",
-			"scope": [
-        "entity.name.type",
-        "entity.name.type.cpp",
-        "entity.name.type.type-parameter",
-        "entity.other.attribute-name.pseudo-class",
-        "entity.other.attribute-name.pseudo-element",
-        "entity.scalar.graphql",
-        "keyword.primitive-datatypes.swift",
-        "meta.indexer.mappedtype.declaration entity.name.type",
-        "meta.protocol-list.objc",
-        "meta.return-type.objc",
-        "meta.type.parameters entity.name.type",
-        "meta.variable.assignment.destructured.object.coffee variable",
-        "source.go storage.type",
-				"source.java storage.type",
-        "storage.class.std.rust",
-				"storage.type.attribute.swift",
-				"storage.type.c",
-				"storage.type.core.rust",
-        "storage.type.cs",
-        "storage.type.generic",
-        "storage.type.groovy",
-				"storage.type.objc",
-				"storage.type.php",
-				"storage.type.haskell",
-        "storage.type.ocaml",
-        "support.type.graphql"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#a6eee6"
-			}
-    },
-    {
       "name": "Types (C++ Templates)",
       "scope": "entity.name.type.template.cpp",
       "settings": {
@@ -1349,28 +1375,17 @@
 			"scope": [
         "keyword.control.inheritance.coffee", // DONE
         "keyword.other.declaration-specifier.accessibility.swift", // DONE
+        "keyword.type-alias.elm", // DONE
         "storage.modifier",
         "storage.type.modifier"
       ],
 			"settings": {
         "fontStyle": "italic bold",
-				"foreground": "#69c8ec"
+				"foreground": "#69c8ec" // TODO: Also used by "Types"
 			}
 		},
 		{
-			"name": "Comments (Punctuation)",
-			"scope": [
-				"punctuation.definition.comment",
-				"string.quoted.docstring.multi.python punctuation.definition.string.begin",
-				"string.quoted.docstring.multi.python punctuation.definition.string.end",
-				"string.quoted.docstring.multi.python constant.character.escape"
-			],
-			"settings": {
-        "fontStyle": "bold",
-				"foreground": "#009db4"
-			}
-    },
-		{
+      // TODO: Add support for general `punctuation.definition.variable`
 			"name": "Variables",
 			"scope": [
         "constant.other.key.perl",
@@ -1430,26 +1445,7 @@
 				"foreground": "#b7e4f9"
 			}
     },
-    {
-			"name": "Shebang Directive",
-			"scope": [
-        "comment.line.hashbang",
-        "comment.line.hashbang punctuation.definition.comment",
-				"comment.line.shebang",
-				"comment.line.shebang punctuation.definition.comment"
-			],
-			"settings": {
-				"foreground": "#9f8e72",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"name": "Haskell Pragmas",
-			"scope": "meta.preprocessor.haskell",
-			"settings": {
-				"foreground": "#00a8bf"
-			}
-		},
+
 		{
 			"name": "JSDoc Tags",
 			"scope": "punctuation.definition.block.tag.jsdoc",
@@ -1460,6 +1456,7 @@
     {
 			"name": "Strings",
 			"scope": [
+        // TODO: Provide support for pug's `string.comment.buffered`
         "meta.attribute-selector",
 				"punctuation.definition.string.begin",
         "punctuation.definition.string.end",

@@ -218,6 +218,15 @@ class LoggerWrapper {
   }
 }
 
+async function makeMeWait() {
+  const retVal = await setTimeout(() => {
+    return 42;
+  }, 1000);
+
+  return retVal;
+}
+
 const logger = new LoggerWrapper(loggerConfig);
 
 module.exports = logger;
+module.exports.makeMeWait = makeMeWait;

@@ -19,7 +19,7 @@ module ExampleModule
     private
 
     def other_method(*args)
-      puts 'doing other stuff #{42}'
+      puts "doing other stuff #{42}"
     end
 
     def self.private

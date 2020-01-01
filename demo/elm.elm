@@ -31,7 +31,7 @@ import Viewer exposing (Viewer)
 -- Avoid putting things in this module unless there is no alternative!
 -- See https://discourse.elm-lang.org/t/elm-spa-in-0-19/1800/2 for more.
 
-type Model
+type alias Model
     = Redirect Session
     | NotFound Session
     | Home Home.Model

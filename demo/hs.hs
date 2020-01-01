@@ -23,3 +23,4 @@ length "Dorne" -- 5
 ("Hello", True, 2)
 fst (6, "Six") -- 6
 snd (6, "Six") -- "Six" 
+data Maybe a = Just a | Nothing

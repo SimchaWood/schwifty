@@ -35,5 +35,5 @@ class SomeClass:
         
     @classmethod
     def class_method(cls):
-        """This is a docstring \n"""
+        """This is TODO a docstring \n"""
         print("the class method was called")

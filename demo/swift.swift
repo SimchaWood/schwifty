@@ -92,6 +92,7 @@ public struct Sample {
   public static func readFile(file: String) throws -> String  {
     let fh = NSFileHandle(forReadingAtPath: file)
     let data = fh!.readDataToEndOfFile()
+    let str = "\(fh) foobar"
     return NSString(data: data, encoding: NSUTF8StringEncoding) as! String
   }
   

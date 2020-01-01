@@ -86,6 +86,10 @@ declare namespace winston {
     exceptionHandlers?: any;
   }
 
+  type Readonly<T> = {
+    readonly [P in keyof T]: T[P];
+}
+
   interface Logger extends NodeJSStream.Transform {
     silent: boolean;
     format: logform.Format;
