@@ -1,3 +1,7 @@
+#######
+Heading
+#######
+
 Paragraphs contain text and may contain inline markup:
 
 *emphasis*, **strong emphasis**, `interpreted text`, ``inline
