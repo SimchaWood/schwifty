@@ -494,7 +494,9 @@
         "punctuation.definition.attribute-selector.end.bracket.square",
 				"punctuation.definition.attribute-selector.begin.bracket.square",
 				"punctuation.definition.entity.begin",
-				"punctuation.definition.entity.end",
+        "punctuation.definition.entity.end",
+        "punctuation.definition.string.begin.yaml",
+        "punctuation.definition.string.end.yaml",
 				"punctuation.definition.type.begin",
         "punctuation.definition.type.end",
         "punctuation.section.embedded.begin.tsx",
@@ -504,6 +506,7 @@
 				"punctuation.section.scope.begin",
         "punctuation.section.scope.end",
         "punctuation.separator.list.comma.css",
+        "source.yaml string",
 				"string.template meta.brace",
 				"string.template punctuation.accessor"
 			],
@@ -513,7 +516,12 @@
     },
     {
       "name": "Brackets, Braces, & Other Punctuation (Edge Cases)",
-      "scope": "constant.language.empty-list.haskell",
+      "scope": [
+        "constant.language.empty-list.haskell",
+        "punctuation.definition.sequence.begin.yaml",
+        "punctuation.definition.sequence.end.yaml",
+        "storage.modifier.array.bracket.square.objc"
+      ],
       "settings": {
         "fontStyle": "",
         "foreground": "#fdd9a2"
@@ -656,6 +664,7 @@
         "storage",
         "storage.modifier.shell",
         "storage.type.def",
+        "storage.modifier.perl",
         "storage.type.primitive"
 			],
 			"settings": {
@@ -1046,6 +1055,7 @@
     {
 			"name": "Operators (Separators)",
 			"scope": [
+        "meta.block-mapping.yaml",
         "meta.object-binding-pattern-variable punctuation.destructuring",
         "punctuation.assignment.graphql",
         "punctuation.colon.graphql",
@@ -1290,6 +1300,16 @@
 				"foreground": "#69c8ec"
 			}
     },
+    {
+      "name": "YAML Anchors & Aliases (Punctuation)",
+      "scope": [
+        "punctuation.definition.anchor",
+        "punctuation.definition.alias"
+      ],
+      "settings": {
+        "foreground": "#fb6467"
+      }
+    },
     // !! SAVE FOR LATER !!
 		{
 			"name": "Language Built-Ins",
@@ -1326,7 +1346,7 @@
         "foreground": "#a6eee6"
       }
     },
-    // START HERE
+    // START BELOW & CONTINUE HERE
 		{
 			"name": "YAML Anchors & Aliases",
 			"scope": [
@@ -1337,16 +1357,6 @@
 				"fontStyle": "italic",
 				"foreground": "#6187ff" // TODO
 			}
-    },
-    {
-      "name": "YAML Anchors & Aliases (Punctuation)",
-      "scope": [
-        "punctuation.definition.anchor",
-        "punctuation.definition.alias"
-      ],
-      "settings": {
-        "foreground": "#b7e4f9" // TODO
-      }
     },
     {
       // TODO: Add highlighting for @ directives
@@ -1373,15 +1383,18 @@
     {
       "name": "Storage Modifiers",
 			"scope": [
+        // TODO: Add support for css `storage.modifier.ignore-case`
+        // TODO: Add support for lua `storage.modifier.local`
         "keyword.control.inheritance.coffee", // DONE
         "keyword.other.declaration-specifier.accessibility.swift", // DONE
         "keyword.type-alias.elm", // DONE
         "storage.modifier",
+        // !! START HERE !!
         "storage.type.modifier"
       ],
 			"settings": {
         "fontStyle": "italic bold",
-				"foreground": "#69c8ec" // TODO: Also used by "Types"
+				"foreground": "#db5dcc"
 			}
 		},
 		{

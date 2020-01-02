@@ -23,7 +23,7 @@ io.write("factorial of 10 is ", factorial(10), "\n")
 -- and its tail recursive variant
 fact = function (n)
 local f
-f = function (m,a)
+f = local function (m,a)
     if m == 0 then return a end -- if
     return f(m-1,m*a) end -- function
 return f(n,1) end -- function

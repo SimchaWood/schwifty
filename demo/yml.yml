@@ -1,3 +1,7 @@
+%TAG ! tag:clarkevans.com,2002:
+!<tag:clarkevans.com,2002:invoice>
+---
+# Comment
 language: node_js
 node_js:
   - "6"
@@ -8,6 +12,7 @@ script:
 after_script:
   - npm run coveralls
 date: 2001-12-15T02:59:43.1Z
+not-date: !!str 2002-04-28
 notifications:
   email:
     on_success: never
@@ -23,3 +28,45 @@ data: |
 more_data: >+
   This is some
   folded text.
+martin: {name: Martin D'vloper, job: Developer, skill: Elite}
+['Apple', 'Orange', 'Strawberry', 'Mango']
+create_key: yes
+needs_agent: no
+knows_oop: True
+likes_emacs: TRUE
+uses_cvs: false
+? - Detroit Tigers
+  - Chicago cubs
+:
+  - 2001-07-23
+
+? [ New York Yankees,
+    Atlanta Braves ]
+: [ 2001-07-02, 2001-08-12,
+    2001-08-14 ]
+canonical: 1.23015e+3
+exponential: 12.3015e+02
+fixed: 1230.15
+negative infinity: -.inf
+not a number: .NaN
+--- !!set {
+? Mark McGwire
+? Sammy Sosa
+? Ken Griff
+}
+--- !!omap
+- Mark McGwire: 65
+- Sammy Sosa: 63
+- Ken Griffy: 58
+%YAML 1.2
+---
+!!map {
+  ? !!str "sequence"
+  : !!seq [ !!str "one", !!str "two" ],
+  ? !!str "mapping"
+  : !!map {
+    ? !!str "sky" : !!str "blue",
+    ? !!str "sea" : !!str "green",
+  },
+}
+...

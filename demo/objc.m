@@ -38,6 +38,7 @@
  
 @property NSString *firstName;
 @property NSString *lastName;
+@property NSString[] *nickNames;
 @property int foobar;
 @property (weak) id <XYZPieChartViewDataSource> dataSource;
 
