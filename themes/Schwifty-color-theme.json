@@ -601,14 +601,18 @@
       }
     },
     {
-			"name": "CSS Pseudo-Class/Element Punctuation & Parent Selectors",
+			"name": "CSS Assorted Selectors",
 			"scope": [
         "entity.name.tag.reference.scss",
         "entity.other.attribute-name.parent-selector",
-        "entity.other.attribute-name.placeholder punctuation"
+        "entity.other.attribute-name.placeholder punctuation",
+        "entity.other.attribute-name.pseudo-class punctuation.definition.entity.css",
+        "entity.other.attribute-name.pseudo-element punctuation.definition.entity.css",
+        "storage.modifier.ignore-case.css"
 			],
 			"settings": {
-				"foreground": "#e762d7" // TODO
+        "fontStyle": "",
+				"foreground": "#fb6467"
 			}
     },
     {
@@ -641,11 +645,11 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#e762d7" // TODO
+        "foreground": "#7ba543"
       }
     },
     {
-			"name": "Data Types",
+			"name": "Data Types and Storage",
 			"scope": [
         "keyword.channel.go",
         "keyword.const.go",
@@ -664,6 +668,7 @@
         "storage",
         "storage.modifier.shell",
         "storage.type.def",
+        "storage.type.function.arrow.js",
         "storage.modifier.perl",
         "storage.type.primitive"
 			],
@@ -1254,7 +1259,28 @@
 				"fontStyle": "bold",
 				"foreground": "#009db4"
 			}
-		},
+    },
+    {
+      "name": "Storage Modifiers",
+			"scope": [
+        "keyword.control.inheritance.coffee",
+        "keyword.other.declaration-specifier.accessibility.swift",
+        "keyword.type-alias.elm",
+        "storage.modifier",
+        "storage.type.modifier"
+      ],
+			"settings": {
+        "fontStyle": "italic bold",
+				"foreground": "#db5dcc"
+			}
+    },
+    {
+      "name": "Storage Modifiers (Lua)",
+      "scope": "storage.modifier.local.lua",
+      "settings": {
+        "fontStyle": ""
+      }
+    },
     {
 			"name": "This, Self, Etc.",
 			"scope": [
@@ -1380,23 +1406,6 @@
         "foreground": "#a6eee6"
       }
     },
-    {
-      "name": "Storage Modifiers",
-			"scope": [
-        // TODO: Add support for css `storage.modifier.ignore-case`
-        // TODO: Add support for lua `storage.modifier.local`
-        "keyword.control.inheritance.coffee", // DONE
-        "keyword.other.declaration-specifier.accessibility.swift", // DONE
-        "keyword.type-alias.elm", // DONE
-        "storage.modifier",
-        // !! START HERE !!
-        "storage.type.modifier"
-      ],
-			"settings": {
-        "fontStyle": "italic bold",
-				"foreground": "#db5dcc"
-			}
-		},
 		{
       // TODO: Add support for general `punctuation.definition.variable`
 			"name": "Variables",
