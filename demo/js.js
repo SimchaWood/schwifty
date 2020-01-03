@@ -74,6 +74,8 @@ switch (2) {
 
 class Foo {}
 
+const foo = new Foo.Thing();
+
 class EditFishForm extends Component {
   // static propTypes = {
   //   updateFish: PropTypes.func,
@@ -87,18 +89,24 @@ class EditFishForm extends Component {
 }
 const str = `The price for this widget is ${sale.getPrice('widget')}`;
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z13579_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
-const text = "foobar";
+const text = 'foobar';
 const { foo: bar } = require('stuff');
 
+const arr = [1, 'baz', str];
 const obj = {
   foobar: 'baz',
   'foo-bar': 'baz',
 };
 
+if (typeof obj.foobar === 'string') {
+  obj.foobar += arr[1];
+}
+obj['foo-bar'] = arr.length;
+
 console.log(rx, text, bar);
 
 const pi = Math.PI;
-// const str = JSON.stringify()
+const str2 = JSON.stringify(str);
 
 const { find: _find, forEach, isUndefined } = require('lodash');
 const winston = require('winston');

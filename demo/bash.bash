@@ -48,7 +48,7 @@ ted () {
 foo () {
   for ((f=0; f<=5; f++))
   do
-    echo "$f"
+    echo "Foo = $f"
   done
 }
 

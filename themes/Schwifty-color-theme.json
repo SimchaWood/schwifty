@@ -419,12 +419,6 @@
 			}
     },
     {
-			"scope": "entity.name.filename",
-			"settings": {
-				"foreground": "#fafd7c"
-			}
-    },
-    {
 			"scope": "header",
 			"settings": {
 				"foreground": "#00afc8"
@@ -448,13 +442,13 @@
 			"scope": "markup.bold",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#fafd7c"
+				"foreground": "#fafd7c" // TODO
 			}
     },
     {
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#fafd7c",
+				"foreground": "#fafd7c", // TODO
 				"fontStyle": "italic"
 			}
     },
@@ -486,9 +480,9 @@
 				"keyword.other.statement-separator.powershell",
 				"meta.brace.round",
         "meta.function-call punctuation",
-        "meta.scope.for-loop.shell punctuation.definition.string.begin",
-				"meta.scope.for-loop.shell punctuation.definition.string.end",
-				"meta.scope.for-loop.shell string",
+        "string.other.math.shell punctuation.definition.string.begin",
+				"string.other.math.shell punctuation.definition.string.end",
+				"string.other.math.shell",
 				"punctuation.definition.arguments.begin",
         "punctuation.definition.arguments.end",
         "punctuation.definition.attribute-selector.end.bracket.square",
@@ -511,7 +505,7 @@
 				"string.template punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#fdd9a2"
+				"foreground": "#b7e4f9"
 			}
     },
     {
@@ -524,27 +518,8 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#fdd9a2"
+        "foreground": "#b7e4f9"
       }
-    },
-    {
-			"name": "Class Name Declarations",
-			"scope": [
-				"entity.name.type.class",
-				"entity.name.class"
-			],
-			"settings": {
-				"fontStyle": "underline",
-				"foreground": "#8bcf21"
-			}
-    },
-    {
-			"name": "Class Names",
-			"scope": "entity.other.inherited-class",
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#8bcf21"
-			}
     },
     {
 			"name": "Comments",
@@ -557,7 +532,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#008ca0"
+				"foreground": "#917c5d"
 			}
     },
     {
@@ -570,7 +545,7 @@
 			],
 			"settings": {
         "fontStyle": "bold",
-				"foreground": "#009db4"
+				"foreground": "#9f8866"
 			}
     },
     {
@@ -582,7 +557,7 @@
       ],
 			"settings": {
         "fontStyle": "bold",
-				"foreground": "#38b03a"
+				"foreground": "#fae48b"
 			}
     },
     {
@@ -644,38 +619,9 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "#7ba543"
+        "fontStyle": "italic bold",
+        "foreground": "#c8b66f"
       }
-    },
-    {
-			"name": "Data Types and Storage",
-			"scope": [
-        "keyword.channel.go",
-        "keyword.const.go",
-        "keyword.function.go",
-        "keyword.interface.go",
-        "keyword.map.go",
-        "keyword.other.class.cs",
-        "keyword.other.interface.cs",
-        "keyword.other.namespace",
-        "keyword.other.struct",
-        "keyword.struct.go",
-        "keyword.type",
-        "keyword.var.go",
-        "meta.class.identifier storage.modifier",
-        "meta.method.declaration meta.var.expr storage.type",
-        "storage",
-        "storage.modifier.shell",
-        "storage.type.def",
-        "storage.type.function.arrow.js",
-        "storage.modifier.perl",
-        "storage.type.primitive"
-			],
-			"settings": {
-				"fontStyle": "bold italic",
-				"foreground": "#6187ff"
-			}
     },
     {
 			"name": "Debugger Directive",
@@ -769,7 +715,6 @@
 				"meta.function-call.static",
 				"meta.method-call.java meta.method",
         "meta.method.groovy",
-        "new.expr entity.name.type",
 				"support.function.any-method.lua"
 			],
 			"settings": {
@@ -793,7 +738,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#e89242"
+				"foreground": "#e762d7"
 			}
     },
     {
@@ -820,7 +765,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b7e4f9"
+        "foreground": "#b7e4f9" // TODO
       }
     },
     {
@@ -891,13 +836,35 @@
 			}
     },
     {
+			"name": "Language Built-Ins (Constants)",
+			"scope": [
+        "support.constant",
+				"variable.other.predefined"
+			],
+			"settings": {
+        "fontStyle": "italic",
+				"foreground": "#fae48b"
+			}
+    },
+    {
+      "name": "Language Built-Ins (Functions)",
+      "scope": [
+        "support.function",
+        "support.function.magic",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#8bcf21"
+      }
+    },
+    {
       "name": "Logs",
       "scope": [
         "text.log",
         "text.log emphasis"
       ],
       "settings": {
-        "foreground": "#fdd9a2"
+        "foreground": "#b7e4f9" // TODO
       }
     },
     {
@@ -1030,12 +997,13 @@
 			"scope": [
         "meta.function.method.with-arguments.ruby",
         "meta.function.method.with-arguments.ruby variable.other",
+        "support.variable.property",
 				"variable.other.object.property",
 				"variable.other.constant.object.property"
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#b7e4f9" // TODO
+				"foreground": "#e89242"
 			}
     },
     {
@@ -1110,7 +1078,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#b7e4f9"
+				"foreground": "#e89242"
 			}
     },
     {
@@ -1237,16 +1205,6 @@
 			}
     },
     {
-      "name": "Text",
-			"scope": [
-        "source",
-        "text"
-      ],
-			"settings": {
-				"foreground": "#fdd9a2"
-			}
-    },
-    {
 			"name": "Shebang Directives & Haskell Pragmas",
 			"scope": [
         "comment.line.hashbang",
@@ -1259,6 +1217,43 @@
 				"fontStyle": "bold",
 				"foreground": "#009db4"
 			}
+    },
+    {
+			"name": "Storage/Data Types",
+			"scope": [
+        "keyword.channel.go",
+        "keyword.const.go",
+        "keyword.declaration.dart",
+        "keyword.function.go",
+        "keyword.interface.go",
+        "keyword.map.go",
+        "keyword.other.class.cs",
+        "keyword.other.interface.cs",
+        "keyword.other.namespace",
+        "keyword.other.struct",
+        "keyword.struct.go",
+        "keyword.type",
+        "keyword.var.go",
+        "meta.class.identifier storage.modifier",
+        "meta.method.declaration meta.var.expr storage.type",
+        "storage",
+        "storage.modifier.shell",
+        "storage.type.def",
+        "storage.type.function.arrow.js",
+        "storage.modifier.perl",
+        "storage.type.primitive"
+			],
+			"settings": {
+				"fontStyle": "bold italic",
+				"foreground": "#6187ff"
+			}
+    },
+    {
+      "name": "Storage (JS/TS Constructors)",
+      "scope": "meta.method.declaration storage.type",
+      "settings": {
+        "fontStyle": "italic"
+      }
     },
     {
       "name": "Storage Modifiers",
@@ -1282,6 +1277,16 @@
       }
     },
     {
+      "name": "Text",
+			"scope": [
+        "source",
+        "text"
+      ],
+			"settings": {
+				"foreground": "#b7e4f9"
+			}
+    },
+    {
 			"name": "This, Self, Etc.",
 			"scope": [
         "keyword.other.base.cs",
@@ -1291,7 +1296,7 @@
 				"variable.parameter.function.language.special"
 			],
 			"settings": {
-				"foreground": "#ff6cee", // TODO
+				"foreground": "#fafd7c",
 				"fontStyle": "italic"
 			}
     },
@@ -1302,6 +1307,7 @@
         "entity.name.type.type-parameter",
         "entity.other.attribute-name.pseudo-class", // TODO: Move
         "entity.other.attribute-name.pseudo-element", // TODO: Move
+        "entity.other.inherited-class",
         "entity.scalar.graphql",
         "meta.protocol-list.objc",
         "meta.return-type.objc",
@@ -1327,6 +1333,13 @@
 			}
     },
     {
+      "name": "Types (Class Declarations)",
+      "scope": "entity.name.type.class",
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
       "name": "YAML Anchors & Aliases (Punctuation)",
       "scope": [
         "punctuation.definition.anchor",
@@ -1348,29 +1361,6 @@
 				"fontStyle": "italic",
 				"foreground": "#a6eee6"
 			}
-    },
-    {
-			"name": "Language Built-Ins (Constants)",
-			"scope": [
-        "support.constant",
-				"variable.other.predefined"
-			],
-			"settings": {
-        "fontStyle": "italic",
-				"foreground": "#bf51b2"
-			}
-    },
-    {
-      "name": "Language Built-Ins (Functions)",
-      "scope": [
-        "meta.method.declaration storage.type",
-        "support.function",
-        "support.function.magic",
-      ],
-      "settings": {
-        "fontStyle": "",
-        "foreground": "#a6eee6"
-      }
     },
     // START BELOW & CONTINUE HERE
 		{
@@ -1419,18 +1409,15 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#fdd9a2"
+				"foreground": "#b7e4f9" // TODO
 			}
     },
     {
       "name": "Variables (Edge Cases)",
-      "scope": [
-        "new.expr entity.name.type.module",
-        "storage.modifier.import"
-      ],
+      "scope": "storage.modifier.import",
       "settings": {
         "fontStyle": "",
-        "foreground": "#fdd9a2"
+        "foreground": "#b7e4f9" // TODO
       }
     },
 		{
@@ -1440,7 +1427,7 @@
         "variable.fragment.graphql"
       ],
 			"settings": {
-				"foreground": "#fdd9a2"
+				"foreground": "#b7e4f9" // TODO
 			}
     },
     {
@@ -1450,7 +1437,7 @@
         "string.unquoted.alias.graphql"
       ],
       "settings": {
-        "foreground": "#fafd7c"
+        "foreground": "#fafd7c" // TODO
       }
     },
 		{
@@ -1464,10 +1451,9 @@
 			"name": "Makefile Prerequisite Files",
 			"scope": "meta.scope.prerequisites.makefile",
 			"settings": {
-				"foreground": "#b7e4f9"
+				"foreground": "#b7e4f9" // TODO
 			}
     },
-
 		{
 			"name": "JSDoc Tags",
 			"scope": "punctuation.definition.block.tag.jsdoc",
@@ -1488,7 +1474,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#a6eee6"
+				"foreground": "#fdd9a2"
 			}
 		},
 		{
@@ -1511,30 +1497,6 @@
 			"settings": {
         "fontStyle": "bold",
 				"foreground": "#00a8bf",
-			}
-		},
-		{
-			"scope": "token.info-token",
-			"settings": {
-				"foreground": "#69c8ec"
-			}
-		},
-		{
-			"scope": "token.warn-token",
-			"settings": {
-				"foreground": "#fafd7c"
-			}
-		},
-		{
-			"scope": "token.error-token",
-			"settings": {
-				"foreground": "#ff6669"
-			}
-		},
-		{
-			"scope": "token.debug-token",
-			"settings": {
-				"foreground": "#bf51b2"
 			}
 		}
 	]

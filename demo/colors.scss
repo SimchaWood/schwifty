@@ -2,8 +2,8 @@ $schlogoblue100: #00afc8; // [md headers, md links] (cursor, codelens)
 
 $schlogoblue125: #00dafa; // [diff header]
 
-$schlogoblue-90: #009db4; // [comment punctuation]
-$schlogoblue-80: #008ca0; // [comments]
+$schlogoblue-90: #009db4; //
+$schlogoblue-80: #008ca0; //
 $schlogoblue-75: #008396;
 $schlogoblue-70: #007a8c;
 $schlogoblue-60: #006978; // (buttons)
@@ -58,19 +58,19 @@ $schwibrown190: #f78a39;
 $schwibrown195: #fd8e3a;
 
 
-$schwigray100: #917c5d;
+$schwigray100: #917c5d; // [comments]
 
-$schwigray110: #9f8866; // (git untracked)
+$schwigray110: #9f8866; // [comment punctuation] (git untracked)
 $schwigray120: #ae946f;
 $schwigray125: #b59b74;
 $schwigray130: #bca178;
-$schwigray150: #d9ba8b;
-$schwigray175: #fdd9a2; // [source](input)
+$schwigray150: #d9ba8b; //
+$schwigray175: #fdd9a2; // (input)
 
 
 $schwellow100: #fae48b; // [regex text]
 
-$schwellow-80: #c8b66f;
+$schwellow-80: #c8b66f; // [units]
 $schwellow-75: #bbab68; // (breadbrumb vars)
 $schwellow-70: #af9f61;
 
@@ -103,14 +103,14 @@ $schwigreener-50: #174918;
 $schwigreener-25: #0b240c;
 
 
-$schwigreenest100: #8bcf21; // [classes, methods] (debug start/restart)
+$schwigreenest100: #8bcf21; // [functions, methods] (debug start/restart)
 
 $schwigreenest120: #a6f83a; //V4
 
 $schwigreenest-80: #6fa51a; //V4 (gutter/overview green)
 
 
-$schwiblue100: #b7e4f9; //V4 (active title text, menu active text, icons)
+$schwiblue100: #b7e4f9; // [source] (active title text, menu active text, icons)
 
 $schwiblue-90: #a4cde0; //V4 (active activity, remote badge text)
 $schwiblue-85: #9bc1d3; //V4 (default text, title text, active line #)
@@ -179,7 +179,7 @@ $schwindigo-30: #0a0f1c; //V4
 $schwindigo-20: #070a13; //V4
 
 
-$schwink100: #e762d7; //V4
+$schwink100: #e762d7; // [parameters]
 
 $schwink110: #fe6bec;
 
