@@ -5,6 +5,7 @@ import re
 rx = re.compile(r"^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z0-9_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$")
 
 # TODO: Do some stuff.
+@topo_decorator
 def topo(G, ind=None, Q=[1]):
     if ind == None:
         ind = [0] * (len(G) + 1)  # this is a comment

@@ -65,17 +65,17 @@ $schwigray120: #ae946f;
 $schwigray125: #b59b74;
 $schwigray130: #bca178;
 $schwigray150: #d9ba8b; //
-$schwigray175: #fdd9a2; // (input)
+$schwigray175: #fdd9a2; // [strings, markup bold/italic] (input)
 
 
-$schwellow100: #fae48b; // [regex text]
+$schwellow100: #fae48b; // [constants, regex text]
 
 $schwellow-80: #c8b66f; // [units]
 $schwellow-75: #bbab68; // (breadbrumb vars)
 $schwellow-70: #af9f61;
 
 
-$schwellower100: #fafd7c; // [strings, quotes] (warnings)
+$schwellower100: #fafd7c; // [parameters, quotes] (warnings)
 
 $schwellower-80: #c8ca63;
 $schwellower-50: #7d7e3e;
@@ -94,7 +94,7 @@ $schwigreen230: #bcfd67;
 $schwigreener100: #2f9331;
 
 $schwigreener110: #33a135;
-$schwigreener120: #38b03a; // [constants]
+$schwigreener120: #38b03a; //
 $schwigreener140: #41cd44; // [regex lookahead]
 $schwigreener170: #4ff953;
 
@@ -143,7 +143,7 @@ $schwibluer-25: #1a323b; //V4
 $schwibluer-20: #15282f; //V4 
 
 
-$schwibleh100: #a6eee6; //
+$schwibleh100: #a6eee6; // [storage/type modifiers]
 
 $schwibleh105: #aef9f1; //
 
@@ -179,11 +179,11 @@ $schwindigo-30: #0a0f1c; //V4
 $schwindigo-20: #070a13; //V4
 
 
-$schwink100: #e762d7; // [parameters]
+$schwink100: #e762d7; // [storage/access modifiers, at-rule punctuation]
 
 $schwink110: #fe6bec;
 
-$schwink-95: #db5dcc; // [storage/access modifiers]
+$schwink-95: #db5dcc; // 
 $schwink-90: #cf58c1; // [diff files, md separator]
 $schwink-80: #b84eac; // [string/regex escapes](progress bar)
 $schwink-55: #7f3576; //

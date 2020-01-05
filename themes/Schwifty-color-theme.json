@@ -442,13 +442,13 @@
 			"scope": "markup.bold",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#fafd7c" // TODO
+				"foreground": "#fdd9a2"
 			}
     },
     {
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#fafd7c", // TODO
+				"foreground": "#fdd9a2",
 				"fontStyle": "italic"
 			}
     },
@@ -565,7 +565,7 @@
       "scope": "punctuation.definition.keyword",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#bf51b2" // TODO
+        "foreground": "#e762d7"
       }
     },
     {
@@ -642,8 +642,8 @@
         "meta.function.decorator support.type"
 			],
 			"settings": {
-				"foreground": "#69c8ec", // TODO
-				"fontStyle": "italic"
+        "fontStyle": "italic",
+				"foreground": "#69c8ec"
 			}
     },
     {
@@ -653,7 +653,8 @@
         "meta.function.decorator punctuation.definition.decorator"
 			],
 			"settings": {
-        "foreground": "#6187ff" // TODO
+        "fontStyle": "italic",
+        "foreground": "#fb6467"
 			}
     },
 		{
@@ -738,7 +739,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#e762d7"
+				"foreground": "#fafd7c"
 			}
     },
     {
@@ -765,7 +766,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b7e4f9" // TODO
+        "foreground": "#e89242"
       }
     },
     {
@@ -833,6 +834,18 @@
 			],
 			"settings": {
 				"fontStyle": "italic"
+			}
+    },
+    {
+			"name": "Language Built-Ins",
+			"scope": [
+        "support",
+        "support.type.builtin",
+        "support.variable",
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#a6eee6"
 			}
     },
     {
@@ -907,7 +920,7 @@
 				"markup.quote"
 			],
 			"settings": {
-				"foreground": "#fafd7c", // TODO
+				"foreground": "#fdd9a2",
 			}
     },
     {
@@ -930,7 +943,7 @@
         "markup.italic.restructuredtext"
       ],
       "settings": {
-        "foreground": "#fafd7c" // TODO
+        "foreground": "#fdd9a2"
       }
     },
     {
@@ -989,7 +1002,7 @@
 				"markup.raw.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#fafd7c" // TODO
+				"foreground": "#fdd9a2"
 			}
     },
     {
@@ -1003,6 +1016,32 @@
 			],
 			"settings": {
         "fontStyle": "italic",
+				"foreground": "#e89242"
+			}
+    },
+    {
+			"name": "Object Property Names & Object/Hash Keys",
+			"scope": [
+        "constant.language.symbol.hashkey.ruby",
+				"constant.other.symbol.hashkey.ruby",
+        // "meta.property-list.scss entity.name.tag", !! TODO
+        "entity.name.tag.yaml",
+        "keyword.key.toml",
+        "meta.object-literal.key",
+        "meta.object-literal.key punctuation.definition.string.begin",
+        "meta.object-literal.key punctuation.definition.string.end",
+        "meta.object-literal.key string",
+        "meta.variable.assignment.destructured.object.coffee variable",
+        "punctuation.support.type.property-name.begin",
+				"punctuation.support.type.property-name.end",
+        "support.type.property-name.json",
+        "variable.object.property",
+				"variable.other.constant.property",
+        "variable.other.env",
+				"variable.other.property"
+			],
+			"settings": {
+        "fontStyle": "",
 				"foreground": "#e89242"
 			}
     },
@@ -1056,31 +1095,6 @@
 				"foreground": "#fb6467"
 			}
 		},
-    {
-			"name": "Property Names & Object/Hash Keys",
-			"scope": [
-        "constant.language.symbol.hashkey.ruby",
-				"constant.other.symbol.hashkey.ruby",
-        // "meta.property-list.scss entity.name.tag", !! TODO
-        "entity.name.tag.yaml",
-        "keyword.key.toml",
-        "meta.object-literal.key.js",
-        "meta.object-literal.key.js punctuation.definition.string.begin",
-        "meta.object-literal.key.js punctuation.definition.string.end",
-        "meta.object-literal.key.js string",
-        "meta.variable.assignment.destructured.object.coffee variable",
-        "punctuation.support.type.property-name.begin",
-				"punctuation.support.type.property-name.end",
-        "support.type.property-name.json",
-				"variable.other.constant.property",
-        "variable.other.env",
-				"variable.other.property"
-			],
-			"settings": {
-        "fontStyle": "",
-				"foreground": "#e89242"
-			}
-    },
     {
 			"name": "RegExp and String Escape Sequences",
 			"scope": [
@@ -1266,7 +1280,7 @@
       ],
 			"settings": {
         "fontStyle": "italic bold",
-				"foreground": "#db5dcc"
+				"foreground": "#e762d7"
 			}
     },
     {
@@ -1296,7 +1310,7 @@
 				"variable.parameter.function.language.special"
 			],
 			"settings": {
-				"foreground": "#fafd7c",
+				"foreground": "#69c8ec",
 				"fontStyle": "italic"
 			}
     },
@@ -1349,19 +1363,6 @@
         "foreground": "#fb6467"
       }
     },
-    // !! SAVE FOR LATER !!
-		{
-			"name": "Language Built-Ins",
-			"scope": [
-        "support",
-        "support.type.builtin",
-        "support.variable",
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#a6eee6"
-			}
-    },
     // START BELOW & CONTINUE HERE
 		{
 			"name": "YAML Anchors & Aliases",
@@ -1393,7 +1394,7 @@
       "scope": "entity.name.type.template.cpp",
       "settings": {
         "fontStyle": "",
-        "foreground": "#a6eee6"
+        "foreground": "#a6eee6" // TODO
       }
     },
 		{
