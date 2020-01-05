@@ -819,6 +819,7 @@
         "keyword.control.at-rule",
 				"keyword.control.new",
         "keyword.operator.new",
+        "punctuation.definition.variable",
         "sass.use support.type"
 			],
 			"settings": {
@@ -1004,6 +1005,32 @@
 			"settings": {
 				"foreground": "#fdd9a2"
 			}
+    },
+    {
+      "name": "Objective-C Implementations, Interfaces, & Protocols",
+      "scope": [
+        "meta.implementation storage.type.objc", 
+        "meta.implementation storage.type.objcpp",
+        "meta.interface-or-protocol storage.type.objc",
+        "meta.interface-or-protocol storage.type.objcpp",
+        "source.objc keyword.other.property",
+        "source.objcpp keyword.other.property"
+      ],
+      "settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#6187ff"
+			}
+    },
+    {
+      "name": "Objective-C Keyword At-Signs",
+      "scope": [
+        "source.objc punctuation.definition.keyword",
+        "source.objcpp punctuation.definition.keyword"
+      ],
+      "settings": {
+        "fontStyle": "italic bold",
+        "foreground": "#69c8ec"
+      }
     },
     {
       "name": "Object Properties",
@@ -1274,6 +1301,8 @@
 			"scope": [
         "keyword.control.inheritance.coffee",
         "keyword.other.declaration-specifier.accessibility.swift",
+        "keyword.other.property.attribute.objc",
+        "keyword.other.property.attribute.objcpp",
         "keyword.type-alias.elm",
         "storage.modifier",
         "storage.type.modifier"
@@ -1318,6 +1347,7 @@
 			"name": "Types",
 			"scope": [
         "entity.name.type",
+        "entity.name.type.template.cpp",
         "entity.name.type.type-parameter",
         "entity.other.attribute-name.pseudo-class", // TODO: Move
         "entity.other.attribute-name.pseudo-element", // TODO: Move
@@ -1354,51 +1384,6 @@
       }
     },
     {
-      "name": "YAML Anchors & Aliases (Punctuation)",
-      "scope": [
-        "punctuation.definition.anchor",
-        "punctuation.definition.alias"
-      ],
-      "settings": {
-        "foreground": "#fb6467"
-      }
-    },
-    // START BELOW & CONTINUE HERE
-		{
-			"name": "YAML Anchors & Aliases",
-			"scope": [
-        "entity.name.type.anchor",
-				"variable.other.alias.yaml"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#6187ff" // TODO
-			}
-    },
-    {
-      // TODO: Add highlighting for @ directives
-      "name": "Objective-C Implementations, Interfaces, & Protocols",
-      "scope": [
-        "meta.implementation storage.type.objc", 
-        "meta.implementation storage.type.objcpp",
-        "meta.interface-or-protocol storage.type.objc",
-        "meta.interface-or-protocol storage.type.objcpp"
-      ],
-      "settings": {
-				"fontStyle": "bold",
-				"foreground": "#6187ff"
-			}
-    },
-    {
-      "name": "Types (C++ Templates)",
-      "scope": "entity.name.type.template.cpp",
-      "settings": {
-        "fontStyle": "",
-        "foreground": "#a6eee6" // TODO
-      }
-    },
-		{
-      // TODO: Add support for general `punctuation.definition.variable`
 			"name": "Variables",
 			"scope": [
         "constant.other.key.perl",
@@ -1410,7 +1395,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#b7e4f9" // TODO
+				"foreground": "#b7e4f9"
 			}
     },
     {
@@ -1418,9 +1403,31 @@
       "scope": "storage.modifier.import",
       "settings": {
         "fontStyle": "",
-        "foreground": "#b7e4f9" // TODO
+        "foreground": "#b7e4f9"
       }
     },
+    {
+			"name": "YAML Anchors & Aliases",
+			"scope": [
+        "entity.name.type.anchor",
+				"variable.other.alias.yaml"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#69c8ec"
+			}
+    },
+    {
+      "name": "YAML Anchors & Aliases (Punctuation)",
+      "scope": [
+        "punctuation.definition.anchor",
+        "punctuation.definition.alias"
+      ],
+      "settings": {
+        "foreground": "#fb6467"
+      }
+    },
+    // !! START HERE !!
 		{
 			"name": "GraphQL Fields", // TODO: Keep separate entry?
 			"scope": [

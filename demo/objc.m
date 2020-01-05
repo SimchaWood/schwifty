@@ -20,8 +20,6 @@
     denominator = d;
 }
 
-+ (BOOL)canHandleRequest:(NSString *)type forUrl:(NSString *)url;
-
 @end
 
 @protocol XYZPieChartViewDataSource
@@ -35,7 +33,7 @@
 @end
 
 @interface Person : NSObject
- 
+
 @property NSString *firstName;
 @property NSString *lastName;
 @property NSString[] *nickNames;
