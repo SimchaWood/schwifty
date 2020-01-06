@@ -75,7 +75,7 @@ $schwellow-75: #bbab68; // (breadbrumb vars)
 $schwellow-70: #af9f61;
 
 
-$schwellower100: #fafd7c; // [parameters, quotes] (warnings)
+$schwellower100: #fafd7c; // [parameters, quotes, html attributes] (warnings)
 
 $schwellower-80: #c8ca63;
 $schwellower-70: #afb156;
@@ -119,20 +119,22 @@ $schwiblue-85: #9bc1d3; //V4 (default text, title text, active line #)
 $schwiblue-80: #92b6c7; //V4 (active breadcrumb text, dropdown text, hovers text, menu text, sideheader text)
 $schwiblue-70: #808fae; //V4 (breadcrumb text, inactive activity)
 $schwiblue-60: #6d8895; //V4 (terminal text)
-$schwiblue-55: #647d88; //V4 (line #)
-$schwiblue-50: #5b727c; //V4 (panel border, nofolder status text)
-$schwiblue-45: #526670; //V4 (active indent, tree indent, resize border, hover border, empty border, image border)
-$schwiblue-40: #495b63; // (default focus)
-$schwiblue-30: #36444a; //V4 (indent, activity border, title border, hovered tab)
-$schwiblue-27: #313d43; // (sidebar border)
-$schwiblue-25: #2d393e; //V4 (debug)
-$schwiblue-23: #2a3439; //V4 (activity active, line highlight, menu active, status border)
-$schwiblue-20: #242d31; //V4 (active tab, editor, hover status)
-$schwiblue-17: #1f262a; //V4 (gutter, menu, widgets)
-$schwiblue-15: #1b2225; //V4 (panel, activity, headers, inactive tabs, inactive title, edgroup border)
-$schwiblue-13: #171d20; //V4 (dropdown, empty, sidebar, hovers, tab border, overview border)
-$schwiblue-10: #121618; //V4 (input, title, status, menu border, widget border, dropdown border, notify header, sidebar header)
-$schwiblue-05: #090b0c; //V4 (terminal, badge text, input)
+$schwiblue-55: #647d88; //
+$schwiblue-50: #5b727c; // (line #)
+$schwiblue-45: #526670; // (panel border, nofolder status text)
+$schwiblue-40: #495b63; // (active indent, tree indent, resize border, hover border, empty border, image border)
+$schwiblue-30: #36444a; // (default focus)
+$schwiblue-27: #313d43; // (indent, activity border, title border, hovered tab)
+$schwiblue-25: #2d393e; // (sidebar border)
+$schwiblue-23: #2a3439; // (debug)
+$schwiblue-20: #242d31; // (activity active, line highlight, menu active, status border)
+$schwiblue-17: #1f262a; // (active tab, editor, hover status)
+$schwiblue-15: #1b2225; // (gutter, menu, widgets)
+$schwiblue-13: #171d20; // (panel, activity, headers, inactive tabs, inactive title, edgroup border)
+$schwiblue-10: #121618; // (dropdown, empty, sidebar, hovers, tab border, overview border)
+$schwiblue-07: #0c0f11; // (input, title, status, menu border, widget border, dropdown border, notify header, sidebar header)
+$schwiblue-05: #090b0c;
+$schwiblue-03: #050607; // (terminal, badge text, input)
 
 
 $schwibluer100: #69c8ec; //V4 [types, yaml anchors] (info, gutter/overview blue)
