@@ -442,13 +442,13 @@
 			"scope": "markup.bold",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#fdd9a2" // TODO
+				"foreground": "#bca178"
 			}
     },
     {
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#fdd9a2", // TODO
+				"foreground": "#bca178",
 				"fontStyle": "italic"
 			}
     },
@@ -911,13 +911,15 @@
       }
     },
     {
+      // TODO: Add highlighting for `Info`, `Debug`, and `Verbose`.
+      // TODO: Fix highlighting for dates.
       "name": "Logs",
       "scope": [
         "text.log",
         "text.log emphasis"
       ],
       "settings": {
-        "foreground": "#b7e4f9" // TODO
+        "foreground": "#fdd9a2"
       }
     },
     {

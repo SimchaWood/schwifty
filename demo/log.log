@@ -16,4 +16,17 @@ foobar.Exception
 
 Warn: You should know about this!
 
+Info: This is some information.
+
+[verbose]
 https://github.com/emilast/vscode-logfile-highlighter/commit/e90aa2554b439827f125fd60ff6d7773fc582fcc
+
+2005-03-23 23:47:11,671 - spam_application - INFO - calling auxiliary_module.some_function()
+2005-03-23 23:47:11,672 - spam_application.auxiliary - INFO - received a call to 'some_function'
+2005-03-23 23:47:11,673 - spam_application - INFO - done with auxiliary_module.some_function()
+
+10-22 22:19 root         INFO     Jackdaws love my big sphinx of quartz.
+10-22 22:19 myapp.area1  DEBUG    Quick zephyrs blow, vexing daft Jim.
+10-22 22:19 myapp.area1  INFO     How quickly daft jumping zebras vex.
+10-22 22:19 myapp.area2  WARNING  Jail zesty vixen who grabbed pay from quack.
+10-22 22:19 myapp.area2  ERROR    The five boxing wizards jump quickly.

@@ -236,6 +236,7 @@ class InternalEscapableScope : public v8::EscapableHandleScope {
 /*! \brief Brief description.
  *         Brief description continued.
  *  @p foobar Description
+ *  @em foobar
  *  @b foobar
  *  Detailed description starts here.
  */
