@@ -442,13 +442,13 @@
 			"scope": "markup.bold",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#fdd9a2"
+				"foreground": "#fdd9a2" // TODO
 			}
     },
     {
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#fdd9a2",
+				"foreground": "#fdd9a2", // TODO
 				"fontStyle": "italic"
 			}
     },
@@ -505,7 +505,7 @@
 				"string.template punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#b7e4f9"
+				"foreground": "#fdd9a2" // DONE
 			}
     },
     {
@@ -518,7 +518,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#b7e4f9"
+        "foreground": "#fdd9a2" // DONE
       }
     },
     {
@@ -532,7 +532,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#917c5d"
+				"foreground": "#008ca0"
 			}
     },
     {
@@ -545,7 +545,7 @@
 			],
 			"settings": {
         "fontStyle": "bold",
-				"foreground": "#9f8866"
+				"foreground": "#009db4"
 			}
     },
     {
@@ -770,24 +770,47 @@
       }
     },
     {
+      "name": "JS Constructors",
+      "scope": "meta.method.declaration storage.type",
+      "settings": {
+        "fontStyle": "italic bold",
+        "foreground": "#a6eee6"
+      }
+    },
+    {
+      "name": "JSDoc-Style Documentation",
+      "scope": "comment.block.documentation",
+      "settings": {
+        "foreground": "#917c5d"
+      }
+    },
+    {
 			"name": "JSDoc-Style Keywords",
 			"scope": [
-				"keyword.codetag.notation", // TODO: Move
         "comment.block.documentation keyword",
-        "comment.block.documentation entity.name.type punctuation.definition.bracket",
         "comment.block.documentation storage.type.class",
+        "keyword.codetag.notation",
         "punctuation.definition.tag.cs",
 			],
 			"settings": {
         "fontStyle": "italic",
-        "foreground": "#4864be" // TODO
+        "foreground": "#bca178"
 			}
+    },
+    // TODO: Add support for `entity.name.tag.inline.jsdoc`
+    {
+      "name": "JSDoc-Style Link Text",
+      "scope": "constant.other.description.jsdoc",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#808fae"
+      }
     },
     {
 			"name": "JSDoc-Style Parameters",
 			"scope": "comment.block.documentation variable",
 			"settings": {
-				"foreground": "#bf7936", // TODO
+				"foreground": "#afb156",
 				"fontStyle": "italic"
 			}
     },
@@ -795,21 +818,37 @@
       "name": "JSDoc-Style Source/Raw Markup",
 			"scope": [
         "comment.block.documentation markup.inline.raw",
-        "comment.block.documentation source.embedded"
+        "comment.block.documentation source.embedded",
+        "meta.example.jsdoc constant.other.description.jsdoc"
       ],
 			"settings": {
-				"foreground": "#bbbd5d" // TODO
+        "fontStyle": "",
+				"foreground": "#808fae"
 			}
 		},
 		{
 			"name": "JSDoc-Style Types",
 			"scope": [
         "comment.block.documentation entity.name.type",
-        "comment.block.documentation.phpdoc support.class.builtin"
+        "comment.block.documentation.phpdoc support.class.builtin",
 			],
 			"settings": {
         "fontStyle": "italic",
-				"foreground": "#7cb2ac" // TODO
+				"foreground": "#54a0bc"
+			}
+    },
+    {
+			"name": "JSDoc Tags",
+			"scope": [
+        "comment.block.documentation entity.name.type punctuation.definition.bracket",
+        "punctuation.definition.block.tag.jsdoc",
+        "punctuation.definition.bracket.square.begin.jsdoc",
+        "punctuation.definition.bracket.square.end.jsdoc",
+        "punctuation.definition.inline.tag.jsdoc"
+      ],
+			"settings": {
+        "fontStyle": "italic",
+				"foreground": "#b84eac"
 			}
     },
     {
@@ -921,7 +960,7 @@
 				"markup.quote"
 			],
 			"settings": {
-				"foreground": "#fdd9a2",
+				"foreground": "#fdd9a2", // TODO
 			}
     },
     {
@@ -944,7 +983,7 @@
         "markup.italic.restructuredtext"
       ],
       "settings": {
-        "foreground": "#fdd9a2"
+        "foreground": "#fdd9a2" // TODO
       }
     },
     {
@@ -1003,7 +1042,7 @@
 				"markup.raw.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#fdd9a2"
+				"foreground": "#fdd9a2" // TODO
 			}
     },
     {
@@ -1290,13 +1329,6 @@
 			}
     },
     {
-      "name": "Storage (JS/TS Constructors)",
-      "scope": "meta.method.declaration storage.type",
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
       "name": "Storage Modifiers",
 			"scope": [
         "keyword.control.inheritance.coffee",
@@ -1326,7 +1358,7 @@
         "text"
       ],
 			"settings": {
-				"foreground": "#b7e4f9"
+				"foreground": "#fdd9a2" // DONE
 			}
     },
     {
@@ -1395,7 +1427,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#b7e4f9"
+				"foreground": "#fdd9a2" // DONE
 			}
     },
     {
@@ -1403,7 +1435,7 @@
       "scope": "storage.modifier.import",
       "settings": {
         "fontStyle": "",
-        "foreground": "#b7e4f9"
+        "foreground": "#fdd9a2" // DONE
       }
     },
     {
@@ -1462,13 +1494,6 @@
 				"foreground": "#b7e4f9" // TODO
 			}
     },
-		{
-			"name": "JSDoc Tags",
-			"scope": "punctuation.definition.block.tag.jsdoc",
-			"settings": {
-				"foreground": "#7cb2ac"
-			}
-    },
     {
 			"name": "Strings",
 			"scope": [
@@ -1482,7 +1507,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#fdd9a2"
+				"foreground": "#b7e4f9"
 			}
 		},
 		{

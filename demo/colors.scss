@@ -2,8 +2,8 @@ $schlogoblue100: #00afc8; // [md headers, md links] (cursor, codelens)
 
 $schlogoblue125: #00dafa; // [diff header]
 
-$schlogoblue-90: #009db4; //
-$schlogoblue-80: #008ca0; //
+$schlogoblue-90: #009db4; // [comment punctuation]
+$schlogoblue-80: #008ca0; // [comments]
 $schlogoblue-75: #008396;
 $schlogoblue-70: #007a8c;
 $schlogoblue-60: #006978; // (buttons)
@@ -58,9 +58,9 @@ $schwibrown190: #f78a39;
 $schwibrown195: #fd8e3a;
 
 
-$schwigray100: #917c5d; // [comments]
+$schwigray100: #917c5d; //
 
-$schwigray110: #9f8866; // [comment punctuation] (git untracked)
+$schwigray110: #9f8866; // (git untracked)
 $schwigray120: #ae946f;
 $schwigray125: #b59b74;
 $schwigray130: #bca178;
@@ -78,6 +78,8 @@ $schwellow-70: #af9f61;
 $schwellower100: #fafd7c; // [parameters, quotes] (warnings)
 
 $schwellower-80: #c8ca63;
+$schwellower-70: #afb156;
+$schwellower-60: #96974a;
 $schwellower-50: #7d7e3e;
 
 
@@ -165,6 +167,8 @@ $schwindigo110: #273768; //V4
 $schwindigo135: #304380;
 $schwindigo150: #364b8e; //V4
 $schwindigo200: #4864be; //V4
+$schwindigo220: #4f6ed1;
+$schwindigo230: #5273da;
 $schwindigo270: #6187ff; //V4
 
 $schwindigo-90: #202d55; //V4

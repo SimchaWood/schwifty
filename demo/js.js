@@ -11,6 +11,15 @@ class Sale {
 
   /**
    * Description of the `decorate` method.
+   * {@link namepathOrURL}
+   * [link text]{@link namepathOrURL}
+   * {@link namepathOrURL|link text}
+   * {@link namepathOrURL link text (after the first space)}
+   * Some more descriptions.
+   * @example <caption>Example usage of method1.</caption>
+   * @example
+   * // returns 2
+   * globalNS.method1(5, 10);
    * @param {*} decorator a decorator
    * @returns {void} not used
    */
@@ -76,16 +85,11 @@ class Foo {}
 
 const foo = new Foo.Thing();
 
-class EditFishForm extends Component {
-  // static propTypes = {
-  //   updateFish: PropTypes.func,
-  //   deleteFish: PropTypes.func,
-  //   index: PropTypes.string,
-  //   fish: PropTypes.shape({
-  //     image: PropTypes.string,
-  //     name: PropTypes.string.isRequired
-  //   })
-  // }
+class MySale extends Sale {
+  constructor(price) {
+    super(price);
+    this.price = price;
+  }
 }
 const str = `The price for this widget is ${sale.getPrice('widget')}`;
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z13579_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
