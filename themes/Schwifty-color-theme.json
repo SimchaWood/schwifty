@@ -514,6 +514,7 @@
       "name": "Brackets, Braces, & Other Punctuation (Edge Cases)",
       "scope": [
         "constant.language.empty-list.haskell",
+        "markup.fenced_code.block.markdown punctuation",
         "punctuation.definition.sequence.begin.yaml",
         "punctuation.definition.sequence.end.yaml",
         "storage.modifier.array.bracket.square.objc"
@@ -536,6 +537,14 @@
 				"fontStyle": "italic",
 				"foreground": "#008ca0"
 			}
+    },
+    {
+      "name": "Comments (Buffered)",
+      "scope": "string.comment.buffered.block.pug",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#917c5d"
+      }
     },
     {
 			"name": "Comments (Punctuation)",
@@ -590,15 +599,22 @@
 			"scope": [
         "entity.name.tag.reference.scss",
         "entity.other.attribute-name.parent-selector",
-        "entity.other.attribute-name.placeholder punctuation",
-        "entity.other.attribute-name.pseudo-class punctuation.definition.entity.css",
-        "entity.other.attribute-name.pseudo-element punctuation.definition.entity.css",
-        "storage.modifier.ignore-case.css"
+        "entity.other.attribute-name.placeholder punctuation"
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#fb6467"
+				"foreground": "#69c8ec"
 			}
+    },
+    {
+      "name": "CSS Interpolations",
+      "scope": [
+        "support.function.interpolation.sass variable",
+        "variable.interpolation.scss variable"
+      ],
+      "settings": {
+        "foreground": "#fafd7c"
+      }
     },
     {
       "name": "CSS Placeholders",
@@ -606,6 +622,30 @@
       "settings": {
         "fontStyle": "italic",
         "foreground":  "#6187ff"
+      }
+    },
+    {
+      "name": "CSS Properties",
+      "scope": [
+        "meta.property-list entity.name.tag.css",
+        "source.css punctuation.definition.interpolation.begin",
+        "source.css punctuation.definition.interpolation.end",
+        "support.function.interpolation.sass",
+        "support.type.property-name"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#e89242"
+      }
+    },
+    {
+      "name": "CSS Psuedo Classes/Elements",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class",
+        "entity.other.attribute-name.pseudo-element",
+      ],
+      "settings": {
+        "foreground": "#69c8ec"
       }
     },
     {
@@ -737,6 +777,7 @@
         "meta.function.arguments variable.other.php",
         "meta.function.parameter.default variable.other",
         "meta.function.parameter.no-default variable.other",
+        "meta.scope.function-call.makefile",
         "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
         "variable.other.root",
 				"variable.parameter"
@@ -747,11 +788,35 @@
 			}
     },
     {
-			"name": "HTML/CSS Attributes",
+      "name": "GraphQL Aliases",
+      "scope": "string.unquoted.alias.graphql",
+      "settings": {
+        "foreground": "#e89242"
+      }
+    },
+    {
+			"name": "GraphQL Fields",
 			"scope": [
-        "entity.other.attribute-name",
-        "support.type.property-name"
+        "meta.selectionset.graphql variable",
+        "variable.fragment.graphql"
       ],
+			"settings": {
+				"foreground": "#b7e4f9"
+			}
+    },
+    {
+			"name": "GraphQL Fragment Names",
+			"scope": [
+        "entity.name.fragment.graphql",
+        "variable.fragment.graphql"
+      ],
+			"settings": {
+				"foreground": "#ff6cee"
+			}
+    },
+    {
+			"name": "HTML Attributes",
+			"scope": "entity.other.attribute-name",
 			"settings": {
 				"foreground": "#e762d7",
 				"fontStyle": "italic"
@@ -900,7 +965,9 @@
 				"keyword.control.new",
         "keyword.operator.new",
         "punctuation.definition.variable",
-        "sass.use support.type"
+        "sass.use support.type",
+        "source.graphql keyword.operator",
+        "storage.modifier.ignore-case.css"
 			],
 			"settings": {
         "fontStyle": "",
@@ -920,9 +987,12 @@
     {
 			"name": "Language Built-Ins",
 			"scope": [
+        "source.css support.constant",
+        "source.sass support.constant",
+        "source.stylus support.constant",
         "support",
         "support.type.builtin",
-        "support.variable",
+        "support.variable"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -952,8 +1022,6 @@
       }
     },
     {
-      // TODO: Add highlighting for `Info`, `Debug`, and `Verbose`.
-      // TODO: Fix highlighting for dates.
       "name": "Logs",
       "scope": [
         "text.log",
@@ -961,6 +1029,33 @@
       ],
       "settings": {
         "foreground": "#fdd9a2"
+      }
+    },
+    {
+      "name": "Logs (Constants)",
+      "scope": [
+        "log.constant",
+        "text.restructuredtext constant.other"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#fae48b"
+      }
+    },
+    {
+      "name": "Logs (Dates)",
+      "scope": "log.date",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#a6eee6"
+      }
+    },
+    {
+      "name": "Logs (Debug)",
+      "scope": "log.debug",
+      "settings": {
+        "fontStyle": "italic bold",
+        "foreground": "#fb6467"
       }
     },
     {
@@ -982,6 +1077,14 @@
       }
     },
     {
+      "name": "Logs (Info)",
+      "scope": "log.info",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#54a0bc"
+      }
+    },
+    {
       "name": "Logs (Warnings)",
       "scope": "log.warning",
       "settings": {
@@ -990,10 +1093,24 @@
       }
     },
     {
+      "name": "Makefile Built-Ins",
+      "scope": "variable.language.makefile",
+      "settings": {
+        "foreground": "#a6eee6"
+      }
+    },
+    {
+			"name": "Makefile Prerequisite Files",
+			"scope": "meta.scope.prerequisites.makefile",
+			"settings": {
+				"foreground": "#b7e4f9"
+			}
+    },
+    {
       "name": "Makefile Targets",
       "scope": "entity.name.function.target.makefile",
       "settings": {
-        "foreground": "#6187ff"
+        "foreground": "#e89242"
       }
     },
     {
@@ -1001,7 +1118,14 @@
       "scope": "support.function.target",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#6187ff"
+        "foreground": "#e89242"
+      }
+    },
+    {
+      "name": "Makefile Variables",
+      "scope": "variable.other.makefile",
+      "settings": {
+        "foreground": "#a6eee6"
       }
     },
     {
@@ -1018,7 +1142,7 @@
 				"markup.quote"
 			],
 			"settings": {
-				"foreground": "#fdd9a2", // TODO
+				"foreground": "#b7e4f9"
 			}
     },
     {
@@ -1041,7 +1165,7 @@
         "markup.italic.restructuredtext"
       ],
       "settings": {
-        "foreground": "#fdd9a2" // TODO
+        "foreground": "#fdd9a2"
       }
     },
     {
@@ -1052,7 +1176,7 @@
         "punctuation.definition.constant.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#fb6467"
+				"foreground": "#e762d7"
 			}
 		},
     {
@@ -1067,7 +1191,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#6187ff" // TODO
+				"foreground": "#6187ff"
 			}
 		},
     {
@@ -1086,7 +1210,9 @@
         "punctuation.definition.directive.restructuredtext",
 				"punctuation.definition.list.begin.markdown",
 				"punctuation.definition.quote.begin.markdown",
-        "punctuation.definition.raw.markdown"
+        "punctuation.definition.raw.markdown",
+        "punctuation.separator.key-value.restructuredtext",
+        "support.directive.restructuredtext"
 			],
 			"settings": {
         "fontStyle": "",
@@ -1096,11 +1222,14 @@
     {
 			"name": "Markdown Raw Code",
 			"scope": [
-				"markup.inline.raw",
-				"markup.raw.restructuredtext"
+        "markup.fenced_code.block.markdown",
+        "markup.inline.raw",
+        "markup.raw.inner.restructuredtext",
+        "markup.raw.restructuredtext",
+        "punctuation.definition.table.restructuredtext"
 			],
 			"settings": {
-				"foreground": "#fdd9a2" // TODO
+				"foreground": "#54a0bc"
 			}
     },
     {
@@ -1148,7 +1277,7 @@
 			"scope": [
         "constant.language.symbol.hashkey.ruby",
 				"constant.other.symbol.hashkey.ruby",
-        // "meta.property-list.scss entity.name.tag", !! TODO
+        "entity.name.tag.restructuredtext",
         "entity.name.tag.yaml",
         "keyword.key.toml",
         "meta.object-literal.key",
@@ -1170,7 +1299,6 @@
 			}
     },
     {
-      // TODO: Support for `source.sass support.function.interpolation`
 			"name": "Operators (Interpolators)",
 			"scope": [
         "keyword.other.template.begin.env",
@@ -1230,15 +1358,15 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#b84eac"
+				"foreground": "#e762d7"
 			}
     },
     {
       "name": "RegExp Character Set Range",
       "scope": "constant.other.character-class.range.regexp",
       "settings": {
-        "fontStyle": "",
-        "foreground": "#74a6a1" // TODO
+        "fontStyle": "bold",
+        "foreground": "#fae48b"
       }
     },
     {
@@ -1250,7 +1378,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#638e8a" // TODO
+        "foreground": "#fdd9a2"
       }
     },
     {
@@ -1295,7 +1423,7 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#fb6467" // TODO
+				"foreground": "#fb6467"
 			}
     },
     {
@@ -1303,7 +1431,7 @@
       "scope": "variable.other.regexp",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#b7e4f9" // TODO
+        "foreground": "#69c8ec"
       }
     },
     {
@@ -1338,8 +1466,15 @@
         "string.regexp"
       ],
 			"settings": {
-				"foreground": "#fae48b"
+				"foreground": "#b7e4f9"
 			}
+    },
+    {
+      "name": "Restructured Text Refs",
+      "scope": "markup.other.command.restructuredtext",
+      "settings": {
+        "foreground": "#46b55a"
+      }
     },
     {
 			"name": "Shebang Directives & Haskell Pragmas",
@@ -1373,6 +1508,7 @@
         "keyword.var.go",
         "meta.class.identifier storage.modifier",
         "meta.method.declaration meta.var.expr storage.type",
+        "source.graphql keyword",
         "storage",
         "storage.modifier.shell",
         "storage.type.def",
@@ -1429,7 +1565,7 @@
         "text"
       ],
 			"settings": {
-				"foreground": "#fdd9a2" // DONE
+				"foreground": "#fdd9a2"
 			}
     },
     {
@@ -1452,8 +1588,6 @@
         "entity.name.type",
         "entity.name.type.template.cpp",
         "entity.name.type.type-parameter",
-        "entity.other.attribute-name.pseudo-class", // TODO: Move
-        "entity.other.attribute-name.pseudo-element", // TODO: Move
         "entity.other.inherited-class",
         "entity.scalar.graphql",
         "meta.protocol-list.objc",
@@ -1499,22 +1633,26 @@
 			],
 			"settings": {
         "fontStyle": "",
-				"foreground": "#fdd9a2" // DONE
+				"foreground": "#fdd9a2"
 			}
     },
     {
       "name": "Variables (Edge Cases)",
-      "scope": "storage.modifier.import",
+      "scope": [
+        "meta.arguments.graphql variable",
+        "meta.selectionset.graphql meta.arguments.graphql variable.graphql",
+        "storage.modifier.import"
+      ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#fdd9a2" // DONE
+        "foreground": "#fdd9a2"
       }
     },
     {
 			"name": "YAML Anchors & Aliases",
 			"scope": [
         "entity.name.type.anchor",
-				"variable.other.alias.yaml"
+        "variable.other.alias.yaml"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -1532,44 +1670,9 @@
       }
     },
     // !! START HERE !!
-		{
-			"name": "GraphQL Fields", // TODO: Keep separate entry?
-			"scope": [
-        "meta.selectionset.graphql variable",
-        "variable.fragment.graphql"
-      ],
-			"settings": {
-				"foreground": "#b7e4f9" // TODO
-			}
-    },
-    {
-      "name": "GraphQL Aliases & Variable Names",
-      "scope": [
-        "meta.selectionset.graphql meta.arguments variable",
-        "string.unquoted.alias.graphql"
-      ],
-      "settings": {
-        "foreground": "#fafd7c" // TODO
-      }
-    },
-		{
-			"name": "GraphQL Fragment Names",
-			"scope": "entity.name.fragment.graphql",
-			"settings": {
-				"foreground": "#ff6cee"
-			}
-    },
-		{
-			"name": "Makefile Prerequisite Files",
-			"scope": "meta.scope.prerequisites.makefile",
-			"settings": {
-				"foreground": "#b7e4f9" // TODO
-			}
-    },
     {
 			"name": "Strings",
 			"scope": [
-        // TODO: Provide support for pug's `string.comment.buffered`
         "meta.attribute-selector",
 				"punctuation.definition.string.begin",
         "punctuation.definition.string.end",

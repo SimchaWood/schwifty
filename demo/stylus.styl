@@ -21,7 +21,7 @@ main {
   font-size: 1.5em;
 }
 
-input::placeholder {
+input::after {
   color: gray !important;
 }
 
@@ -59,3 +59,11 @@ div:not(.stupidDiv) {
 .sibling2 + .sibling3 {
   background: #0000ff;
 }
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+form input[type=button]
+  border-radius(5px)

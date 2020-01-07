@@ -92,8 +92,10 @@ class MySale extends Sale {
   }
 }
 const str = `The price for this widget is ${sale.getPrice('widget')}`;
+
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z13579_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
-const text = 'foobar';
+
+const text = 'foobar\n';
 const { foo: bar } = require('stuff');
 
 const arr = [1, 'baz', str];

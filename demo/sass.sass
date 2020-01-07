@@ -67,8 +67,14 @@ button[class~="special" i]
   color: red
 
 .parent
-  .child
+  button
+    color: orange
+
+  & .child
     background: blue
+
+  .child2
+    color: rgba(50%, 50%, 50%, 1.0)
 
 @mixin rtl($property, $ltr-value, $rtl-value)
   #{$property}: $ltr-value

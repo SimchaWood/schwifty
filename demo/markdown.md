@@ -27,6 +27,13 @@ Heading 1
 
 ```javascript
   let meaningOfLife = 42;
+  if (meaningOfLife > 0) {
+    console.log('42');
+  }
+```
+
+```code
+  int x = 42;
 ```
 
 ******************************

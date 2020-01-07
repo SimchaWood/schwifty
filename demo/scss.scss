@@ -91,6 +91,10 @@ button[class~="special" i] {
 }
 
 .parent {
+  button {
+    color: orange;
+  }
+
   & .child {
     background: blue;
   }

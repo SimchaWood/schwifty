@@ -26,6 +26,10 @@ type Stat {
     retweets: Int
     responses: Int
 }
+schema {
+  query: Query
+  mutation: Mutation
+}
 
 type Notification {
     id: ID
@@ -74,6 +78,12 @@ query HeroComparison($first: Int = 3) {
   rightComparison: hero(episode: JEDI) {
     ...comparisonFields
   }
+  empireHero: hero(episode: EMPIRE) {
+    name
+  }
+  jediHero: hero(episode: JEDI) {
+    name
+  }
 }
 
 fragment comparisonFields on Character {
@@ -84,6 +94,27 @@ fragment comparisonFields on Character {
       node {
         name
       }
+    }
+  }
+}
+
+type Starship {
+  id: ID!
+  name: String!
+  length(unit: LengthUnit = METER): Float
+}
+
+enum Episode {
+  NEWHOPE
+  EMPIRE
+  JEDI
+}
+
+query Hero($episode: Episode, $withFriends: Boolean!) {
+  hero(episode: $episode) {
+    name
+    friends @include(if: $withFriends) {
+      name
     }
   }
 }

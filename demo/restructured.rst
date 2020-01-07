@@ -37,7 +37,13 @@ how
 -a            command-line option "a"
 -b file       options can have arguments
 
-::
+| These lines are
+| broken exactly like in
+| the source file.
+
+.. warning:: This is a directive.
+
+Code sample::
     if literal_block:
         text = 'is left as-is'
         spaces_and_linebreaks = 'are preserved'
@@ -50,13 +56,14 @@ Block quote:
 
 >>> print 'Python-specific usage examples; begun with ">>>"'
 
-+------------------------+------------+----------+
-| Header row, column 1   | Header 2   | Header 3 |
-+========================+============+==========+
-| body row 1, column 1   | column 2   | column 3 |
-+------------------------+------------+----------+
-| body row 2             | Cells may span        |
-+------------------------+-----------------------+
+.. tabularcolumns:: |1|5|5|
+  +------------------------+------------+----------+
+  | Header row, column 1   | Header 2   | Header 3 |
+  +========================+============+==========+
+  | body row 1, column 1   | column 2   | column 3 |
+  +------------------------+------------+----------+
+  | body row 2             | Cells may span        |
+  +------------------------+-----------------------+
 
 ====================  ==========  ==========
 Header row, column 1  Header 2    Header 3
@@ -64,6 +71,19 @@ Header row, column 1  Header 2    Header 3
 body row 1, column 1  column 2    column 3
 body row 2            Cells may span columns
 ====================  ======================
+
+.. hlist::
+    :columns: 3
+
+    * first item
+    * second item
+    * 3d item
+    * 4th item
+    * 5th item
+
+.. code-block:: html
+  :linenos:
+  <h1>code block example</h1>
 
 .. [1] A footnote contains body elements, consistently indented by at least 3 spaces.
 
@@ -86,3 +106,4 @@ r"""This is a raw docstring.  Backslashes (\) are not touched."""
 Want to learn about `my favorite programming language`_?
 
 .. _my favorite programming language: http://www.python.org
+
