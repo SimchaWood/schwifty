@@ -2,3 +2,4 @@
 # demo/
 vsc-extension-quickstart.md
 *.code-workspace
+*.vsix
