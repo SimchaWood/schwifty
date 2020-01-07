@@ -67,6 +67,10 @@ h1, h2, h3 {
 main {
   margin-top: 20px;
   font-size: 1.5em;
+
+  h3 {
+    color: goldenrod;
+  }
 }
 
 input::placeholder {
@@ -89,6 +93,10 @@ button[class~="special" i] {
 .parent {
   & .child {
     background: blue;
+  }
+
+  .child2 {
+    color: rgba(50%, 50%, 50%, 1.0);
   }
 }
 

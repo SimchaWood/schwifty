@@ -25,10 +25,12 @@ namespace NightOwl.demo
         #endregion
 
         /// <summary>
-        /// Hello this is an xml comment
+        /// Hello this is an xml comment &mdash; with markup.
         /// </summary>
+        /// 
+        /// <![CDATA[ds]]>
         /// <param name="testParam">param comment</param>
-        /// <returns></returns>
+        /// <returns>A value.</returns>
         public async Task<string> TestMethod(string testParam)
         {
             for(var i = 0; i <= 5; i++)

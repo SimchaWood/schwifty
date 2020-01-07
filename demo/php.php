@@ -11,6 +11,20 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->pdo->query("CREATE TABLE hello (what VARCHAR(50) NOT NULL)");
     }
+    /**
+     * A summary informing the user what the associated element does.
+     * 
+     * A *description*, that can span multiple lines, to go _in-depth_ into the details of this element
+     * and to provide some background information or textual references. {@link example.com Documentation}
+     * 
+     * Here an example of the italics tag: <<i>>Hello, world!<<i>>
+     *
+     * @param string $myArgument With a *description* of this argument, these may also
+     *    span multiple lines.
+     *
+     * @access public
+     * @return void
+     */
     public function tearDown()
     {
         $this->pdo->query("DROP TABLE hello");
@@ -44,6 +58,8 @@ class A {
       return static::class;
   }
 }
+
+/** @var string[] An array of string objects. */
 
 function foo($bar = "bar")
 {
