@@ -315,7 +315,7 @@
 		"statusBarItem.prominentBackground": "#171d20",
     "statusBarItem.prominentForeground": "#92b6c7",
     "statusBarItem.prominentHoverBackground": "#b7e4f920",
-		"statusBarItem.remoteBackground": "#5c2756",
+		"statusBarItem.remoteBackground": "#73316b",
     "statusBarItem.remoteForeground": "#9bc1d3",
 		"symbolIcon.arrayForeground": "#bbab68",
 		"symbolIcon.booleanForeground": "#bbab68",
@@ -815,8 +815,11 @@
 			}
     },
     {
-			"name": "HTML Attributes",
-			"scope": "entity.other.attribute-name",
+			"name": "HTML/CSS Attributes",
+			"scope": [
+        "entity.other.attribute-name",
+        "entity.other.attribute-selector"
+      ],
 			"settings": {
 				"foreground": "#e762d7",
 				"fontStyle": "italic"
@@ -1280,6 +1283,7 @@
         "entity.name.tag.restructuredtext",
         "entity.name.tag.yaml",
         "keyword.key.toml",
+        "keyword.other.definition.ini",
         "meta.object-literal.key",
         "meta.object-literal.key punctuation.definition.string.begin",
         "meta.object-literal.key punctuation.definition.string.end",
@@ -1545,6 +1549,19 @@
       }
     },
     {
+			"name": "Strings",
+			"scope": [
+				"punctuation.definition.string.begin",
+        "punctuation.definition.string.end",
+				"string",
+				"source.env"
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#b7e4f9"
+			}
+		},
+    {
       "name": "Strings (HTML Attributes)",
       "scope": [
         "meta.tag.attributes punctuation.definition.string.begin",
@@ -1557,6 +1574,17 @@
       "settings": {
         "fontStyle": "italic"
       }
+    },
+    {
+			"name": "Strings (within Interpolations)",
+			"scope": [
+				"meta.embedded.line punctuation.definition.string.begin",
+				"meta.embedded.line punctuation.definition.string.end",
+				"meta.embedded.line string"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
     },
     {
       "name": "Text",
@@ -1641,6 +1669,7 @@
       "scope": [
         "meta.arguments.graphql variable",
         "meta.selectionset.graphql meta.arguments.graphql variable.graphql",
+        "sass.use constant",
         "storage.modifier.import"
       ],
       "settings": {
@@ -1668,44 +1697,6 @@
       "settings": {
         "foreground": "#fb6467"
       }
-    },
-    // !! START HERE !!
-    {
-			"name": "Strings",
-			"scope": [
-        "meta.attribute-selector",
-				"punctuation.definition.string.begin",
-        "punctuation.definition.string.end",
-        "sass.use constant", // DONE
-				"string",
-				"source.env"
-			],
-			"settings": {
-        "fontStyle": "",
-				"foreground": "#b7e4f9"
-			}
-		},
-		{
-			"name": "Strings (within Interpolations)",
-			"scope": [
-				"meta.embedded.line punctuation.definition.string.begin",
-				"meta.embedded.line punctuation.definition.string.end",
-				"meta.embedded.line string"
-			],
-			"settings": {
-				"fontStyle": "italic"
-			}
-    },
-    {
-      "name": "'Use Strict' Directive",
-			"scope": [
-				"string.other.use-strict",
-				"punctuation.definition.use-strict"
-			],
-			"settings": {
-        "fontStyle": "bold",
-				"foreground": "#00a8bf",
-			}
-		}
+    }
 	]
 }

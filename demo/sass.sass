@@ -100,3 +100,12 @@ div:not(.stupidDiv)
 
 .sibling2 + .sibling3
   background: #0000ff
+
+[data-product]
+  color: white
+
+  @include append-attr("red")
+    color: red
+
+  @include append-attr('-green')
+    color: green

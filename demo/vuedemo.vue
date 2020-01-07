@@ -45,4 +45,8 @@ button.disabled {
   background: #ccc;
   cursor: none;
 }
+
+[data-product] {
+  color: white;
+}
 </style>
