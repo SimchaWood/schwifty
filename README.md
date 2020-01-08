@@ -1,16 +1,26 @@
 # Schwifty
 
-## A color theme for those who want to get schwifty
+Schwifty is a dark theme for [VS Code](https://code.visualstudio.com/).
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+![screenshot1](images/screenshot1.png)
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+## Installation (How to get Schwifty)
 
-### For more information
+1. Open the **Extensions** sidebar on VS Code (`ctrl+shift+X` or navigate to *View* > *Extensions*).
+2. Enter `Schwifty` into the search field.
+3. Click **Install**.
+4. Use your preferred method to select *Schwifty* as your theme:
+    - Click *Set Color Theme* on the **Extensions: Schwifty** details page.
+    - Navigate to *File* > *Preferences* > *Color Theme* (or press `ctrl-K ctrl-C`) and select *Schwifty* from the dropdown list.
+    - Open the Command Palette (`ctrl+shift+P`), enter `color theme` at the prompt, and select *Schwifty* from the dropdown list.
+5. Now that you have gotten Schwifty, it's time to stay schwifty.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Schwiftied Screenshots
 
-**Enjoy!**
+Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) font.
+
+![screenshot2](images/screenshot3.png)
+
+![screenshot3](images/screenshot2.png)
+
+## Acknowledgements
