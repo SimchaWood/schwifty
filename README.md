@@ -13,7 +13,7 @@ Schwifty is a dark theme for [VS Code](https://code.visualstudio.com/).
     - Click *Set Color Theme* on the **Extensions: Schwifty** details page.
     - Navigate to *File* > *Preferences* > *Color Theme* (or press `ctrl-K ctrl-C`) and select *Schwifty* from the dropdown list.
     - Open the Command Palette (`ctrl+shift+P`), enter `color theme` at the prompt, and select *Schwifty* from the dropdown list.
-5. Now that you have gotten Schwifty, it's time to stay schwifty.
+5. Now that you have gotten Schwifty, it's time to stay Schwifty.
 
 ## Schwiftied Screenshots
 
