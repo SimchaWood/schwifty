@@ -4,7 +4,10 @@
     "description": "A dark theme for those who want to get Schwifty.",
     "version": "1.0.0",
     "publisher": "SimchaWood",
-    "repository": "https://github.com/SimchaWood/schwifty",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/SimchaWood/schwifty"
+    },
     "engines": {
         "vscode": "^1.41.0"
     },
