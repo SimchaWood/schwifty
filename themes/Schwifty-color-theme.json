@@ -57,10 +57,10 @@
 		"dropdown.foreground": "#92b6c7",
 		"dropdown.listBackground": "#121618",
     "editor.background": "#1f262a",
-		"editor.findMatchBackground": "#46b55a60",
-		// "editor.findMatchBorder": null,
-		"editor.findMatchHighlightBackground": "#46b55a40",
-		// "editor.findMatchHighlightBorder": null,
+    "editor.findMatchBackground": "#46b55a80",
+    "editor.findMatchBorder": "#46b55a80",
+    "editor.findMatchHighlightBackground": "#46b55a60",
+    "editor.findMatchHighlightBorder": "#46b55a60",
     "editor.findRangeHighlightBackground": "#62fd7e20",
 		// "editor.findRangeHighlightBorder": null,
 		"editor.focusedStackFrameHighlightBackground": "#6ed2f720",
@@ -192,8 +192,8 @@
 		"list.activeSelectionForeground": "#b7e4f9",
 		"list.dropBackground": "#b7e4f920",
     "list.errorForeground": "#fb6467",   
-		"list.filterMatchBackground": "#46b55a60",
-    // "list.filterMatchBorder": null,
+    "list.filterMatchBackground": "#46b55a40",
+    "list.filterMatchBorder": "#46b55a40",
 		"list.focusBackground": "#242d31",
     "list.focusForeground": "#b7e4f9",
     "list.highlightForeground": "#62fd7e",
@@ -275,8 +275,8 @@
 		"scrollbarSlider.activeBackground": "#b7e4f960",
 		"scrollbarSlider.background": "#b7e4f920",
     "scrollbarSlider.hoverBackground": "#b7e4f940",
-    "searchEditor.findMatchBackground": "#46b55a60",
-    // "searchEditor.findMatchBorder": null,
+    "searchEditor.findMatchBackground": "#46b55a80",
+    "searchEditor.findMatchBorder": "#45b55a80",
     "selection.background": "#00afc860",
 		"settings.checkboxBackground": "#121618",
 		"settings.checkboxBorder": "#0c0f11",
@@ -706,7 +706,7 @@
 			}
     },
 		{
-      "name": "Diff Files",
+      "name": "Diff Files (Header)",
 			"scope": [
 				"meta.diff",
 				"meta.diff.header"
@@ -720,6 +720,13 @@
       "scope": "meta.diff.index",
       "settings": {
         "foreground": "#cf58c1"
+      }
+    },
+    {
+      "name": "Diff Files (Text)",
+      "scope": "source.diff",
+      "settings": {
+        "foreground": "#917c5d"
       }
     },
 		{
@@ -1478,6 +1485,21 @@
       "scope": "markup.other.command.restructuredtext",
       "settings": {
         "foreground": "#46b55a"
+      }
+    },
+    {
+      "name": "Search Result Paths",
+      "scope": "string path.searchResult",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#00afc8"
+      }
+    },
+    {
+      "name": "Search Result Line Numbers",
+      "scope": "constant.numeric lineNumber.searchResult",
+      "settings": {
+        "foreground": "#e89242"
       }
     },
     {

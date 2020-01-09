@@ -1,26 +1,35 @@
 {
-    "name": "schwifty",
-    "displayName": "Schwifty",
-    "description": "A dark theme for those who want to get Schwifty.",
-    "version": "1.0.0",
-    "publisher": "SimchaWood",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/SimchaWood/schwifty"
-    },
-    "engines": {
-        "vscode": "^1.41.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Schwifty",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Schwifty-color-theme.json"
-            }
-        ]
-    }
+  "name": "schwifty",
+  "version": "1.0.0",
+  "publisher": "SimchaWood",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimchaWood/schwifty"
+  },
+  "displayName": "Schwifty",
+  "description": "A dark theme for those who want to foster a dark, schwifty vibe.",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "color-theme",
+    "dark theme"
+  ],
+  "galleryBanner": {
+    "color": "#24325f",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Schwifty",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Schwifty-color-theme.json"
+      }
+    ]
+  }
 }

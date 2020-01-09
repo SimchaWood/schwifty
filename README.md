@@ -1,6 +1,9 @@
 # Schwifty
 
-Schwifty is a dark theme for [VS Code](https://code.visualstudio.com/).
+![badge](https://vsmarketplacebadge.apphb.com/version/simchawood.schwifty.svg)
+![badge](https://img.shields.io/github/license/SimchaWood/schwifty)
+
+Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
 
 ![screenshot1](images/screenshot1.png)
 
@@ -23,4 +26,12 @@ Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.
 
 ![screenshot3](images/screenshot2.png)
 
+## Making Schwifty Even Schwiftier
+
+Suggestions are always welcome. Any issues or suggestions should be submitted through [GitHub](https://github.com/SimchaWood/schwifty/issues).
+
 ## Acknowledgements
+
+The demo files found in [Sarah Drasner's Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras) and [Wes Bos's Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2&WT.mc_id=github-theme-sdras) themes were particularly useful in the development and testing of this theme.
+
+The color palette is inspired by Adult Swim's [Rick and Morty](https://www.rickandmorty.com/).
