@@ -1,6 +1,6 @@
 # Schwifty
 
-![badge](https://vsmarketplacebadge.apphb.com/version/simchawood.schwifty.svg)
+![badge](https://vsmarketplacebadge.apphb.com/version/SimchaWood.schwifty.svg)
 ![badge](https://img.shields.io/github/license/SimchaWood/schwifty)
 
 Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
