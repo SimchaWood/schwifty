@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/SimchaWood/schwifty"
   },
+  "bugs": {
+    "url": "https://github.com/SimchaWood/schwifty/issues"
+  },
   "displayName": "Schwifty",
   "description": "A dark theme for those who want to foster a dark, schwifty vibe.",
   "categories": [
@@ -23,6 +26,7 @@
     "color": "#24325f",
     "theme": "dark"
   },
+  "icon": "schwiftylogo.png",
   "contributes": {
     "themes": [
       {

@@ -20,7 +20,7 @@ Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
 
 ## Schwiftied Screenshots
 
-Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) font.
+Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) font:
 
 ![screenshot2](images/screenshot3.png)
 
@@ -32,6 +32,8 @@ Suggestions are always welcome. Any issues or suggestions should be submitted th
 
 ## Acknowledgements
 
+> **schwifty** \\&#712;shwif-tē\\ [Yiddish &#x05e9;&#x05f0;&#x05d9;&#x05e4;&#x05bf;&#x05d8;&#x05d9;&#x05e7;] *adj* **:** in a state or condition of which any explanation or characterization would be incomprehensible to those not currently experiencing it
+
 The demo files found in [Sarah Drasner's Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras) and [Wes Bos's Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2&WT.mc_id=github-theme-sdras) themes were particularly useful in the development and testing of this theme.
 
-The color palette is inspired by Adult Swim's [Rick and Morty](https://www.rickandmorty.com/).
+The Schwifty color palette was inspired by my unhealthy obsession with Adult Swim's [Rick and Morty](https://www.rickandmorty.com/).
