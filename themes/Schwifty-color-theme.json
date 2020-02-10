@@ -64,6 +64,7 @@
     "editor.findRangeHighlightBackground": "#62fd7e20",
     // "editor.findRangeHighlightBorder": null,
     "editor.focusedStackFrameHighlightBackground": "#6ed2f720",
+    "editor.foldBackground": "#001a1e",
     "editor.foreground": "#92b6c7",
     "editor.hoverHighlightBackground": "#b7e4f960",
     "editor.inactiveSelectionBackground": "#00afc840",
@@ -277,6 +278,7 @@
     "scrollbarSlider.hoverBackground": "#b7e4f940",
     "searchEditor.findMatchBackground": "#46b55a80",
     "searchEditor.findMatchBorder": "#45b55a80",
+    "searchEditor.textInputBorder": "#121618",
     "selection.background": "#00afc860",
     "settings.checkboxBackground": "#121618",
     "settings.checkboxBorder": "#0c0f11",
@@ -410,7 +412,7 @@
     "welcomePage.buttonBackground": "#242d31",
     "welcomePage.buttonHoverBackground": "#2a3439",
     "widget.shadow": "#b7e4f920",
-    "window.activeBorder": "#0c0f11",
+    "window.activeBorder": "#242d31",
     "window.inactiveBorder": "#171d20"
   },
   "tokenColors": [
