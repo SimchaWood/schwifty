@@ -25,6 +25,7 @@ Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.
 ![screenshot3](images/screenshot3.png)
 
 Schwifty Theme with TypeScript file (right half of image shows file with VS Code's semantic highlighting enabled):
+
 ![screenshot4](images/screenshot4.png)
 
 ## Making Schwifty Even Schwiftier
