@@ -22,9 +22,10 @@ Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
 
 Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) font:
 
-![screenshot2](images/screenshot3.png)
+![screenshot3](images/screenshot3.png)
 
-![screenshot3](images/screenshot2.png)
+Schwifty Theme with TypeScript file (right half of image shows file with VS Code's semantic highlighting enabled):
+![screenshot4](images/screenshot4.png)
 
 ## Making Schwifty Even Schwiftier
 
