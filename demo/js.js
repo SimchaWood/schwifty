@@ -62,8 +62,8 @@ async function asyncCall() {
 
 const options = {
   connections: {
-    compression: false
-  }
+    compression: false,
+  },
 };
 
 for (let i = 0; i < 10; i++) {
@@ -102,7 +102,7 @@ const { foo: bar } = require("stuff");
 const arr = [1, "baz", str];
 const obj = {
   foobar: "baz",
-  "foo-bar": "baz"
+  "foo-bar": "baz",
 };
 
 if (typeof obj.foobar === "string") {
@@ -142,7 +142,7 @@ class LoggerWrapper {
       /** @type {loggerMethod} */
       verbose: this.addLogMethod("mainLogger", "verbose"),
       /** @type {loggerMethod} */
-      silly: this.addLogMethod("mainLogger", "silly")
+      silly: this.addLogMethod("mainLogger", "silly"),
     };
 
     this.status = {
@@ -151,7 +151,7 @@ class LoggerWrapper {
       /** @type {statusMethod} */
       alert: this.addLogMethod("statusLogger", "alert"),
       /** @type {statusMethod} */
-      info: this.addLogMethod("statusLogger", "info")
+      info: this.addLogMethod("statusLogger", "info"),
     };
 
     this._debug = this.addLogMethod("debugLogger");
@@ -197,7 +197,7 @@ class LoggerWrapper {
       this.container.add(loggerId, {
         level: logger.level,
         levels: logger.levels,
-        transports: getTransportConfig(configData.transports, logger)
+        transports: getTransportConfig(configData.transports, logger),
       });
 
       logger.logMethod = configData.logMethod;
@@ -220,7 +220,7 @@ class LoggerWrapper {
     const level = logLevel || logger.level;
 
     if (isUndefined(config.logMethod)) {
-      return info => {
+      return (info) => {
         info.level = level;
         return logger.log(info);
       };
@@ -229,7 +229,7 @@ class LoggerWrapper {
   }
 
   getLoggerConfig(loggerId) {
-    return _find(this.loggerConfigs, x => x.loggerId === loggerId);
+    return _find(this.loggerConfigs, (x) => x.loggerId === loggerId);
   }
 }
 

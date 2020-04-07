@@ -1,6 +1,7 @@
 {
   "name": "Schwifty",
   "type": "dark",
+
   "colors": {
     "activityBar.activeBackground": "#242d31",
     "activityBar.activeBorder": "#92b6c7",
@@ -225,6 +226,7 @@
     "merge.currentHeaderBackground": "#69c8ec80",
     "merge.incomingContentBackground": "#fd8e3a40",
     "merge.incomingHeaderBackground": "#fd8e3a80",
+    "minimap.background": "#1f262a",
     "minimap.errorHighlight": "#fb6467",
     "minimap.findMatchHighlight": "#46b55a",
     "minimap.selectionHighlight": "#00afc8",
@@ -232,6 +234,9 @@
     "minimapGutter.addedBackground": "#6fa51a",
     "minimapGutter.deletedBackground": "#fb6467",
     "minimapGutter.modifiedBackground": "#54a0bc",
+    "minimapSlider.activeBackground": "#b7e4f960",
+    "minimapSlider.background": "#b7e4f918",
+    "minimapSlider.hoverBackground": "#b7e4f930",
     "notificationCenter.border": "#495b63",
     "notificationCenterHeader.background": "#0c0f11",
     "notificationCenterHeader.foreground": "#b7e4f9",
