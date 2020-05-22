@@ -1,7 +1,7 @@
 {
   "name": "Schwifty",
   "type": "dark",
-
+  // "semanticHighlighting": true,
   "colors": {
     "activityBar.activeBackground": "#242d31",
     "activityBar.activeBorder": "#92b6c7",
@@ -106,6 +106,7 @@
     "editorGutter.background": "#1b2225",
     "editorGutter.commentRangeForeground": "#00afc8",
     "editorGutter.deletedBackground": "#fb6467",
+    // "editorGutter.foldingControlForeground": "#ff0000", // ADD
     "editorGutter.modifiedBackground": "#54a0bc",
     // "editorHint.border": null,
     "editorHint.foreground": "#46b55a",
@@ -237,6 +238,9 @@
     "minimapSlider.activeBackground": "#b7e4f960",
     "minimapSlider.background": "#b7e4f918",
     "minimapSlider.hoverBackground": "#b7e4f930",
+    "notebook.cellToolbarSeperator": "#ff0000",
+    "notebook.focusedCellIndicator": "#ff0000",
+    "notebook.outputContainerBackgroundColor": "#ff0000",
     "notificationCenter.border": "#495b63",
     "notificationCenterHeader.background": "#0c0f11",
     "notificationCenterHeader.foreground": "#b7e4f9",
