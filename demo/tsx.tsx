@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   constructor(
     private searchService: SearchService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {

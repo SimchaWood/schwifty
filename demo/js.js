@@ -2,8 +2,9 @@
 /* eslint-disable prefer-named-capture-group */
 /* eslint-disable max-classes-per-file */
 
-"use strict";
+'use strict';
 
+// TODO: This is something to do.
 class Sale {
   constructor(price) {
     [this.decoratorsList, this.price] = [[], price];
@@ -48,8 +49,8 @@ class Sale {
 }
 
 let sale = new Sale(100);
-sale.decorate("fedtax");
-sale.decorate("quebec");
+sale.decorate('fedtax');
+sale.decorate('quebec');
 console.log(sale.getPrice()); //112.88
 
 sale.getPrice();
@@ -73,7 +74,7 @@ for (let i = 0; i < 10; i++) {
 if (true) {
 }
 
-while (false) {}
+while (false) { }
 
 switch (2) {
   case 2:
@@ -82,7 +83,7 @@ switch (2) {
     break;
 }
 
-class Foo {}
+class Foo { }
 
 const foo = new Foo.Thing();
 
@@ -92,34 +93,34 @@ class MySale extends Sale {
     this.price = price;
   }
 }
-const str = `The price for this widget is ${sale.getPrice("widget")}`;
+const str = `The price for this widget is ${sale.getPrice('widget')}`;
 
 const rx = /^(?:(start))(?<!foo)(?<=bar)MUSKET_(?<cfgName>[A-Z13579_]+)(._fibble\d*){0,1}(?=foo)(?!bar)$/u;
 
-const text = "foobar\n";
-const { foo: bar } = require("stuff");
+const text = 'foobar\n';
+const { foo: bar } = require('stuff');
 
-const arr = [1, "baz", str];
+const arr = [1, 'baz', str];
 const obj = {
-  foobar: "baz",
-  "foo-bar": "baz",
+  foobar: 'baz',
+  'foo-bar': 'baz',
 };
 
-if (typeof obj.foobar === "string") {
+if (typeof obj.foobar === 'string') {
   obj.foobar += arr[1];
 }
-obj["foo-bar"] = arr.length;
+obj['foo-bar'] = arr.length;
 
 console.log(rx, text, bar);
 
 const pi = Math.PI;
 const str2 = JSON.stringify(str);
 
-const { find: _find, forEach, isUndefined } = require("lodash");
-const winston = require("winston");
+const { find: _find, forEach, isUndefined } = require('lodash');
+const winston = require('winston');
 
-const loggerConfig = require("./config");
-const { getTransportConfig } = require("./util");
+const loggerConfig = require('./config');
+const { getTransportConfig } = require('./util');
 
 /**
  * Class that serves as an interface for winston.Logger
@@ -134,28 +135,28 @@ class LoggerWrapper {
 
     this.log = {
       /** @type {loggerMethod} */
-      error: this.addLogMethod("mainLogger", "error"),
+      error: this.addLogMethod('mainLogger', 'error'),
       /** @type {loggerMethod} */
-      warn: this.addLogMethod("mainLogger", "warn"),
+      warn: this.addLogMethod('mainLogger', 'warn'),
       /** @type {loggerMethod} */
-      info: this.addLogMethod("mainLogger", "info"),
+      info: this.addLogMethod('mainLogger', 'info'),
       /** @type {loggerMethod} */
-      verbose: this.addLogMethod("mainLogger", "verbose"),
+      verbose: this.addLogMethod('mainLogger', 'verbose'),
       /** @type {loggerMethod} */
-      silly: this.addLogMethod("mainLogger", "silly"),
+      silly: this.addLogMethod('mainLogger', 'silly'),
     };
 
     this.status = {
       /** @type {statusMethod} */
-      error: this.addLogMethod("statusLogger", "error"),
+      error: this.addLogMethod('statusLogger', 'error'),
       /** @type {statusMethod} */
-      alert: this.addLogMethod("statusLogger", "alert"),
+      alert: this.addLogMethod('statusLogger', 'alert'),
       /** @type {statusMethod} */
-      info: this.addLogMethod("statusLogger", "info"),
+      info: this.addLogMethod('statusLogger', 'info'),
     };
 
-    this._debug = this.addLogMethod("debugLogger");
-    this._request = this.addLogMethod("requestLogger");
+    this._debug = this.addLogMethod('debugLogger');
+    this._request = this.addLogMethod('requestLogger');
   }
 
   configureLoggers(config) {

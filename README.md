@@ -18,15 +18,9 @@ Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
    - Open the Command Palette (`ctrl+shift+P`), enter `color theme` at the prompt, and select _Schwifty_ from the dropdown list.
 5. Now that you have gotten Schwifty, it's time to stay Schwifty.
 
-## Schwiftied Screenshots
+Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and the [Hack](https://sourcefoundry.org/hack/) font:
 
-Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) font:
-
-![screenshot3](images/screenshot3.png)
-
-Schwifty Theme with TypeScript file (right half of image shows file with VS Code's semantic highlighting enabled):
-
-![screenshot4](images/screenshot4.png)
+![screenshot3](images/screenshot2.png)
 
 ## Making Schwifty Even Schwiftier
 
