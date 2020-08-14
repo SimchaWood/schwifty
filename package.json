@@ -1,6 +1,6 @@
 {
   "name": "schwifty",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publisher": "SimchaWood",
   "engines": {
     "vscode": "^1.42.0"
