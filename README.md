@@ -1,7 +1,7 @@
 # Schwifty
 
 [![badge](https://vsmarketplacebadge.apphb.com/version/SimchaWood.schwifty.svg)](https://marketplace.visualstudio.com/items?itemName=SimchaWood.schwifty)
-[![badge](https://img.shields.io/github/license/SimchaWood/schwifty)](https://github.com/SimchaWood/schwifty/blob/master/LICENSE)
+[![badge](https://img.shields.io/github/license/SimchaYork/schwifty)](https://github.com/SimchaYork/schwifty/blob/master/LICENSE)
 
 Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
 
@@ -24,7 +24,7 @@ Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.
 
 ## Making Schwifty Even Schwiftier
 
-Suggestions are always welcome. Any issues or suggestions should be submitted through [GitHub](https://github.com/SimchaWood/schwifty/issues).
+Suggestions are always welcome. Any issues or suggestions should be submitted through [GitHub](https://github.com/SimchaYork/schwifty/issues).
 
 ## Acknowledgements
 
