@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.3.0]
+
+- Adds support for charts, pinned tabs, and SCM view (VS Code 1.50.0).
+
 ## [1.2.0]
 
 - Enables semantic highlighting and adds support for new color theme options added from VS Code 1.43 forward.
