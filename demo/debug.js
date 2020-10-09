@@ -2,9 +2,9 @@
 const stringThing = require("./debug2");
 
 function thrower(z) {
-  if (!z) {
-    throw Error("Foo!");
-  }
+  // if (!z) {
+  //   throw Error("Foo!");
+  // }
   return z + 1;
 }
 
