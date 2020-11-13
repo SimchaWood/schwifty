@@ -4,7 +4,7 @@
   "author": "Simcha York",
   "publisher": "SimchaWood",
   "engines": {
-    "vscode": "^1.47.0"
+    "vscode": "^1.51.0"
   },
   "license": "SEE LICENSE IN LICENSE",
   "repository": {

@@ -274,6 +274,8 @@
     "minimapSlider.activeBackground": "#b7e4f960",
     "minimapSlider.background": "#b7e4f918",
     "minimapSlider.hoverBackground": "#b7e4f930",
+    "notebook.focusedRowBorder": "#526670",
+    "notebook.rowHoverBackground": "#242d31",
     // **** Used only with VSC Insiders for now ****
     // "notebook.cellBorderColor": null,
     // "notebook.cellHoverBackground": null,
@@ -353,6 +355,7 @@
     "settings.dropdownBorder": "#0c0f11",
     "settings.dropdownForeground": "#b7e4f9",
     "settings.dropdownListBorder": "#36444a",
+    "settings.focusedRowBackground": "#2a3439",
     "settings.headerForeground": "#b7e4f9",
     "settings.modifiedItemIndicator": "#b97434",
     "settings.numberInputBackground": "#121618",
