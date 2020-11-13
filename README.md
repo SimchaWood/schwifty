@@ -28,7 +28,7 @@ Suggestions are always welcome. Any issues or suggestions should be submitted th
 
 ## Acknowledgements
 
-> **schwifty** \\&#712;shwif-tē\\ [Yiddish &#x05e9;&#x05f0;&#x05d9;&#x05e4;&#x05bf;&#x05d8;&#x05d9;&#x05e7;] _adj_ **:** in a state or condition of which any explanation or characterization would be incomprehensible to those not currently experiencing it
+> **schwifty** \\&#712;shwif-tē\\ [from Yiddish &#x05e9;&#x05f0;&#x05d9;&#x05e4;&#x05bf;&#x05d8;&#x05d9;&#x05e7;] _adj_ **:** in a state or condition of which any explanation or characterization would be incomprehensible to those not currently experiencing it
 
 The demo files found in [Sarah Drasner's Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras) and [Wes Bos's Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2&WT.mc_id=github-theme-sdras) themes were particularly useful in the development and testing of this theme.
 

@@ -1,8 +1,12 @@
 # Change Log
 
-## [1.3.0]
+## [1.4.0]
 
 - Adds support for new Settings page options (VS Code 1.51.0).
+
+## [1.3.0]
+
+- Adds support for charts, pinned tabs, and SCM view (VS Code 1.50.0).
 
 ## [1.2.0]
 
