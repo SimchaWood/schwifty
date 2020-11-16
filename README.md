@@ -3,9 +3,11 @@
 [![badge](https://vsmarketplacebadge.apphb.com/version/SimchaWood.schwifty.svg)](https://marketplace.visualstudio.com/items?itemName=SimchaWood.schwifty)
 [![badge](https://img.shields.io/github/license/SimchaYork/schwifty)](https://github.com/SimchaYork/schwifty/blob/master/LICENSE)
 
-Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
+Schwifty is _the_ dark [VS Code](https://code.visualstudio.com/) theme for all your light-night, early-morning, and mid-afternoon coding needs. Works equally well in brightly-lit open spaces and in dim, dank lerkims.
 
-![screenshot1](images/screenshot1.png)
+Schwifty offers full workbench theming and plays nice with VS Code's semantic highlighting. Don't let your eyes gaze on lesser themes a single minute longer. Get Schwifty today!
+
+![screenshot2](images/screenshot2.png)
 
 ## Installation (How to get Schwifty)
 
@@ -20,7 +22,7 @@ Schwifty is a dark [VS Code](https://code.visualstudio.com/) theme.
 
 Schwifty Theme using the [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) and the [Hack](https://sourcefoundry.org/hack/) font:
 
-![screenshot3](images/screenshot2.png)
+![screenshot1](images/screenshot1.png)
 
 ## Making Schwifty Even Schwiftier
 
